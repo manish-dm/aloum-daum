@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Routes from "./routes";
 import "slick-carousel/slick/slick.css";
