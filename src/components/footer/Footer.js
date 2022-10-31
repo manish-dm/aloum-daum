@@ -6,6 +6,7 @@ import youtube from '../../assets/icons/youtube.png'
 import instagram from '../../assets/icons/instagram.png'
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <div className='footer-main'>
             <div className='footer-content'>
@@ -29,7 +30,7 @@ const Footer = () => {
                     </div>
                     <div className='footer-infos'>
                         <p className='footer-heads'>Informations</p>
-                        <p className='infos'>Start A Return</p>
+                        <p className='infos'>Start a Return</p>
                         <p className='infos'>Contact Us</p>
                         <p className='infos'>Shipping FAQ</p>
                         <p className='infos'>Terms & Conditions</p>
@@ -50,7 +51,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-row-2'>
-                    row-2
+                   <div className='copyright'><span style = {{color: "#707070"}}>&copy; </span>AloumDaum {year}.</div>
+                   <div className='payment-gateways'>payment gateways</div>
                 </div>
             </div>
         </div>
