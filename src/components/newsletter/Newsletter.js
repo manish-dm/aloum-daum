@@ -19,7 +19,9 @@ const Newsletter = () => {
 
         </div>
 
-        <img src={product} className="product"/>
+        <div className="product"> 
+          <img src={product} />
+          </div>
       </div>
     </div>
   )
