@@ -43,32 +43,52 @@ const Navbar = () => {
               FACE <FiChevronDown />
             </div>
             <ul className="dropDown-list">
-              <li>Conditioner</li>
-              <li>Hair oil</li>
-              <li>Shampoo</li>
-              <li>Volumizer</li>
+              <li>Whitener</li>
+              <li>Mask</li>
+              <li>Acne Remover</li>
             </ul>
           </li>
           <li>
             <div className="menu-name-and-arrow">
               BODY <FiChevronDown />
             </div>
-            <ul className="dropDown-list">
-              <li>Conditioner</li>
-              <li>Hair oil</li>
-              <li>Shampoo</li>
-              <li>Volumizer</li>
-            </ul>
+            <div className="mega-box">
+                <div className="mega-box-content">
+                    <div className="mega-box-row">
+                        <header>Heading 1</header>
+                        <ul className="mega-box-links">
+                            <li>Body oil</li>
+                            <li>Tanner</li>
+                            <li>Moisturiser</li>
+                        </ul>
+                    </div>
+                    <div className="mega-box-row">
+                        <header>Heading 2</header>
+                        <ul className="mega-box-links">
+                            <li>Spray</li>
+                            <li>Lotion</li>
+                            <li>Perfume</li>
+                        </ul>
+                    </div>
+                    <div className="mega-box-row">
+                        <header>Heading 3</header>
+                        <ul className="mega-box-links">
+                            <li>Cobblouise</li>
+                            <li>Yorlopi</li>
+                            <li>Smoothner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
           </li>
           <li>
             <div className="menu-name-and-arrow">
               WELLNESS <FiChevronDown />
             </div>
             <ul className="dropDown-list">
-              <li>Conditioner</li>
-              <li>Hair oil</li>
-              <li>Shampoo</li>
-              <li>Volumizer</li>
+              <li>Grooming</li>
+              <li>Hygiene</li>
+              <li>Health</li>
             </ul>
           </li>
           <li>
@@ -76,10 +96,10 @@ const Navbar = () => {
               INTIMATE <FiChevronDown />
             </div>
             <ul className="dropDown-list">
-              <li>Conditioner</li>
-              <li>Hair oil</li>
-              <li>Shampoo</li>
-              <li>Volumizerrrrrrrrrrrrrr</li>
+              <li>Spa Oil</li>
+              <li>Truffler</li>
+              <li>Shredlum</li>
+              <li>Brocolopico</li>
             </ul>
           </li>
         </ul>

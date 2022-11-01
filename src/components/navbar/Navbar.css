@@ -65,7 +65,6 @@
   list-style: none;
   display: flex;
   gap: 8rem;
-  position: relative;
 }
 
 .nav-lower-menu-links > li {
@@ -74,6 +73,7 @@
   margin: 2.95rem 0;
   gap: 0.5rem;
   cursor: pointer;
+  position: relative;
 }
 
 .menu-name-and-arrow {
@@ -85,9 +85,10 @@
     list-style: none;
     background-color: #f3e7e0;
     position: absolute;
-    left: -5%;
-    top: 70%;
-    width: 13rem;
+    left: -10%;
+    top: 140%;
+    width: fit-content;
+    min-width: 14rem;
     font: normal normal normal 1.7rem/4rem Rubik-Regular;
     opacity: 0;
     visibility: hidden;
@@ -95,14 +96,59 @@
 
 .dropDown-list > li {
     width: 100%;
-    padding-left: 1rem;
+    padding-inline: 1rem;
     transition: all 0.5s ease;
 }
 .dropDown-list > li:hover {
     background-color: #f5dacc;
 }
 
-.nav-lower-menu-links > li:hover .dropDown-list {
+.nav-lower-menu-links > li:hover .dropDown-list,
+.nav-lower-menu-links > li:hover .mega-box {
     opacity: 1;
     visibility: visible;
+    top: 110%;
+    transition: all 0.3s ease;
+}
+/*****mega box****/
+.mega-box {
+    position: absolute;
+    top: 140%;
+    left: -27rem;
+    background-color: #f3e7e0;
+    width: fit-content;
+    opacity: 0;
+    visibility: hidden;
+}
+.mega-box ul {
+    list-style: none;
+}
+
+.mega-box-content {
+    padding: 2.5rem 1rem;
+    display: flex;
+    gap: 5rem;
+}
+.mega-box-row {
+    min-width: 15rem;
+}
+.mega-box-row > header {
+    font-weight: 600;
+    cursor: default;
+    padding-left: 1rem;
+}
+
+.mega-box-row:not(:last-child) .mega-box-links {
+    border-right: 1px solid rgb(179, 179, 179);
+}
+
+.mega-box-links {
+    font: normal normal normal 1.7rem/4rem Rubik-Regular;
+    padding-right: 1rem;
+}
+.mega-box-links > li {
+    padding: 0 1rem;
+}
+.mega-box-links > li:hover {
+    background-color: #f5dacc;
 }
