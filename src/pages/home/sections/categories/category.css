@@ -85,7 +85,7 @@ img{
     }
     
     .category-heading {
-        font: normal normal bold 3rem/3.5rem Urbanist-Bold;
+        font: normal normal bold 3rem/3rem Urbanist-Bold;
     }
     
     .category-desc {
@@ -93,5 +93,31 @@ img{
     }
   .item-4 img, .item-5{
     margin-top: 1.5rem;
+  }
+  .category-container{
+    gap: 1rem;
+  }
+}
+@media(max-width: 360px){
+    .item-1{
+        
+    }
+    .category-title {
+        margin-top: 1.5rem;
+        font: normal normal normal 1.2rem/1.5rem Rubik-Regular;
+    }
+    
+    .category-heading {
+        font: normal normal bold 2.5rem Urbanist-Bold;
+    }
+    
+    .category-desc {
+        font: normal normal normal 1.8rem/2.3rem Rubik-Regular;
+    }
+  .item-4 img, .item-5{
+    margin-top: 1.5rem;
+  }
+  .category-container{
+    gap: 1rem;
   }
 }

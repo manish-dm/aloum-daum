@@ -45,7 +45,7 @@ input::placeholder {
     width: 15rem;
     height: 1.4rem;
     letter-spacing: 0rem;
-    font: normal normal 500 1.7rem/8.4rem Rubik-Medium;
+    font: normal normal 500 1.7rem Rubik-Medium;
     color: #B8B8B8;
   }
 
@@ -59,7 +59,7 @@ input::placeholder {
     opacity: 1;
     color: #fffffffa;
     text-align: center;
-    font: normal normal 500 1.7rem/8.4rem Rubik-Medium;
+    font: normal normal 500 1.7rem  Rubik-Medium;
     color: #FFFFFF;
 }
 .product{
@@ -105,13 +105,13 @@ input::placeholder {
     input::placeholder {
         padding: 1.5rem 0;
         width: 15rem;
-        font: normal normal 500 1.2rem/4rem Rubik-Medium;
+        font: normal normal 500 1.2rem Rubik-Medium;
         margin-bottom: 3rem;
     }
     .submit-btn{
         width: 11rem;
         height: 4rem;
-        font: normal normal 500 1.5rem/2rem Rubik-Medium;
+        font: normal normal 500 1.5rem Rubik-Medium;
     }
 }
 
@@ -126,11 +126,12 @@ input::placeholder {
     input::placeholder {
     padding-block: auto;
     width: 15rem;
-    font: normal normal 500 1.2rem/3.6rem Rubik-Medium;
+    font: normal normal 500 1.2rem  Rubik-Medium;
 }
     .submit-btn{
         width: 8rem;
         height: 3rem;
-        font: normal normal 500 1rem/3rem Rubik-Medium;
+        
+        font: normal normal 500 1.5rem  Rubik-Medium;
     }
 }
