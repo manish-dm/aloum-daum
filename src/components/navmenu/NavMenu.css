@@ -1,0 +1,59 @@
+.navmenu-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  height: 5.7rem;
+  background: #f3e7e0 0% 0% no-repeat padding-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navmenu-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.navmenu-icons-style {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navmenu-icons-style.fb {
+  font-size: 1.6rem;
+}
+
+.navmenu-info {
+  width: 79.5vw;
+  text-align: center;
+
+  font: normal normal normal 1.3rem Rubik-Regular;
+  color: #707070;
+}
+
+.navmenu-lang-changer {
+  font: normal normal normal 1.3rem Rubik-Regular;
+  color: #707070;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .navmenu-icons-style {
+    font-size: 2.4rem;
+  }
+
+  .navmenu-icons-style.fb {
+    font-size: 2rem;
+  }
+
+  .navmenu-info {
+    width: 70vw;
+    font-size: 1.7rem;
+  }
+
+  .navmenu-lang-changer {
+    font-size: 1.7rem;
+  }
+}
