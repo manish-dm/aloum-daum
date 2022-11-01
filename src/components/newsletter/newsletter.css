@@ -1,0 +1,136 @@
+.newsletter-main {
+    background-color: #E4E5E7;
+    z-index: -999;
+}
+
+.newsletter-container {
+    display: flex;
+    margin: 0 0 0 13.7rem;
+    height: fit-content;
+}
+
+.newsletter-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    margin-right: 2rem;
+   
+   
+}
+
+.newsletter-desc {
+    font: normal normal bold 5.2rem/6.9rem Urbanist-Bold;
+    color: #131313;
+}
+
+.actions {
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.actions input {
+    width: 36.6rem;
+    height: 6.2rem;
+    border: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    padding-left: 1rem;
+}
+input::placeholder {
+    padding: 1.5rem  0;
+    width: 15rem;
+    height: 1.4rem;
+    letter-spacing: 0rem;
+    font: normal normal 500 1.7rem/8.4rem Rubik-Medium;
+    color: #B8B8B8;
+  }
+
+.submit-btn {
+    width: 20.4rem;
+    height: 6.2rem;
+    background: #191919 0% 0% no-repeat padding-box;
+    border: none;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    opacity: 1;
+    color: #fffffffa;
+    text-align: center;
+    font: normal normal 500 1.7rem/8.4rem Rubik-Medium;
+    color: #FFFFFF;
+}
+.product{
+    flex: 1;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+.product img{
+    width: 100%;
+}
+
+@media (max-width: 1300px){
+    .newsletter-desc{
+        font-size: 3.5rem;
+    }
+    .actions input {
+        width: 32rem;
+    }
+    .submit-btn{
+        width: 18rem;
+    }
+}
+@media (max-width: 1000px){
+    .newsletter-desc{
+        font-size: 4rem;
+    }
+    .actions input {
+        width: 30rem;
+    }
+    .submit-btn{
+        width: 15rem;
+    }
+}
+
+@media (max-width: 600px){
+    .newsletter-desc{
+        font: normal normal bold 2.7rem/3rem Urbanist-Bold;
+    }
+    .actions input {
+        width: 22rem;
+        height: 4rem;
+    }
+    input::placeholder {
+        padding: 1.5rem 0;
+        width: 15rem;
+        font: normal normal 500 1.2rem/4rem Rubik-Medium;
+        margin-bottom: 3rem;
+    }
+    .submit-btn{
+        width: 11rem;
+        height: 4rem;
+        font: normal normal 500 1.5rem/2rem Rubik-Medium;
+    }
+}
+
+@media (max-width: 450px){
+    .newsletter-desc{
+        font: normal normal bold 2rem/2.5rem Urbanist-Bold;
+    }
+    .actions input {
+        width: 15rem;
+        height: 3rem;
+    }
+    input::placeholder {
+    padding-block: auto;
+    width: 15rem;
+    font: normal normal 500 1.2rem/3.6rem Rubik-Medium;
+}
+    .submit-btn{
+        width: 8rem;
+        height: 3rem;
+        font: normal normal 500 1rem/3rem Rubik-Medium;
+    }
+}

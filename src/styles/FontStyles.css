@@ -1,22 +1,55 @@
-/* Raleway font family starts*/
-/* @font-face {
-  font-family: "Raleway-Regular";
-  src: local("Raleway-Regular"),
-    url("../assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+/* Rubik font family starts*/
+ @font-face {
+  font-family: "Rubik-Regular";
+  src: local("Rubik-Regular"),
+    url("../assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-Medium";
-  src: local("Raleway-Medium"),
-    url("../assets/fonts/raleway/Raleway-Medium.ttf") format("truetype");
+  font-family: "Rubik-Medium";
+  src: local("Rubik-Medium"),
+    url("../assets/fonts/rubik/Rubik-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-SemiBold";
-  src: local("Raleway-SemiBold"),
-    url("../assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
+  font-family: "Rubik-SemiBold";
+  src: local("Rubik-SemiBold"),
+    url("../assets/fonts/rubik/Rubik-SemiBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-Bold";
-  src: local("Raleway-Bold"),
-    url("../assets/fonts/raleway/Raleway-Bold.ttf") format("truetype");
-} */
-/* Raleway font family ends */
+  font-family: "Rubik-Bold";
+  src: local("Rubik-Bold"),
+    url("../assets/fonts/rubik/Rubik-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rubik-Light";
+  src: local("Rubik-Light"),
+    url("../assets/fonts/rubik/Rubik-Light.ttf") format("truetype");
+}
+
+/* Urbanist font family starts*/
+
+@font-face {
+  font-family: "Urbanist-Regular";
+  src: local("Urbanist-Regular"),
+    url("../assets/fonts/urbanist/Urbanist-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist-Medium";
+  src: local("Urbanist-Medium"),
+    url("../assets/fonts/urbanist/Urbanist-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist-SemiBold";
+  src: local("Urbanist-SemiBold"),
+    url("../assets/fonts/urbanist/Urbanist-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist-Bold";
+  src: local("Urbanist-Bold"),
+    url("../assets/fonts/urbanist/Urbanist-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist-Light";
+  src: local("Urbanist-Light"),
+    url("../assets/fonts/urbanist/Urbanist-Light.ttf") format("truetype");
+}
+

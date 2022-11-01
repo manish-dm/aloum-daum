@@ -3,7 +3,9 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className='homepage-container'>this will be aloum daum home page</div>
+    <div className='homepage-container'>
+      
+    </div>
   )
 }
 
