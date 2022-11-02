@@ -6,12 +6,17 @@
 
 .bestseller-carousel-heading {
   display: flex;
-  margin-left: 16rem;
-  margin-right: 22.5rem;
+  margin-left: 13.7rem;
+  margin-right: 13.9rem;
   align-items: center;
   justify-content: space-between;
 }
-
+.bestseller-carousel-title-and-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 .bestseller-carousel-title {
   font-family: "Raleway-Bold";
   font-style: normal;
@@ -21,7 +26,11 @@
   letter-spacing: -0.1rem;
   color: #1d293f;
 }
-
+.bestseller-carousel-desc{
+  width: 54.3rem;
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+   color: #707070;
+}
 .bestseller-carousel-actions {
   display: flex;
   gap: 2rem;
@@ -65,14 +74,16 @@
   width: 33.2rem;
   height: 44.6rem;
   /* border: 1px solid red; */
-  align-content: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .item-image img {
   width: 30.3rem;
   height: 30.3rem;
   object-fit: scale-down;
-
+  align-self: center;
 }
 
 .product-details {
@@ -176,7 +187,8 @@
     width: 80%;
     height: 1.1rem;
     border-radius: 1rem;
-    background-color: rgba(34, 176, 252, 0.2);
+    background-color: rgb(150, 150, 150);
+   
     position: relative;
   }
 
@@ -185,8 +197,14 @@
     left: 0;
     width: 12%;
     height: 100%;
-    background-color: #1d293f;
+    background-color: #f0e9e7;
     border-radius: 1rem;
     transition: left 900ms ease-in-out;
+  }
+}
+/* Media Queries */
+@media(max-width: 600px){
+  .item-1{
+    padding-left: 1.5rem;
   }
 }

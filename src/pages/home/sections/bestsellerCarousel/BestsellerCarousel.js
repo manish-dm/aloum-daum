@@ -17,7 +17,13 @@ const BestsellerCarousel = () => {
   return (
     <div className="bestseller-carousel-main">
       <div className="bestseller-carousel-heading">
+        <div className="bestseller-carousel-title-and-desc">
         <div className="bestseller-carousel-title">Our Bestsellers</div>
+        <div className="bestseller-carousel-desc">
+          Looking for something specific? 
+        Shop by category to find your perfect piece of jewellery!
+        </div>
+        </div>
         <div className="bestseller-carousel-actions">
           <span onClick={() => bestsellerSliderRef.current.slickPrev()}>
             <div className="left-btn">
@@ -52,12 +58,12 @@ const BestsellerCarousel = () => {
           })}
         </Slider>
         {/* progress bar of slider */}
-        {/* <div className="bestseller-slider-progressbar">
+        <div className="bestseller-slider-progressbar">
                         <div
                           className="bestseller-slider-progressDot"
                           style={{ left: progressVal + "%" }}
                         />
-                      </div> */}
+                      </div>
       </div>
     </div>
   );

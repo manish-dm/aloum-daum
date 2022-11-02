@@ -182,6 +182,19 @@ img {
     .category-container {
         gap: 1rem;
     }
+    .hoverable-circle{
+        width: 5.5rem;
+        height: 4rem;
+        border: 1.8px solid #E0B9CE;
+        margin-right: 1rem;
+    }
+    .readmore-btn-dash {
+        width: 2.5rem;
+        height: 0.2rem;
+        background: black;
+        transform: translateX(1.2rem);
+      }
+   
 }
 
 @media(max-width: 360px) {

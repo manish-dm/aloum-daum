@@ -1,5 +1,5 @@
 .newsletter-main {
-    background-color: #E4E5E7;
+    background-color: #E6E7E9;
     z-index: -999;
 }
 
@@ -96,7 +96,7 @@ input::placeholder {
 
 @media (max-width: 600px){
     .newsletter-desc{
-        font: normal normal bold 2.7rem/3rem Urbanist-Bold;
+        font: normal normal bold 2.7rem Urbanist-Bold;
     }
     .actions input {
         width: 22rem;
@@ -117,7 +117,7 @@ input::placeholder {
 
 @media (max-width: 450px){
     .newsletter-desc{
-        font: normal normal bold 2rem/2.5rem Urbanist-Bold;
+        font: normal normal bold 2rem Urbanist-Bold;
     }
     .actions input {
         width: 15rem;
@@ -132,6 +132,6 @@ input::placeholder {
         width: 8rem;
         height: 3rem;
         
-        font: normal normal 500 1.5rem  Rubik-Medium;
+        font: normal normal 500 1.2rem  Rubik-Medium;
     }
 }
