@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Category from "./sections/categories/Category";
-import BestsellerCarousel from "./sections/bestsellerCarousel/BestsellerCarousel";
 import HeroSection from "./sections/herosection/HeroSection";
+import BestsellerCarousel from "./sections/bestsellerCarousel/BestsellerCarousel";
+import Category from "./sections/categories/Category";
+import ProductUsp from "./sections/homeUsp/ProductUsp";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <BestsellerCarousel />
       <Category />
+      <ProductUsp />
     </div>
   );
 };

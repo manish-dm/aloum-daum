@@ -1,0 +1,71 @@
+.usp-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F8;
+    margin-inline: auto;
+    padding-block: 12.8rem;
+}
+
+.usp-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usp-title {
+    font: normal normal 500 3.1rem/3.4rem Rubik-Medium;
+    color: #111111;
+
+}
+
+.usp-desc {
+    font: normal normal normal 1.8rem/3.2rem Rubik-Regular;
+    color: #707070;
+    margin-top: 2.2rem;
+    margin-bottom: 6.8rem;
+    width: 75.2rem;
+    text-align: center;
+}
+.usp-images-and-text{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-inline: auto;
+    column-gap: 6.6rem;
+}
+.indiviual-usp-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25.4rem;
+}
+.usp-images{
+    width: 12.8rem;
+    object-fit: scale-down;
+}
+.usp-card-title {
+    font: normal normal 600 1.6rem/3rem Rubik-Semibold;
+    color: #1D1D1D;
+}
+
+.usp-card-desc {
+    font: normal normal normal 1.6rem/2.4rem Rubik-Regular;
+    color: #707070;
+    text-align: center;
+}
+
+@media(max-width: 1200px){
+    .usp-images-and-text{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 6rem;
+    }
+    .usp-desc{
+        width: 45rem;
+    }
+}
