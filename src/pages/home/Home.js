@@ -1,15 +1,17 @@
-import React from 'react'
+import React from "react";
 import "./Home.css";
-import Category from './sections/categories/Category';
-import BestsellerCarousel from './sections/bestsellerCarousel/BestsellerCarousel'
+import Category from "./sections/categories/Category";
+import BestsellerCarousel from "./sections/bestsellerCarousel/BestsellerCarousel";
+import HeroSection from "./sections/herosection/HeroSection";
 
 const Home = () => {
   return (
-    <div className='homepage-container'>
+    <div className="homepage-container">
+      <HeroSection />
       <BestsellerCarousel />
-       <Category />
+      <Category />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

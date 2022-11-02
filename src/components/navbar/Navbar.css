@@ -96,6 +96,7 @@
   border-radius: 1rem;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 
 .dropDown-list > li {
@@ -125,6 +126,7 @@
   border-radius: 1rem;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 .mega-box ul {
   list-style: none;
@@ -214,7 +216,7 @@
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.411);
     backdrop-filter: blur(15px);
-    z-index: 99;
+    z-index: 999;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
   }
@@ -254,7 +256,7 @@
     width: 100%;
     padding: 0 0 0 2rem;
     position: static;
-    opacity: 0;
+    opacity: 1;
     visibility: visible;
     background-color: transparent;
     max-height: 0px;
