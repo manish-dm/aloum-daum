@@ -64,9 +64,11 @@
 
 .email,
 .contact-number {
+    margin-bottom: 2rem;
     font: normal normal normal 1.7rem/3rem Rubik-Regular;
     color: #5E5E5E;
     border-bottom: 1px solid #707070;
+    width: fit-content;
 }
 
 .follow-us-div{
@@ -86,7 +88,9 @@
 /**********************************/
 .footer-row-2{
     display: flex;
-    border-top: 1px solid black ;
+    border-top: 1.5px solid rgb(211, 210, 210) ;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 .copyright{
     font: normal normal 600 1.7rem/2 Urbanist-Semibold;
@@ -105,6 +109,9 @@ opacity: 1;
 
 /* Media Queries */
 @media(max-width: 800px) {
+    .footer-main{
+        margin: 0 auto;
+    }
     .footer-row-1 {
         grid-template-columns: 1fr 1fr;
         column-gap: 5rem;
@@ -113,4 +120,5 @@ opacity: 1;
     .footer-nav-links{
         margin-left: 0;
     }
+    
 }

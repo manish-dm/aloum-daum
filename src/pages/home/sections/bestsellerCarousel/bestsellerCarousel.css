@@ -1,0 +1,210 @@
+.bestseller-carousel-main {
+  background: #ffffff;
+  padding-top: 10rem;
+  /* border: 1px solid blue; */
+}
+
+.bestseller-carousel-heading {
+  display: flex;
+  margin-left: 13.7rem;
+  margin-right: 13.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestseller-carousel-title-and-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bestseller-carousel-title {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.1rem;
+  line-height: 7.2rem;
+  letter-spacing: -0.1rem;
+  color: #1d293f;
+}
+.bestseller-carousel-desc{
+  width: 54.3rem;
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+   color: #707070;
+}
+.bestseller-carousel-actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.left-btn,
+.right-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 50%;
+  border: 1px solid #EEEEEE;
+  transition: background-color 200ms ease-out;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+  background-color: #c2c0c0;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.bestseller-carousel-container {
+  padding-top: 10rem;
+  padding-bottom: 11.5rem;
+
+}
+
+.individual-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image {
+  width: 33.2rem;
+  height: 44.6rem;
+  /* border: 1px solid red; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.item-image img {
+  width: 30.3rem;
+  height: 30.3rem;
+  object-fit: scale-down;
+  align-self: center;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+  /* margin-top: 1rem; */
+}
+
+.product-price {
+  font: normal normal bold 1.6rem/3rem Rubik-Bold;
+  color: #1D1D1D;
+}
+
+.product-name {
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+  color: #1D1D1D;
+}
+
+.bestseller-carousel-slider {
+  margin-right: -150px;
+}
+
+.bestseller-slider-progressbar {
+  margin-top: 6rem;
+  display: none;
+}
+
+/*******************************************/
+@media (max-width: 1750px) {
+  .bestseller-carousel-slider {
+    margin-right: -500px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .bestseller-carousel-slider {
+    margin-right: -200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bestseller-carousel-slider {
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 850px) {
+  .bestseller-carousel-slider {
+    margin-right: -150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .bestseller-carousel-heading {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 6.3rem;
+  }
+
+  .bestseller-carousel-actions {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .bestseller-carousel-container {
+    padding-left: 6.3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .individual-item {
+    padding: 1rem 0 0 3rem;
+    max-width: 30rem;
+    height: 29rem;
+  }
+
+  .bestseller-carousel-icon {
+    margin-top: 5rem;
+  }
+
+  .bestseller-carousel-category {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .bestseller-carousel-slider {
+    margin-right: -10px;
+  }
+
+  .bestseller-carousel-actions {
+    display: none;
+  }
+
+  .bestseller-slider-progressbar {
+    display: block;
+    width: 80%;
+    height: 1.1rem;
+    border-radius: 1rem;
+    background-color: rgb(150, 150, 150);
+   
+    position: relative;
+  }
+
+  .bestseller-slider-progressDot {
+    position: absolute;
+    left: 0;
+    width: 12%;
+    height: 100%;
+    background-color: #f0e9e7;
+    border-radius: 1rem;
+    transition: left 900ms ease-in-out;
+  }
+}
+/* Media Queries */
+@media(max-width: 600px){
+  .item-1{
+    padding-left: 1.5rem;
+  }
+}

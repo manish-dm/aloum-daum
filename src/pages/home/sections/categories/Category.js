@@ -5,40 +5,49 @@ import categoryGridImage2 from '../../../../assets/images/homepage/categoryGridI
 import categoryGridImage3 from '../../../../assets/images/homepage/categoryGridImage3.png'
 import categoryGridImage4 from '../../../../assets/images/homepage/categoryGridImage4.png'
 import categoryGridImage5 from '../../../../assets/images/homepage/categoryGridImage5.png'
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const Category = () => {
   return (
     <div className='category-main'>
       <div className='category-container'>
-         <div className='item-1'>
-         <div className='category-title'>
-              OUR CATEGORIES
-              </div>
-             <div className ='category-heading'>
-              Shop By our Categories
-              </div>
-             <div className='category-desc'>
-              Because You Nedd Time For Yourself
-             </div>
-         </div>
-         <div className='item-2'>
-         <img src={categoryGridImage5} />
-           </div>
-           <div className='item-3'>
-            <img src={categoryGridImage1} />
-           </div>
-           <div className='item-4'>
-           <img src={categoryGridImage4} />
-           </div>
-           <div className='item-5'>
-           <img src={categoryGridImage3} />
-           </div>
-           <div className='item-6'>
-           item-6
-           </div>
-           <div className='item-7'>
-           <img src={categoryGridImage2} />
-           </div>
+        <div className='item-1'>
+          <div className='category-title'>
+            OUR CATEGORIES
+          </div>
+          <div className='category-heading'>
+            Shop By our Categories
+          </div>
+          <div className='category-desc'>
+            Because You Nedd Time For Yourself
+          </div>
+        </div>
+        <div className='item-2'>
+          <img src={categoryGridImage5} />
+          <div className='item-2-text'>FACE</div>
+        </div>
+        <div className='item-3'>
+          <img src={categoryGridImage1} />
+          <div className='item-3-text'>HAIR</div>
+        </div>
+        <div className='item-4'>
+          <img src={categoryGridImage4} />
+          <div className='item-4-text'>HAIR</div>
+        </div>
+        <div className='item-5'>
+          <img src={categoryGridImage3} />
+        </div>
+        <div className='item-6'>
+          <div className='item-6-text'>Shop All Products</div>
+          <div className='hoverable-circle'></div>
+          <div className='item-6-arrow'>
+            <div className="readmore-btn-dash" />
+            <MdOutlineArrowForwardIos fill="black" size="2rem" />
+          </div>
+        </div>
+        <div className='item-7'>
+          <img src={categoryGridImage2} />
+        </div>
       </div>
     </div>
   )
