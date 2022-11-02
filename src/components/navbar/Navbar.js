@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import aloumNavLogo from "../../assets/images/homepage/aloumNavLogo.png";
 import SearchIcon from "../../assets/images/homepage/searchIcon.png";
@@ -11,12 +11,15 @@ import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
+  const [clicked, setClicked] = useState(false);
+  const onNavBtnClicked = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <div className="nav-container">
       <div className="nav-upper">
         <img src={aloumNavLogo} alt="logo" className="nav-upper-logo" />
-        <input type="radio" name="slide" id="menu-btn"/>
-        <input type="radio" name="slide" id="cancel-btn"/>
         <div className="nav-upper-link-buttons">
           <div className="nav-searchbar">
             <img src={SearchIcon} alt="search here" />
@@ -29,15 +32,25 @@ const Navbar = () => {
           </div>
         </div>
         {/* hamburger btn */}
-        <label htmlFor="menu-btn" className="nav-btn nav-open-btn">
-          <HiOutlineMenuAlt3 />
-        </label>
+        {!clicked && (
+          <label
+            htmlFor="menu-btn"
+            className="nav-btn nav-open-btn"
+            onClick={onNavBtnClicked}
+          >
+            <HiOutlineMenuAlt3 />
+          </label>
+        )}
       </div>
       {/* ************************************************************ */}
-      <div className="nav-lower">
+      <div className={clicked ? "nav-lower show-nav" : "nav-lower"}>
         <ul className="nav-lower-menu-links">
           {/* mobile nav cancel btn */}
-          <label htmlFor="cancel-btn" className="nav-btn nav-close-btn">
+          <label
+            htmlFor="cancel-btn"
+            className="nav-btn nav-close-btn"
+            onClick={onNavBtnClicked}
+          >
             <CgClose />
           </label>
           <li>
