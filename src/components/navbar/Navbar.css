@@ -1,0 +1,154 @@
+.nav-container {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #fdf9f8;
+}
+
+.nav-upper {
+  margin: 0 7.3vw;
+  padding-top: 4.22rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-upper-logo {
+  width: 22.9rem;
+  height: 7rem;
+  cursor: pointer;
+}
+
+.nav-upper-link-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-searchbar > input {
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  font: normal normal normal 1.6rem/8.4rem Rubik-Regular;
+  color: #707070;
+  background: none;
+}
+.nav-searchbar > input::placeholder {
+  font: normal normal normal 1.6rem/8.4rem Rubik-Regular;
+  color: #707070;
+  padding-left: 0.5rem;
+}
+.nav-icon-buttons {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.nav-icon-buttons > * {
+  cursor: pointer;
+}
+
+/*********************************************************/
+
+.nav-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-lower-menu-links {
+  list-style: none;
+  display: flex;
+  gap: 8rem;
+}
+
+.nav-lower-menu-links > li {
+  font: normal normal normal 1.7rem Rubik-Regular;
+  color: #161616;
+  margin: 2.95rem 0;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-name-and-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.dropDown-list {
+    list-style: none;
+    background-color: #f3e7e0;
+    position: absolute;
+    left: -10%;
+    top: 140%;
+    width: fit-content;
+    min-width: 14rem;
+    font: normal normal normal 1.7rem/4rem Rubik-Regular;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropDown-list > li {
+    width: 100%;
+    padding-inline: 1rem;
+    transition: all 0.5s ease;
+}
+.dropDown-list > li:hover {
+    background-color: #f5dacc;
+}
+
+.nav-lower-menu-links > li:hover .dropDown-list,
+.nav-lower-menu-links > li:hover .mega-box {
+    opacity: 1;
+    visibility: visible;
+    top: 110%;
+    transition: all 0.3s ease;
+}
+/*****mega box****/
+.mega-box {
+    position: absolute;
+    top: 140%;
+    left: -27rem;
+    background-color: #f3e7e0;
+    width: fit-content;
+    opacity: 0;
+    visibility: hidden;
+}
+.mega-box ul {
+    list-style: none;
+}
+
+.mega-box-content {
+    padding: 2.5rem 1rem;
+    display: flex;
+    gap: 5rem;
+}
+.mega-box-row {
+    min-width: 15rem;
+}
+.mega-box-row > header {
+    font-weight: 600;
+    cursor: default;
+    padding-left: 1rem;
+}
+
+.mega-box-row:not(:last-child) .mega-box-links {
+    border-right: 1px solid rgb(179, 179, 179);
+}
+
+.mega-box-links {
+    font: normal normal normal 1.7rem/4rem Rubik-Regular;
+    padding-right: 1rem;
+}
+.mega-box-links > li {
+    padding: 0 1rem;
+}
+.mega-box-links > li:hover {
+    background-color: #f5dacc;
+}
