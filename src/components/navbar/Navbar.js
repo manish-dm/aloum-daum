@@ -65,10 +65,10 @@ const Navbar = () => {
               HAIR <FiChevronDown />
             </label>
             <ul className="dropDown-list">
-              <li>Conditioner</li>
-              <li>Hair oil</li>
-              <li>Shampoo</li>
-              <li>Volumizer</li>
+              <li onClick={onNavBtnClicked}>Conditioner</li>
+              <li onClick={onNavBtnClicked}>Hair oil</li>
+              <li onClick={onNavBtnClicked}>Shampoo</li>
+              <li onClick={onNavBtnClicked}>Volumizer</li>
             </ul>
           </li>
           <li>
@@ -83,9 +83,9 @@ const Navbar = () => {
               FACE <FiChevronDown />
             </label>
             <ul className="dropDown-list">
-              <li>Whitener</li>
-              <li>Mask</li>
-              <li>Acne Remover</li>
+              <li onClick={onNavBtnClicked}>Whitener</li>
+              <li onClick={onNavBtnClicked}>Mask</li>
+              <li onClick={onNavBtnClicked}>Acne Remover</li>
             </ul>
           </li>
           <li>
@@ -111,25 +111,25 @@ const Navbar = () => {
                 <div className="mega-box-row">
                   <header>Head</header>
                   <ul className="mega-box-links">
-                    <li>Body oil</li>
-                    <li>Tanner</li>
-                    <li>Moisturiser</li>
+                    <li onClick={onNavBtnClicked}>Body oil</li>
+                    <li onClick={onNavBtnClicked}>Tanner</li>
+                    <li onClick={onNavBtnClicked}>Moisturiser</li>
                   </ul>
                 </div>
                 <div className="mega-box-row">
                   <header>Middle</header>
                   <ul className="mega-box-links">
-                    <li>Spray</li>
-                    <li>Lotion</li>
-                    <li>Perfume</li>
+                    <li onClick={onNavBtnClicked}>Spray</li>
+                    <li onClick={onNavBtnClicked}>Lotion</li>
+                    <li onClick={onNavBtnClicked}>Perfume</li>
                   </ul>
                 </div>
                 <div className="mega-box-row">
                   <header>Lower</header>
                   <ul className="mega-box-links">
-                    <li>Cobblouise</li>
-                    <li>Yorlopi</li>
-                    <li>Smoothner</li>
+                    <li onClick={onNavBtnClicked}>Cobblouise</li>
+                    <li onClick={onNavBtnClicked}>Yorlopi</li>
+                    <li onClick={onNavBtnClicked}>Smoothner</li>
                   </ul>
                 </div>
               </div>
@@ -147,9 +147,9 @@ const Navbar = () => {
               WELLNESS <FiChevronDown />
             </label>
             <ul className="dropDown-list">
-              <li>Grooming</li>
-              <li>Hygiene</li>
-              <li>Health</li>
+              <li onClick={onNavBtnClicked}>Grooming</li>
+              <li onClick={onNavBtnClicked}>Hygiene</li>
+              <li onClick={onNavBtnClicked}>Health</li>
             </ul>
           </li>
           <li>
@@ -164,10 +164,10 @@ const Navbar = () => {
               INTIMATE <FiChevronDown />
             </label>
             <ul className="dropDown-list">
-              <li>Spa Oil</li>
-              <li>Truffler</li>
-              <li>Shredlum</li>
-              <li>Brocolopico</li>
+              <li onClick={onNavBtnClicked}>Spa Oil</li>
+              <li onClick={onNavBtnClicked}>Truffler</li>
+              <li onClick={onNavBtnClicked}>Shredlum</li>
+              <li onClick={onNavBtnClicked}>Brocolopico</li>
             </ul>
           </li>
         </ul>
