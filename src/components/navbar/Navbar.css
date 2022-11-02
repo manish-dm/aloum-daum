@@ -73,7 +73,7 @@
 .nav-lower-menu-links > li {
   font: normal normal normal 1.7rem Rubik-Regular;
   color: #161616;
-  margin: 2.95rem 0;
+  margin: 2.95rem 0 0 0;
   gap: 0.5rem;
   cursor: pointer;
   position: relative;
@@ -193,6 +193,10 @@
 /***************Mobile Responsive***************************/
 
 @media (max-width: 970px) {
+  .nav-upper {
+    border-bottom: none;
+  }
+
   .nav-upper-link-buttons {
     display: none;
   }
@@ -231,7 +235,7 @@
     border-radius: 1rem;
   }
   .menu-name-and-arrow:hover {
-    background-color: #F4D6E0;
+    background-color: #f4d6e0;
     color: black;
     transition: all 0.3s ease;
   }
@@ -250,12 +254,11 @@
     width: 100%;
     padding: 0 0 0 2rem;
     position: static;
-    opacity: 1;
+    opacity: 0;
     visibility: visible;
     background-color: transparent;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.9s linear;
   }
 
   #showDropdown1:checked ~ .dropDown-list,
@@ -264,7 +267,6 @@
   #showDropdown4:checked ~ .dropDown-list,
   #showMobileMega:checked ~ .mega-box {
     max-height: 100%;
-    transition: max-height 0.9s linear;
   }
 
   .dropDown-list li:hover {
@@ -306,7 +308,7 @@
     max-height: 100%;
     transition: max-height 0.9s linear;
   }
-  
+
   .mega-box-content {
     padding: 0;
     display: flex;
@@ -357,5 +359,50 @@
     background-color: #f5dacc;
     color: black;
     border-radius: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-upper-logo {
+    width: 30.9rem;
+    height: auto;
+  }
+  .nav-btn.nav-open-btn {
+    font-size: 5rem;
+  }
+
+  .nav-lower {
+    max-width: 100vw;
+  }
+
+  .nav-lower-menu-links {
+    padding-top: 9.2rem;
+  }
+
+  .nav-lower-menu-links li {
+    font-size: 4rem;
+    line-height: 6rem;
+    padding: 1rem;
+  }
+  .mobile-menu-name-and-arrow {
+    padding-left: 2rem;
+  }
+  .dropDown-list li {
+    margin-left: 2rem;
+  }
+
+  .mega-box-row > header {
+    margin-left: 5rem;
+    padding-top: 1.5rem;
+  }
+  .mega-box-links > li {
+    font-size: 4rem;
+    line-height: 6rem;
+    padding-left: 9rem;
+  }
+  .nav-btn.nav-close-btn {
+    right: 3rem;
+    top: 3rem;
+    font-size: 6rem;
   }
 }
