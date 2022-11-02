@@ -11,7 +11,7 @@ const Category = () => {
     <div className='category-main'>
       <div className='category-container'>
          <div className='item-1'>
-             <div className='category-title'>
+         <div className='category-title'>
               OUR CATEGORIES
               </div>
              <div className ='category-heading'>
