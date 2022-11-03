@@ -4,7 +4,6 @@ import product6 from "../../../../assets/images/homepage/product6.png";
 import product1 from "../../../../assets/images/homepage/product1.png";
 import product4 from "../../../../assets/images/homepage/product4.png";
 import product5 from "../../../../assets/images/homepage/product5.png";
-import product7 from "../../../../assets/images/homepage/product7.png";
 import Slider from "react-slick";
 import HeroSection from "./HeroSection";
 
@@ -36,13 +35,6 @@ const HeroSlider = () => {
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
       image: product5,
-    },
-
-    {
-      heading: "Be Beautiful and Fun",
-      description:
-        "Take your pick of the best and newest Korean makeup brands and skin care products.",
-      image: product7,
     },
   ];
   return (

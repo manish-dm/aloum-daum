@@ -53,3 +53,58 @@
     url("../assets/fonts/urbanist/Urbanist-Light.ttf") format("truetype");
 }
 
+/* Open-Sans font family starts*/
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: local("OpenSans-Regular"),
+    url("../assets/fonts/openSans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: local("OpenSans-Medium"),
+    url("../assets/fonts/openSans/OpenSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: local("OpenSans-SemiBold"),
+    url("../assets/fonts/openSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: local("OpenSans-Bold"),
+    url("../assets/fonts/openSans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: local("OpenSans-Light"),
+    url("../assets/fonts/openSans/OpenSans-Light.ttf") format("truetype");
+}
+
+/* Poppins font family starts*/
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+    url("../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: local("Poppins-Medium"),
+    url("../assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: local("Poppins-SemiBold"),
+    url("../assets/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins-Bold"),
+    url("../assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: local("Poppins-Light"),
+    url("../assets/fonts/poppins/Poppins-Light.ttf") format("truetype");
+}

@@ -1,0 +1,76 @@
+.trendingnow-wrapper {
+  width: 100%;
+  background-color: #fdf9f8;
+  padding-bottom: 12rem;
+}
+
+.trendingnow-header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.trendingnow-title {
+  font: normal normal normal 1.8rem Rubik-Regular;
+  color: #131313;
+}
+
+.trendingnow-heading {
+  font: normal normal bold 5.2rem Urbanist-Bold;
+  color: #131313;
+}
+
+.trendingnow-products-section {
+  display: flex;
+  justify-content: center;
+  gap: 3.6rem;
+  flex-wrap: wrap;
+}
+
+.trendingnow-card {
+  height: fit-content;
+}
+
+.trendingnow-card-image {
+  transition: transform 0.5s ease;
+}
+.trendingnow-card:hover .trendingnow-card-image {
+  transform: scale(1.2);
+}
+
+.trendingnow-card-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.trendingnow-card-name {
+  font: normal normal bold 2rem OpenSans-Bold;
+  color: #131313;
+}
+
+.trendingnow-card-btn {
+  font: normal normal 500 1.3rem Rubik-Regular;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .trendingnow-wrapper > * {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .trendingnow-header-section {
+    margin-bottom: 2rem;
+  }
+  .trendingnow-card-name {
+    font-size: 2.7rem;
+  }
+  .trendingnow-card-btn {
+    font-size: 1.8rem;
+  }
+}
