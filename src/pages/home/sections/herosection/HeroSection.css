@@ -1,7 +1,7 @@
 .herosection-wrapper {
   width: 100%;
   display: flex;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   background: #fdf9f8 0% 0% no-repeat padding-box;
   position: relative;
@@ -70,4 +70,28 @@
 
 .hero-image-style {
   width: 100%;
+}
+
+/************************************************/
+
+@media (max-width: 550px) {
+  .herosection-imageContent {
+    display: none;
+  }
+
+  .herosection-textContent {
+    padding-left: 9%;
+    width: 100%;
+  }
+  .herosection-wrapper::before {
+    opacity: 0.7;
+    top: -2%;
+}
+}
+
+@media (max-width: 450px) {
+  .hero-desc {
+    font-size: 2.7rem;
+    line-height: 5.5rem;
+  }
 }
