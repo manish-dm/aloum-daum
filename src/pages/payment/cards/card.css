@@ -1,0 +1,62 @@
+.card-method-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+input:focus {
+    border: none;
+}
+
+.card-number,
+.expDate,
+.cvv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-number {
+    font: normal normal 500 1.8rem/2.6rem Rubik-Medium;
+}
+
+.card-number input {
+    width: 50.4rem;
+    height: 7.2rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.expDate-and-cvv {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.expDate label,
+.cvv label {
+    font: normal normal 500 1.5rem/2.2rem Rubik-Medium;
+    color: #141414;
+}
+
+.expDate input,
+.cvv input {
+    width: 25.3rem;
+    height: 7.2rem;
+    border: none;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 0.2rem;
+}
+
+.card-method-main button {
+    width: 50.4rem;
+    height: 6.5rem;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 2px;
+    opacity: 1;
+
+    font: normal normal 500 1.9rem/1.3rem Rubik-Medium;
+    color: #FFFFFF;
+}

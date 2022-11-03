@@ -1,0 +1,11 @@
+.cod-main{
+    width: 50.4rem;
+    height: 6.5rem;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 2px;
+    opacity: 1;
+
+    font: normal normal 500 1.9rem/1.3rem Rubik-Medium;
+    color: #FFFFFF;
+}
