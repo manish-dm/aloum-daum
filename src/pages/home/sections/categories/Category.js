@@ -19,7 +19,7 @@ const Category = () => {
             Shop By our Categories
           </div>
           <div className='category-desc'>
-            Because You Nedd Time For Yourself
+            Because You Need Time For Yourself
           </div>
         </div>
         <div className='item-2'>

@@ -18,7 +18,7 @@ const HeroSlider = () => {
     },
 
     {
-      heading: "Be Cool Out There",
+      heading: "Be Cool and Prosperous",
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
       image: product1,

@@ -1,0 +1,77 @@
+.newproduct-wrapper {
+  width: 100%;
+  height: 65.1rem;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.newproduct-wrapper > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.newproduct-img-style {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 39%;
+}
+
+.newproduct-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 53.7rem;
+  position: absolute;
+  left: 7.2%;
+}
+
+.newproduct-title {
+  font: normal normal normal 1.8rem/4.5rem Rubik-Regular;
+  color: #131313;
+}
+
+.newproduct-heading {
+  font: normal normal bold 5.2rem/6.9rem Urbanist-Bold;
+  color: #131313;
+}
+
+.newproduct-desc {
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+  color: #707070;
+}
+
+.newproduct-button {
+  width: 21.9rem;
+  height: 6.2rem;
+  background: #a16a5a 0% 0% no-repeat padding-box;
+  border-radius: 0.6rem;
+
+  font: normal normal 500 2rem Rubik-Regular;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newproduct-dash-and-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newproduct-dash {
+  width: 1.9rem;
+  height: 0.2rem;
+  background-color: #ffffff;
+  transform: translateX(0.75rem);
+}
+
+@media (max-width: 500px) {
+    .newproduct-desc {
+        width: 80%;
+    }
+}

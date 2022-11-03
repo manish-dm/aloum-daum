@@ -1,5 +1,6 @@
 .category-main {
     background: #FDF9F8;
+    padding-top: 14rem;
 }
 
 .category-container {
@@ -198,9 +199,7 @@ img {
 }
 
 @media(max-width: 360px) {
-    .item-1 {}
-
-    .category-title {
+       .category-title {
         margin-top: 1.5rem;
         font: normal normal normal 1.2rem/1.5rem Rubik-Regular;
     }

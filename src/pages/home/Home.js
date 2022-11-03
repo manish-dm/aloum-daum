@@ -6,6 +6,7 @@ import Category from "./sections/categories/Category";
 import ProductUsp from "./sections/homeUsp/ProductUsp";
 import Newsletter from "./sections/newsletter/Newsletter";
 import Marquee from "../../components/marquee/Marquee";
+import NewProductBanner from "./sections/newProductBanner/NewProductBanner";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HeroSlider />
       <Marquee />
       <BestsellerCarousel />
+      <NewProductBanner />
       <Category />
       <ProductUsp />
       <Newsletter />
