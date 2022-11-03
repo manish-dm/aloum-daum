@@ -2,13 +2,13 @@
 .hero-slider-wrapper .slick-dots {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin-bottom: 2.5rem;
   padding: 1rem 0;
   list-style-type: none;
 }
 
 .hero-slider-wrapper .slick-dots li {
-  margin: -4rem 0.25rem;
+  margin: 0.25rem;
 }
 
 .hero-slider-wrapper .slick-dots li.slick-active button {
@@ -26,5 +26,4 @@
   background-color: #9a9a9a;
   opacity: 0.31;
   text-indent: -9999px;
-  transform: translateY(-4rem);
 }
