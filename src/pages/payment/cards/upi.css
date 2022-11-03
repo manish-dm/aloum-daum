@@ -1,0 +1,30 @@
+.UPI-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:2rem
+}
+.enter-upi{
+    font: normal normal 500 1.8rem/2.6rem Rubik-Medium;
+}
+.UPI-main input{
+    width: 504px;
+    width: 50.4rem;
+    height: 7.2rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 0.2rem;
+    padding:0 4rem ;
+}
+.UPI-main button{
+    width: 50.4rem;
+    height: 6.5rem;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 2px;
+    opacity: 1;
+
+    font: normal normal 500 1.9rem/1.3rem Rubik-Medium;
+    color: #FFFFFF;
+}
