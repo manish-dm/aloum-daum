@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61c6b9ba.css",
+    "main.js": "/static/js/main.a59117bd.js",
+    "static/js/787.c4beb39a.chunk.js": "/static/js/787.c4beb39a.chunk.js",
+    "static/media/product2.png": "/static/media/product2.51118ec8a8eda315491b.png",
+    "static/media/categoryGridImage5.png": "/static/media/categoryGridImage5.db005dddeab5cc7db17f.png",
+    "static/media/categoryGridImage1.png": "/static/media/categoryGridImage1.a18d2021466b0bdc301b.png",
+    "static/media/categoryGridImage3.png": "/static/media/categoryGridImage3.45e135c798435269c74f.png",
+    "static/media/categoryGridImage4.png": "/static/media/categoryGridImage4.fb15116d4a9271d05e92.png",
+    "static/media/trendingImage1.png": "/static/media/trendingImage1.bc648f50b87185d9a808.png",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.974ab100afa4538622da.ttf",
+    "static/media/Rubik-Medium.ttf": "/static/media/Rubik-Medium.9eca2a21c16a15364ea0.ttf",
+    "static/media/Rubik-SemiBold.ttf": "/static/media/Rubik-SemiBold.4e99ecca3660ff081d90.ttf",
+    "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
+    "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.4f69a31f58eb5e296d8d.ttf",
+    "static/media/product6.png": "/static/media/product6.c776d9f513263cf522a5.png",
+    "static/media/categoryGridImage2.png": "/static/media/categoryGridImage2.c8c615dec3e66e1eea3a.png",
+    "static/media/product1.png": "/static/media/product1.3199ce180b716cbab0a9.png",
+    "static/media/Urbanist-Light.ttf": "/static/media/Urbanist-Light.55ed2929e37cd5fd9b62.ttf",
+    "static/media/Urbanist-Medium.ttf": "/static/media/Urbanist-Medium.934caf896c405316f809.ttf",
+    "static/media/Urbanist-SemiBold.ttf": "/static/media/Urbanist-SemiBold.7da44a6d82965ce3d957.ttf",
+    "static/media/Urbanist-Regular.ttf": "/static/media/Urbanist-Regular.e75437051d196cb77fef.ttf",
+    "static/media/Urbanist-Bold.ttf": "/static/media/Urbanist-Bold.578c7c1d4785d6cd2fa5.ttf",
+    "static/media/product5.png": "/static/media/product5.0b8a27927ffbcb872140.png",
+    "static/media/product4.png": "/static/media/product4.13063fba7ee80b73e804.png",
+    "static/media/Group15.png": "/static/media/Group15.20c80fea00e20aa19d45.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.61c6b9ba.css.map": "/static/css/main.61c6b9ba.css.map",
+    "main.a59117bd.js.map": "/static/js/main.a59117bd.js.map",
+    "787.c4beb39a.chunk.js.map": "/static/js/787.c4beb39a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c6b9ba.css",
+    "static/js/main.a59117bd.js"
+  ]
+}
