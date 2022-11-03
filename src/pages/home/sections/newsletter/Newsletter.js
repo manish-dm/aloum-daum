@@ -1,5 +1,5 @@
 import React from 'react'
-import product from '../../assets/images/homepage/product2.png'
+import product from '../../../../assets/images/homepage/product2.png'
 
 import './newsletter.css'
 

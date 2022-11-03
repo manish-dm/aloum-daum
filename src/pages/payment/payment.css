@@ -1,0 +1,26 @@
+.payment-container{
+    display: flex;
+    flex-direction: column;
+    margin-inline:auto;
+    border: 1px solid black;
+}
+.show-checkout-status{
+    margin-inline: auto;
+    border: 1px solid blue;
+}
+.payment-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* .payment-heading{
+
+} */
+.payment-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.payment-options{
+    display: flex;
+    flex-direction: column;
+}
