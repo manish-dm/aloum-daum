@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './netbanking.css'
 const NetBanking = () => {
   return (
-    <div>NetBanking</div>
+    <div className='netbanking-main'>NetBanking</div>
   )
 }
 

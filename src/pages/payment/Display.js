@@ -6,7 +6,7 @@ import UPI from './cards/UPI'
 import COD from './cards/COD'
 
 const Display = ({prop}) => {
-    console.log("display",prop)
+    
   return (
     <div className='display-input-details'>
 

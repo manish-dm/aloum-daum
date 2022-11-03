@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
                 <div className='footer-row-2'>
                    <div className='copyright'><span style = {{color: "#707070"}}>&copy; </span>AloumDaum {year}.</div>
-                   <div className='payment-gateways'>payment gateways</div>
+                   <div className='payment-gateways'></div>
                 </div>
             </div>
         </div>
