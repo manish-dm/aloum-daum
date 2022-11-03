@@ -1,0 +1,13 @@
+.allproducts-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 26% 1fr;
+}
+
+.products-filter-sidebar {
+    background-color: pink;
+}
+
+.products-whole-gallery {
+    background-color: lightcoral;
+}

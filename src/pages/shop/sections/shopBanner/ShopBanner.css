@@ -1,0 +1,15 @@
+.shopbanner-wrapper {
+  width: 100%;
+  height: 78rem;
+  background: #8e6d6a;
+  color: #ffffff;
+
+  display: grid;
+  place-items: center;
+}
+
+.shopbanner-title {
+  width: fit-content;
+  font: normal normal bold 8.7rem/9rem Urbanist-Bold;
+  color: #ffffff;
+}
