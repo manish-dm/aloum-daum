@@ -19,8 +19,24 @@
 .payment-box{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
 }
 .payment-options{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+}
+.individual-methods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.method-icon{
+    width: 6.8rem;
+    height: 6.5rem;
+}
+.method-icon img{
+    object-fit: scale-down;
 }
