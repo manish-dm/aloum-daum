@@ -43,6 +43,8 @@
   height: 6.2rem;
   background: #2d2d2d 0% 0% no-repeat padding-box;
   border-radius: 0.6rem;
+  border: none;
+  outline: none;
 
   font: normal normal 500 2rem/8.4rem Rubik-Medium;
   color: #ffffff;

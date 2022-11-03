@@ -1,5 +1,5 @@
 .marquee-wrapper {
-    width: 100%;
+  width: 100%;
   background-color: #ffefef;
   height: 5rem;
   display: flex;
@@ -48,4 +48,19 @@
 
 .marquee-wrapper:hover .marquee__content {
   animation-play-state: paused;
+}
+
+@media (max-width: 1270px) {
+  .marquee {
+    --gap: 8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .marquee-wrapper {
+    height: 7rem;
+  }
+  .marquee__content > li {
+    font-size: 2rem;
+  }
 }
