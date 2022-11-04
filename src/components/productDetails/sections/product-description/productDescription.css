@@ -1,0 +1,82 @@
+.ProductDescription-main{
+    margin-left: 13.7rem;
+    margin-right: 13.9rem;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid lightgray;
+}
+.product-desc-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    margin-top: 4rem;
+    padding-bottom:5rem ;
+}
+
+.product-description{
+    font: normal normal 500 2.8rem/3rem Urbanist-Medium;
+    color: #1D1D1D;
+    border-bottom: 3px solid #F19291;
+    padding-bottom: 1.5rem ;
+}
+
+.About-Brand,
+.Reviews {
+    font: normal normal 500 2.8rem/3rem Urbanist-Medium;
+    color: #B9B9B9;
+    border-bottom: 3px solid #f1939100;
+    padding-bottom: 1.5rem ;
+}
+.description-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-div-texts{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+}
+.left-div-texts-heading{
+    font: normal normal 500 2.8rem/3rem Urbanist-Medium;
+    color: #1D1D1D;
+}
+.product-cagarcteristics-heading{
+    font: normal normal normal 1.9rem/3rem Rubik-Regular;
+color: #707070;;
+}
+.prouct-characteristics{
+    display:flex;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-div-extraInfo{
+    width: 52.2rem;
+    font: normal normal normal 1.9rem/3rem Rubik-Regular;
+    color: #707070;
+
+}
+/************************************/
+.right-div-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+}
+.product-desc-image{
+    width: 40rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.product-desc-image img{
+    width: 100%;
+    object-fit: scale-down;
+}
+/* css for active slidde  */ 
+/* .product-description:hover,
+.About-Brand:hover,
+.Reviews:hover {
+    
+    color: #1D1D1D;
+    border-bottom: 3px solid #F19291;
+} */

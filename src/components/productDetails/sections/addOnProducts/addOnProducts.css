@@ -1,0 +1,79 @@
+.AddOnProducts-main {
+    margin-left: 13.7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+    margin-block: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 1px solid lightgray;
+}
+.AddOnProducts-wrapper{
+    display: flex;
+    column-gap: 7.4rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.plus-sign {
+    margin-bottom: 5rem;
+    font: normal normal 500 2.6rem/3rem Rubik-Medium;
+}
+
+.AddOnProducts-total-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.AddOnProducts-price {
+    font: normal normal normal 3.1rem/2.7rem Rubik-Regular;
+    color: #505050;
+}
+
+.AddOnProducts-total-price-text {
+    font: normal normal normal 1.7rem/2.7rem Rubik-Regular;
+    color: #1D1D1D;
+    margin-top: 1.5rem;
+}
+
+.AddOnProducts-total-price button {
+    width: 22.7rem;
+    height: 6rem;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 0.2rem;
+
+    font: normal normal 500 1.6rem/1.5rem Rubik-Medium;
+    color: #FFFFFF;
+}
+
+.AddOnProducts-checklist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.item,
+.item-2,
+.item-3 {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.AddOnProducts-checklist input[type="checkbox"] {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.item input:checked ~ .checkmark {
+    background: #F19291;
+  }
+.AddOnProducts-checklist label {
+    font: normal normal normal 19px/30px Rubik;
+    letter-spacing: 0px;
+    color: #505050;
+}
