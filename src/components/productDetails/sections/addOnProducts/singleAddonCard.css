@@ -1,0 +1,28 @@
+.SingleAddonCard-main{
+    display: flex;
+    flex-direction: column;
+    width: 20.2rem;
+    row-gap: 2rem;
+}
+.SingleAddonCard-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    height: 18.8rem;
+    margin-bottom: 2rem;
+}
+.SingleAddonCard-image img{
+    width: 8.5rem;
+    object-fit: scale-down;
+}
+.SingleAddonCard-product-name{
+    width: 17.3rem;
+    height: 2rem;
+    text-align: left;
+    font: normal normal normal 1.7rem/1.7rem Rubik-Regular;
+    color: #1D1D1D;
+}
+.SingleAddonCard-product-price{
+    font: normal normal normal 1.7rem/2.7rem Rubik-Regular;
+}

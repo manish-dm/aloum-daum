@@ -1,0 +1,238 @@
+.ProductMainDetails-conatiner {
+    width: 90%;
+    /* margin-inline:auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    margin-left: 13.7rem;
+    margin-right: 13.9rem;
+}
+
+.ProductMainDetails-left-conatiner,
+.ProductMainDetails-right-conatiner {
+    display: flex;
+    flex-direction: column;
+}
+.ProductMainDetails-right-conatiner {
+  margin-top: 3rem;
+}
+
+.productMainDetailsPage-status {
+    align-self: start;
+}
+.product-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.main-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: #F5F5F7 0% 0% no-repeat padding-box;
+    width: 83.2rem;
+    height: 93.2rem;
+}
+.main-img img{
+   object-fit: cover;
+   margin-left: 8rem;
+}
+.product-alt-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+.individual-product-alt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F7 0% 0% no-repeat padding-box;
+    width: 9rem;
+    height: 10.9rem;
+    
+}
+
+/***********************************/
+.ProductMainDetails-product-price{
+    font: normal normal bold 2.4rem/3rem Rubik-Bold;
+color: #1D1D1D;
+}
+.ProductMainDetails-product-name{
+    font: normal normal 500 4.4rem/3rem Rubik-Medium;
+    color: #1D1D1D;
+    margin: 1.2rem 0 1.7rem 0;
+}
+
+.product-ratings-and-reviews {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.7rem;
+}
+
+.product-ratings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font: normal normal normal 1.6rem/2.6rem Rubik-Regular;
+    color: #656565;
+    padding-right: 1rem;
+    border-right: 1px solid lightgray;
+}
+
+.product-reviews {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal normal 1.6rem/2.6rem RubRubik-Regularik;
+    color: #656565;
+}
+
+.product-desc-para {
+    width: 70rem;
+    margin-top: 3.66rem;
+    padding-bottom: 1.5rem;
+    font: normal normal normal 1.9rem/3rem Rubik-Regular;
+    color: #707070;
+
+    border-bottom:1px solid lightgrey ;
+}
+.product-selection-dropdown{
+    margin-top: 2.8rem;
+    margin-bottom: 4.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-selection-dropdown label {
+    font: normal normal 500 2.0rem/3rem Rubik-Medium;
+    color: #1D1D1D;
+}
+
+select {
+    width: 64.6rem;
+    height: 6.2rem;
+    margin-left: 4rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: .1rem solid #D2D2D2;
+}
+select:required {
+    font: normal normal normal 1.6rem/2.6rem Rubik-Regular;
+    color: #959595;
+    padding-left: 2rem;
+  }
+  option {
+    color: black;
+  }
+
+.product-quantity {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
+}
+
+.quantity-text {
+    font: normal normal 500 2rem/3rem Rubik-Medium;
+    color: #1D1D1D;
+}
+.quantity-actions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.inc-dec-btn {
+    display: flex;
+    align-items: center;
+    width: 24.3rem;
+    height: 8.2rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.increase-and-decrease,
+.show-quantity {
+    margin-left: 1.5rem;
+    padding:2.5rem ;
+    font: normal normal 500 2.6rem/3rem Rubik-Regular;
+    color: #000000;
+}
+
+.addtoCart-btn {
+    width: 45.7rem;
+    height: 8.2rem;
+    border: none;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: .2rem;
+
+    font: normal normal 500 2.2rem/3rem Rubik-Regular;
+    color: #FFFFFF;
+}
+
+.add-wishlist {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.addToWishlist-text {
+    font: normal normal 500 2.2rem/3rem Rubik-Medium;
+    color: #000000;
+}
+
+.product-tags {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.tag-list {
+    display: flex;
+}
+
+.tag-text {
+    font: normal normal 500 2rem/3rem Rubik-Medium;
+    color: #1D1D1D;
+}
+
+.tag-1,
+.tag-2 {
+    width: 11.8rem;
+height: 4.6rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 0.5rem;
+margin-right: 2rem;
+background: #EEEEEE 0% 0% no-repeat padding-box;
+    font: normal normal normal 1.5rem/6.9rem Rubik-Regular;
+    color: #505050;
+}
+
+.category,
+.Brand,
+.follow-us {
+    font: normal normal 500 2.0rem/3.0rem Rubik-Medium;
+    color: #1D1D1D;
+}
+
+.category span,
+.Brand span {
+    font: normal normal normal 2rem/3rem Rubik-Regular;
+    color: #7A7A7A;
+}

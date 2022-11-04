@@ -1,0 +1,19 @@
+.RelatedProducts-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13.7rem;
+    margin-right: 13.9rem;
+    margin-block: 5rem;
+}
+.RelatedProducts-heading{
+    margin-bottom: 8.3rem;
+    font: normal normal bold 5.2rem/6.9rem Urbanist-Bold;
+    color: #131313;
+
+}
+.RelatedProducts-imagaes{
+    display: flex;
+    column-gap: 2.2rem;
+}
