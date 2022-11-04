@@ -1,0 +1,195 @@
+.filter-sidebar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-sidebar-content {
+  /* width: 37.6rem; */
+  width: 76%;
+}
+
+.all-filter-wrapper {
+  width: 100%;
+}
+
+.tagsTypeStyle,
+.checkboxTypeStyle,
+.rangeTypeStyle,
+.accordianTypeStyle {
+  padding: 2.2rem 0;
+  border-top: 1px solid #e2e2e2;
+}
+
+.filterName-Style {
+  font: normal normal bold 2rem/3rem Rubik-Bold;
+  color: #505050;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.open-collapse-btn {
+   cursor: pointer;
+}
+
+.tagOptionsStyling {
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.singleTagCss {
+  width: fit-content;
+  height: 4.6rem;
+  padding: 0 1.7rem;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border-radius: 0.6rem;
+
+  font: normal normal normal 1.5rem Rubik-Regular;
+  color: #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.singleTagCss:hover {
+  background: #3b3b3b 0% 0% no-repeat padding-box;
+  outline: 1px solid #707070;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/**********************************/
+.single-checkbox-style {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.filter-checkbox-div:first-child {
+  margin-top: -2rem;
+}
+.single-checkbox-style > input {
+  width: 2.6rem;
+  height: 2.6rem;
+  /* appearance: none;
+  -webkit-appearance: none; */
+  outline: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.1rem solid #707070;
+  border-radius: 7px;
+}
+input[type="checkbox"]:checked {
+  /* appearance: checkbox;
+  -webkit-appearance: checkbox; */
+  accent-color: #3b3b3b;
+}
+.single-checkbox-style > label {
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+  color: #505050;
+}
+
+/**********************************/
+.range-values {
+  padding-bottom: 3rem;
+  display: flex;
+  gap: 2.3rem;
+}
+.range-values-child {
+  width: 18rem;
+  height: 6.7rem;
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+  border-radius: 0.6rem;
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+  color: #c0c0c0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-values-child > span {
+  font: normal normal normal 1.9rem/3rem Rubik-SemiBold;
+  color: #505050;
+  margin: 0 0.5rem;
+}
+.range-slider-div {
+  width: 100%;
+  height: 2rem;
+}
+
+.slider {
+  cursor: pointer;
+  width: 100%;
+}
+
+.track {
+  background-color: #e6e6e6;
+  height: 6px;
+}
+
+.track:nth-child(2) {
+  background-color: #505050;
+}
+
+.thumb {
+  width: 1.9rem;
+  height: 1.9rem;
+  background: #505050;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -6px;
+}
+
+/******************************/
+.accordianTypeStyle {
+   display: flex;
+   flex-direction: column;
+}
+.accordian-options{
+   max-height: 0px;
+   overflow: hidden;
+   padding-top: 0.1rem;
+   transition: max-height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.open-accordian {
+   max-height: 999px;
+   transition: max-height 0.5s ease-in;
+}
+
+.filter-action-buttons {
+   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+.filter-action--apply-btn {
+  width: 25.4rem;
+  height: 6.7rem;
+  background: #3b3b3b 0% 0% no-repeat padding-box;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: normal normal bold 2rem/3rem Rubik-Bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+.filter-action--trash-btn {
+  width: 5.9rem;
+  height: 5.9rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.2rem solid #aba9a982;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.trashIconStyle {
+  font-size: 2.3rem;
+}
