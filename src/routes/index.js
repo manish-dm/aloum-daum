@@ -11,11 +11,8 @@ const index = () => {
     <Routes>
       <Route path="/" exact element={<Home />} />
       <Route path="/payment" exact element={<Payment />} />
-<<<<<<< HEAD
-      <Route path="/shop" exact element={<Shop />} />
-=======
-      <Route path = '/product-detail' exact element = {<ProductDetails />} />
->>>>>>> 530fdf5 (product detail page implemented)
+      <Route path='/product-detail' exact element={<ProductDetails />} />
+      <Route path='/shop' exact element={<Shop />} />
      </Routes>
      </>
   );
