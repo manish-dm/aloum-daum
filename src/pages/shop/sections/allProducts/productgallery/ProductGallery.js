@@ -1,8 +1,8 @@
 import React from "react";
 import "./ProductGallery.css";
 import { BiChevronDown } from "react-icons/bi";
-import {MdGridView} from "react-icons/md";
-import {GiHamburgerMenu} from "react-icons/gi";
+import { MdGridView } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 import ProductCard from "./productCard/ProductCard";
 
 const ProductGallery = () => {
@@ -14,13 +14,19 @@ const ProductGallery = () => {
           <div className="product-view-sort-div">
             <div className="product-view-buttons">
               <span>View:</span>
-              <span><MdGridView className="sort-view-icon active"/></span>
-              <span><GiHamburgerMenu className="sort-view-icon"/></span>
+              <span>
+                <MdGridView className="sort-view-icon active" />
+              </span>
+              <span>
+                <GiHamburgerMenu className="sort-view-icon" />
+              </span>
             </div>
             <div className="vr-seperator"></div>
             <div className="product-sort-dropdown">
               <span>Sort by Latest</span>
-              <span><BiChevronDown className="sort-drop-icon"/></span>
+              <span>
+                <BiChevronDown className="sort-drop-icon" />
+              </span>
             </div>
           </div>
         </div>

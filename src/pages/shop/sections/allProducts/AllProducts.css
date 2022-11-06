@@ -1,17 +1,18 @@
 .allproducts-wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 26.5% 1fr;
-    background-color: #FAFAFA;
-    gap: 4.6rem;
-    padding-top: 4.7rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 26.5% 1fr;
+  background-color: #fafafa;
+  gap: 4.6rem;
+  padding-top: 4.7rem;
+  padding-bottom: 16rem;
 }
 
 .products-filter-sidebar {
-    width: 100%;
+  width: 100%;
 }
 
 .products-whole-gallery {
-    width: 100%;
-    /* width: 135.4rem; */
+  width: 100%;
+  /* width: 135.4rem; */
 }
