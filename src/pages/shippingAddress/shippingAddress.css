@@ -1,0 +1,15 @@
+.ShippingAddress-main{
+   display: flex;
+   margin: 0 25.2rem 0 38.5rem;
+   column-gap: 4rem;
+}
+.delivery-address{
+ width: 500px;
+ height: 500px;
+ border-right: 2px solid lightgrey;
+ padding-right: 4rem ;
+}
+.order-details{
+    width: 250px;
+    height: 500px;
+} 
