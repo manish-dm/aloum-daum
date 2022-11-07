@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "./CartItems.css";
 import cartItemImage1 from "../../../../assets/images/homepage/product1.png";
 import cartItemImage2 from "../../../../assets/images/homepage/product6.png";
 import { HiPlusSm, HiMinusSm } from "react-icons/hi";
+import CheckoutModal from "../../../../components/checkout/CheckoutModal";
 
 const CartItems = () => {
+const [openDialog, setOpenDialog] = useState(false);
+
   const staticData = [
     {
       id: "erds",
@@ -110,9 +113,10 @@ const CartItems = () => {
               </div>
 
               <div className="proceed-btn-container">
-                <button className="checkout-box-proceed-btn">
+                <button className="checkout-box-proceed-btn" onClick={() => setOpenDialog(true)}>
                   PROCEED TO CHECKOUT
                 </button>
+                <CheckoutModal openDialog={openDialog} setOpenDialog={setOpenDialog}/>
               </div>
               <span className="checkout-box-msg">Checkout with Mutilple Adresses</span>
             </div>

@@ -69,6 +69,7 @@
 
   font: normal normal normal 1.4rem/3rem Rubik-Regular;
   color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 730px) {

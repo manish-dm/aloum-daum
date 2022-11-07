@@ -1,0 +1,19 @@
+.checkoutmodal-wrapper {
+  background-color: pink;
+  display: flex;
+}
+
+.checkoutmodal-signin,
+.checkoutmodal-register,
+.checkoutmodal-guest {
+  width: 54.7rem;
+  height: 49.3rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkoutmodal-register{
+background: #FDF9F8;
+}
