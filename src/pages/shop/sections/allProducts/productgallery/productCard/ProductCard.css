@@ -1,4 +1,9 @@
 .productcard-wrapper {
-    width: 100%;
-    background-color: pink;
+  width: 100%;
+  padding-top: 2.9rem;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 4.5rem;
+  flex-wrap: wrap;
 }

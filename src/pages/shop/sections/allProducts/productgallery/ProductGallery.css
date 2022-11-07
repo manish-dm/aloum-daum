@@ -41,10 +41,10 @@
   font-size: 2.8rem;
   transform: translateY(0.7rem);
   cursor: pointer;
-  color: #ABABAB;
+  color: #ababab;
 }
 .sort-view-icon.active {
-    color: #000000;
+  color: #000000;
 }
 
 .vr-seperator {
@@ -67,6 +67,5 @@
 /*******************************************************/
 
 .productgallery-cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
