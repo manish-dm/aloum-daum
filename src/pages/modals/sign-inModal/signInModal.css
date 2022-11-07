@@ -1,0 +1,130 @@
+.box {
+    position: relative;
+}
+
+.close-sigIn-modal {
+    position: absolute;
+    bottom: 94.5%;
+    left: 95%;
+}
+
+.SignInModal-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.SignInModal-title {
+    font: normal normal 500 1.4rem Poppins-Medium;
+    color: #202020;
+}
+
+.SignInModal-heading {
+    font: normal normal 500 4.1rem Poppins-Medium;
+    color: #202020;
+    margin: 0.9rem 0 3.1rem 0;
+}
+
+.SignInModal-main input {
+    width: 41.7rem;
+    height: 5.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    border: 1px solid #DCDBDD;
+    border-radius: 1.2rem;
+}
+
+.SignInModal input::placeholder {
+    margin: 0;
+    padding: 0;
+    font: normal normal Normal 4.1rem Poppins-Regular;
+    color: #84818A;
+    margin-left: 2rem;
+}
+
+.SignInModal-otp-btn {
+    width: 41.7rem;
+    height: 4.8rem;
+    background: #1C1C1C 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 1.2rem;
+
+    font: normal normal 500 1.4rem Poppins-Medium;
+    color: #FFFFFF;
+
+    margin: 2.7rem 0 1.9rem 0;
+}
+
+.SignInModal-divider {
+    display: flex;
+}
+
+.SigInModal-left-div,
+.SigInModal-right-div {
+    width: 20rem;
+    margin-top: 1rem;
+    border-top: 1px solid #DCDBDD;
+}
+
+.SignInModal-or {
+    font: normal normal Normal 1.4rem Poppins-Regular;
+    margin-inline: 1rem;
+}
+
+.SignInModal-other-Options {
+    display: flex;
+    column-gap: 1.57rem;
+    margin-top: 2.97rem;
+}
+
+.google-logo-conatiner,
+.facebook-logo-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    width: 20.3rem;
+    height: 5.2rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDBDD;
+    border-radius: 1.2rem;
+}
+
+.signin-vai-google,
+.signin-vai-facebook {
+    font: normal normal 500 1.4rem Poppins-Medium;
+    color: #202020;
+}
+
+.SignInModal-other-Options img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+@media(max-width:1100px){
+    .close-sigIn-modal {
+        position: absolute;
+        bottom: 93.5%;
+        left: 92%;
+    }
+}
+@media(max-width:900px) {
+    .SignInModal-main input,
+    .SignInModal-otp-btn {
+        width: 95%;
+    }
+   
+    
+}
+@media(max-width:600px){
+    .SignInModal-other-Options {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .close-sigIn-modal {
+        position: absolute;
+        bottom: 92%;
+        left: 88%;
+    }
+}
