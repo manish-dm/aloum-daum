@@ -11,8 +11,8 @@ const index = () => {
     <Routes>
       <Route path="/" exact element={<Home />} />
       <Route path="/payment" exact element={<Payment />} />
-      <Route path='/product-detail' exact element={<ProductDetails />} />
-      <Route path='/shop' exact element={<Shop />} />
+      <Route path="/shop" exact element={<Shop />} />
+      <Route path = '/product-detail' exact element = {<ProductDetails />} />
      </Routes>
      </>
   );
