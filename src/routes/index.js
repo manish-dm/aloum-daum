@@ -6,6 +6,7 @@ import Payment from "../pages/payment/Payment";
 import Shop from "../pages/shop/Shop";
 import ShippingAddress from "../pages/shippingAddress/ShippingAddress";
 import SigInModal from "../pages/modals/sign-inModal/SigInModal";
+import Cart from "../pages/cart/Cart";
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       <Route path = '/product-detail' exact element = {<ProductDetails />} />
       <Route path = '/shipping-address' exact element = {<ShippingAddress />} />
       <Route path = '/sign-in' exact element = {<SigInModal />} />
+      <Route path="/cart" exact element={<Cart />} />
      </Routes>
      </>
   );
