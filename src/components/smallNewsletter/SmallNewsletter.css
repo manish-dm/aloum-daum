@@ -1,0 +1,94 @@
+.smallnewsletter-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
+.smallnewsletter-content {
+  width: 117rem;
+  height: 10.4rem;
+  background: #ee3364 0% 0% no-repeat padding-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8.3rem;
+}
+
+.newsletter-icon-and-msg-container {
+  display: flex;
+  gap: 2rem;
+}
+.newsletter-icon-style {
+  font-size: 4rem;
+  color: white;
+}
+
+.newsletter-msg-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.newsletter-msg-div > span:nth-of-type(1) {
+  font: normal normal normal 2.2rem/3.4rem Urbanist-Regular;
+  letter-spacing: -0.22px;
+  color: #ffffff;
+}
+.newsletter-msg-div > span:nth-of-type(2) {
+  font: normal normal normal 1.5rem/2.1rem Rubik-Regular;
+  letter-spacing: -0.15px;
+  color: #ffffff;
+}
+
+.newsletter-input-and-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-input-and-button-div > input {
+  outline: none;
+  border: none;
+  width: 33.7rem;
+  height: 5rem;
+  font: normal normal normal 1.5rem/3rem Rubik-Regular;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-left: 2rem;
+}
+.newsletter-input-and-button-div > input::placeholder {
+  width: 100%;
+  font: normal normal normal 1.5rem/3rem Rubik-Regular;
+  color: #a0a0a0;
+}
+
+.newsletter-input-and-button-div > button {
+  outline: none;
+  border: none;
+  width: 12rem;
+  height: 5rem;
+  background: #333e48 0% 0% no-repeat padding-box;
+
+  font: normal normal normal 1.4rem/3rem Rubik-Regular;
+  color: #ffffff;
+}
+
+@media (max-width: 730px) {
+  .smallnewsletter-content {
+    padding: 0 2.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .newsletter-input-and-button-div > input {
+    width: 20.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .smallnewsletter-content {
+    padding: 0 1.3rem;
+  }
+  .newsletter-input-and-button-div > input {
+    width: 16rem;
+    padding-left: 0.5rem;
+  }
+}
