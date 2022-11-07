@@ -1,6 +1,7 @@
 
 .payment-main{
-    margin-block:7.7rem ;
+    margin-top:7.7rem ;
+    margin-bottom: 44rem;
 }
 .payment-container {
     display: flex;
@@ -133,4 +134,21 @@ input[type="radio"]:checked {
 .payment-method-name {
     font: normal normal 500 2rem/2.6rem Rubik-Medium;
     color: #141414;
+}
+
+@media(max-width:600px){
+    .payment-heading{
+       margin-inline:auto;
+       margin-bottom: 4rem;
+    }
+    .payment-box {
+        grid-template-columns: 1fr;
+    }
+    .payment-options{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
 }

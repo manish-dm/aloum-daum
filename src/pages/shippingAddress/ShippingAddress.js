@@ -1,10 +1,12 @@
 import React from 'react'
 import './shippingAddress.css'
+import SmallNewsletter from '../../components/smallNewsletter/SmallNewsletter'
 
 import {orderSummaryData} from './orderSummaryData.js'
 
 const ShippingAddress = () => {
     return (
+       <>
         <div className='ShippingAddress-content'>
             <div className='delivery-details'>
                 <div className='deliver-address-heading'>
@@ -85,6 +87,8 @@ const ShippingAddress = () => {
                  <button>Proceed To Payment</button>
             </div>
         </div>
+            <SmallNewsletter />
+       </>
     )
 }
 
