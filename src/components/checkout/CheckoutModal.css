@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+.checkoutmodal-signin {
+  display: flex;
+  flex-direction: column;
+}
+
 .checkoutmodal-register{
 background: #FDF9F8;
 }
