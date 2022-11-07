@@ -19,7 +19,7 @@
 }
 
 .showing-results {
-  font: normal normal normal 2.2rem/6.9rem Rubik-Regular;
+  font: normal normal normal 2.2rem Rubik-Regular;
   color: #505050;
 }
 
@@ -53,7 +53,7 @@
   background-color: #c1c1c1;
 }
 .product-sort-dropdown {
-  font: normal normal normal 2.2rem/6.9rem Rubik-Regular;
+  font: normal normal normal 2.2rem Rubik-Regular;
   color: #505050;
   display: flex;
   align-items: center;
@@ -68,4 +68,32 @@
 
 .productgallery-cards-container {
   width: 100%;
+}
+
+.productcard-pagination-div {
+  margin-top: 5.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font: normal normal normal 1.5rem Rubik-Regular;
+  color: #000000;
+}
+
+.productcard-pagination-div > span {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.productcard-pagination-div .page-active {
+  background-color: #E8E8E8;
+}
+
+.productcard-pagination-div .pagination-next-page-btn {
+  font-size: 2.3rem;
+  cursor: pointer;
 }

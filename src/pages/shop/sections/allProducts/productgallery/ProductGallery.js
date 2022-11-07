@@ -1,9 +1,10 @@
 import React from "react";
 import "./ProductGallery.css";
-import { BiChevronDown } from "react-icons/bi";
+import { BiChevronDown, BiChevronsRight } from "react-icons/bi";
 import { MdGridView } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ProductCard from "./productCard/ProductCard";
+import {FiChevronsRight} from "react-icons/fi";
 
 const ProductGallery = () => {
   return (
@@ -33,6 +34,11 @@ const ProductGallery = () => {
         {/* ****************************************************************** */}
         <div className="productgallery-cards-container">
           <ProductCard />
+          <div className="productcard-pagination-div">
+            <span className="page-active">1</span>
+            <span>2</span>
+            <FiChevronsRight className="pagination-next-page-btn"/>
+          </div>
         </div>
       </div>
     </div>
