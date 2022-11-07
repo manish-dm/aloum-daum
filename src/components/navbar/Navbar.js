@@ -9,17 +9,23 @@ import { FiChevronDown } from "react-icons/fi";
 import trendingImage1 from "../../assets/images/homepage/trendingImage1.png";
 import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
   const onNavBtnClicked = () => {
     setClicked(!clicked);
   };
 
+  const onNavigation = (path) => {
+    navigate(path);
+  }
+
   return (
     <div className="nav-container">
       <div className="nav-upper">
-        <img src={aloumNavLogo} alt="logo" className="nav-upper-logo" />
+        <img src={aloumNavLogo} alt="logo" className="nav-upper-logo" onClick={() => onNavigation("/")}/>
         <div className="nav-upper-link-buttons">
           <div className="nav-searchbar">
             <img src={SearchIcon} alt="search here" />
