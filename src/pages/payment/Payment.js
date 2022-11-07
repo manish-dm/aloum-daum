@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './payment.css'
 import {paymentMethodData} from './paymentMethodData'
 import Display from './Display'
+import SmallNewsletter from '../../components/smallNewsletter/SmallNewsletter'
 
 const Payment = () => {
   const[showItemName,setShowItemName] = useState("card");
@@ -9,7 +10,9 @@ const Payment = () => {
         setShowItemName(prop)
     }
     return (
-        <div className='payment-main'>
+       <>
+       
+       <div className='payment-main'>
             <div className='payment-conatiner'>
                 <div className='show-checkout-status'>
                     <div className='numbers'>1</div>
@@ -49,6 +52,8 @@ const Payment = () => {
                     </div>
                 </div>
             </div>
+            <SmallNewsletter />
+       </>
 
             )
 }
