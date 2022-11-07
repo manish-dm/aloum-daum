@@ -27,8 +27,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-  
 }
 .main-img{
     display: flex;
@@ -235,4 +233,17 @@ background: #EEEEEE 0% 0% no-repeat padding-box;
 .Brand span {
     font: normal normal normal 2rem/3rem Rubik-Regular;
     color: #7A7A7A;
+}
+
+@media(max-width:1000px)
+{
+    .ProductMainDetails-conatiner{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .ProductMainDetails-left-conatiner{
+        justify-content: flex-start;
+       align-items: flex-start;
+    }
+    
 }
