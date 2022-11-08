@@ -1,5 +1,4 @@
 .checkoutmodal-wrapper {
-  background-color: pink;
   display: flex;
 }
 
@@ -10,15 +9,89 @@
   height: 49.3rem;
   background: #ffffff;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-}
-
-.checkoutmodal-signin {
-  display: flex;
   flex-direction: column;
 }
-
-.checkoutmodal-register{
-background: #FDF9F8;
+.checkoutmodal-image-div {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 13.4rem;
 }
+.checkoutmodal-image-div > img {
+  width: 100%;
+}
+
+.checkoutmodal-message {
+  font: normal normal normal 2.8rem/3.4rem Urbanist-Regular;
+  color: #202020;
+  margin-top: 3rem;
+}
+
+.checkoutmodal-primary-button {
+  outline: none;
+  border: none;
+  width: 32.3rem;
+  height: 4.8rem;
+  background: #1c1c1c 0% 0% no-repeat padding-box;
+  border-radius: 1.2rem;
+
+  font: normal normal normal 1.4rem/2rem Poppins-Medium;
+  color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.checkoutmodal-register {
+  background: #fdf9f8;
+}
+
+/**************/
+.checkoutModal-divider {
+  display: flex;
+}
+
+.checkoutModal-left-div,
+.checkoutModal-right-div {
+  width: 16rem;
+  margin-top: 1rem;
+  border-top: 1px solid #dcdbdd;
+}
+
+.checkoutModal-or {
+  font: normal normal Normal 1.4rem Poppins-Regular;
+  margin-inline: 1rem;
+  color: #84818a;
+}
+
+.checkoutModal-other-Options {
+  display: flex;
+  column-gap: 1.57rem;
+  margin-top: 2.97rem;
+}
+
+.checkout-google-logo-conatiner,
+.checkout-facebook-logo-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  width: 17.3rem;
+  height: 5.2rem;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dcdbdd;
+  border-radius: 1.2rem;
+}
+
+.checkoutModal-vai-google,
+.checkoutModal-vai-facebook {
+  font: normal normal 500 1.4rem Poppins-Medium;
+  color: #202020;
+}
+.checkoutModal-other-Options img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+/***************/
