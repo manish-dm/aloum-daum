@@ -6,6 +6,7 @@
     position: absolute;
     bottom: 94.5%;
     left: 95%;
+    cursor: pointer;
 }
 
 .SignInModal-main {

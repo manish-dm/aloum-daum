@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./CheckoutModal.css";
 import { Dialog } from "@mui/material";
 import Gicon from "../../assets/icons/Gicon.png";
@@ -6,9 +6,11 @@ import Ficon from "../../assets/icons/Ficon.png";
 import loginvector from "../../assets/images/cartpage/loginvector.jpg";
 import registervector from "../../assets/images/cartpage/registervector.jpg";
 import SignInModal from "../sign-inModal/SigInModal";
+import RegisterModal from "../registermodal/RegisterModal";
 
 const CheckoutModal = ({ openDialog, setOpenDialog }) => {
   const [openSignIn, setOpenSignIn] = useState(false);
+  const [openRegister, setOpenRegister] = useState(false);
 
   return (
     <Dialog
@@ -22,8 +24,13 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
             <img src={loginvector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Have an Account?</div>
-          <button className="checkoutmodal-primary-button">Sign In</button>
-          <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn}/>
+          <button
+            className="checkoutmodal-primary-button"
+            onClick={() => setOpenSignIn(true)}
+          >
+            Sign In
+          </button>
+          <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn} />
 
           <div className="checkoutModal-divider">
             <div className="checkoutModal-left-div"></div>
@@ -48,7 +55,16 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
             <img src={registervector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Don't have a Account?</div>
-          <button className="checkoutmodal-primary-button">Register</button>
+          <button
+            className="checkoutmodal-primary-button"
+            onClick={() => setOpenRegister(true)}
+          >
+            Register
+          </button>
+          <RegisterModal
+            openRegister={openRegister}
+            setOpenRegister={setOpenRegister}
+          />
 
           <div className="checkoutModal-divider">
             <div className="checkoutModal-left-div"></div>
