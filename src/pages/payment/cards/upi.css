@@ -28,3 +28,16 @@
     font: normal normal 500 1.9rem/1.3rem Rubik-Medium;
     color: #FFFFFF;
 }
+/*********************Media Queries**********/
+@media(max-width:500px){
+    .enter-upi{
+        font-size: 3rem;
+    }
+    .UPI-main button{
+        margin-top: 3rem;
+        font-size: 2.8rem;
+    }
+    .UPI-main input::placeholder{
+        font-size: 2rem;
+    }
+}

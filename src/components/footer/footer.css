@@ -7,14 +7,17 @@
     flex-direction: column;
     margin: 9rem 13.9rem 0 13.7rem;
 }
-.footer-row-1{
+
+.footer-row-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 0.5rem;
 }
-.footer-nav-links{
+
+.footer-nav-links {
     margin-left: 12rem;
 }
+
 .footer-nav-links,
 .footer-infos,
 .footer-contactUs {
@@ -71,54 +74,117 @@
     width: fit-content;
 }
 
-.follow-us-div{
-    display:flex;
+.follow-us-div {
+    display: flex;
     column-gap: 1rem;
     /* margin-top: 4.4rem; */
     align-items: center;
 }
+
 .follow-us-text {
     font: normal normal 500 2rem/2.4rem Urbanist-Medium;
     color: #000000;
 }
-.icons{
+
+.icons {
     width: 1.6rem;
     height: 1.6rem;
 }
+
 /**********************************/
-.footer-row-2{
+.footer-row-2 {
     display: flex;
-    border-top: 1.5px solid rgb(211, 210, 210) ;
+    border-top: 1.5px solid rgb(211, 210, 210);
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
-.copyright{
+
+.copyright {
     font: normal normal 600 1.7rem/2 Urbanist-Semibold;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
-.copyright, .payment-gateways{
+
+.copyright,
+.payment-gateways {
     margin-top: 2rem;
 }
-.payment-gateways{
+
+.payment-gateways {
     margin-left: auto;
 }
 
 
 
-/* Media Queries */
+/*******************Media Queries**********************/
+
 @media(max-width: 800px) {
-    .footer-main{
-        margin: 0 auto;
+    .footer-main {
+        margin: 0;
+    }
+    .footer-content{
+        margin: 0;
+        margin-left: 6rem;
     }
     .footer-row-1 {
         grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
+        column-gap: 10rem;
         row-gap: 5rem;
     }
-    .footer-nav-links{
+
+    .footer-nav-links {
         margin-left: 0;
     }
-    
+}
+
+@media(max-width:500px) { 
+    .footer-nav-links, .footer-infos{
+        row-gap: 3.5rem;
+    }
+  .footer-content{
+    margin-left:7rem;
+    margin-right:0 ;
+  }
+  .footer-row-1{
+    column-gap: 8rem;
+  }
+  .aloum-footer-logo {
+    width: 30rem;
+}
+    .company-desc {
+        padding-top:2rem ;
+        font-size: 3rem;
+    }
+
+    .footer-heads {
+        font-size: 4rem;
+    }
+
+    .links {
+        font-size: 3.2rem;
+    }
+
+    .infos {
+        font-size: 3.2rem;
+    }
+
+    .email-field,
+    .contact-number-field {
+        font-size: 3.2rem;
+    }
+
+    .email,
+    .contact-number {
+        font-size: 2.4rem;
+    }
+
+    .follow-us-text {
+        font-size: 3rem;
+    }
+
+    .copyright {
+        font-size: 3.2rem;
+        letter-spacing: 0.5px;
+    }
 }
