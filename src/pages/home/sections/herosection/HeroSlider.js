@@ -9,28 +9,32 @@ import HeroSection from "./HeroSection";
 
 const HeroSlider = () => {
   const heroStaticData = [
-    {
+    { 
+      id: "sdf",
       heading: "Be Natural and Glowing",
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
       image: product6,
     },
 
-    {
+    { 
+      id: "retret",
       heading: "Be Cool and Prosperous",
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
       image: product1,
     },
 
-    {
+    { 
+      id: "jghjgh",
       heading: "Be Zeal and Inspiring",
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
       image: product4,
     },
 
-    {
+    { 
+      id: "oirty",
       heading: "Be Vivid and Perceptive",
       description:
         "Take your pick of the best and newest Korean makeup brands and skin care products.",
