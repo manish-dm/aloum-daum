@@ -25,7 +25,7 @@ const Footer = () => {
                         <p className='links'>Hair</p>
                         <p className='links'>Face</p>
                         <p className='links'>Body</p>
-                        <p className='links'>Welness</p>
+                        <p className='links'>Wellness</p>
                         <p className='links'>Intimate</p>
                     </div>
                     <div className='footer-infos'>
@@ -37,10 +37,10 @@ const Footer = () => {
                         <p className='infos'>Privacy Policy</p>
                     </div>
                     <div className='footer-contactUs'>
-                        <p className='footer-heads'>Conatct Us</p>
+                        <p className='footer-heads'>Contact Us</p>
                         <p className='email-field'>Email</p>
                         <p className='email'>aloumdaum123@gmail.com</p>
-                        <p className='contact-number-field'>Conatct</p>
+                        <p className='contact-number-field'>Contact</p>
                         <p className='contact-number'>6243532653</p>
                         <div className='follow-us-div'>
                             <div className='follow-us-text'>Follows Us:- </div>

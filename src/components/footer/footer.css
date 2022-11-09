@@ -140,7 +140,7 @@
 
 @media(max-width:500px) { 
     .footer-nav-links, .footer-infos{
-        row-gap: 3.5rem;
+        row-gap: 2.8rem;
     }
   .footer-content{
     margin-left:7rem;
@@ -154,7 +154,8 @@
 }
     .company-desc {
         padding-top:2rem ;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 3.6rem;
     }
 
     .footer-heads {
@@ -162,21 +163,21 @@
     }
 
     .links {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .infos {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .email-field,
     .contact-number-field {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .email,
     .contact-number {
-        font-size: 2.4rem;
+        font-size: 1.9rem;
     }
 
     .follow-us-text {
