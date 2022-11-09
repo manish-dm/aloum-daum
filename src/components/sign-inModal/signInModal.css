@@ -1,5 +1,6 @@
 .box {
     position: relative;
+   
 }
 
 .close-sigIn-modal {
@@ -12,6 +13,7 @@
 .SignInModal-main {
     display: flex;
     flex-direction: column;
+    padding-left: 2.5rem;
 }
 
 .SignInModal-title {
@@ -98,6 +100,20 @@
     width: 1.7rem;
     height: 1.7rem;
 }
+@media(max-width:1300px){
+    .SignInModal-main {
+        padding-left: 1rem;
+    }
+    .SignInModal-main input,
+    .SignInModal-otp-btn {
+        width: 95%;
+    }
+    .close-sigIn-modal {
+        position: absolute;
+        bottom: 94%;
+        left: 94%;
+    }
+}
 @media(max-width:1100px){
     .close-sigIn-modal {
         position: absolute;
@@ -105,6 +121,7 @@
         left: 92%;
     }
 }
+
 @media(max-width:900px) {
     .SignInModal-main input,
     .SignInModal-otp-btn {
@@ -121,9 +138,35 @@
         justify-content: center;
         align-items: center;
     }
+    .SignInModal-main input,
+    .SignInModal-otp-btn {
+        width: 100%;
+    }
+    .SignInModal-main input{
+        padding-left: 1rem;
+    }
     .close-sigIn-modal {
         position: absolute;
         bottom: 92%;
         left: 88%;
     }
+    .SignInModal-title {
+        font: normal normal 500 1.8rem Poppins-Medium;
+    }
+    
+    .SignInModal-heading {
+        font: normal normal 500 4.5rem Poppins-Medium;
+    }
+    .SignInModal-main input::placeholder {
+        font: normal normal normal 1.2rem Poppins-Regular;
+    }
+    
+    .SignInModal-otp-btn {
+        font: normal normal 500 1.8rem Poppins-Medium;
+    }
+    .signin-vai-google,
+.signin-vai-facebook {
+    font: normal normal 500 1.8rem Poppins-Medium;
+}
+
 }

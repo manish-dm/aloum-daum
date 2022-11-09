@@ -26,3 +26,12 @@
 .SingleAddonCard-product-price{
     font: normal normal normal 1.7rem/2.7rem Rubik-Regular;
 }
+@media(max-width:500px){
+    .SingleAddonCard-product-name{ 
+        font: normal normal normal 2.5rem/2.2rem Rubik-Regular; 
+    }
+    .SingleAddonCard-product-price{
+        margin-top: 2.5rem;
+        font: normal normal normal 2.4rem/2.7rem Rubik-Regular;
+    }
+}
