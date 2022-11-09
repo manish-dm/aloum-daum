@@ -9,3 +9,8 @@
     font: normal normal 500 1.9rem/1.3rem Rubik-Medium;
     color: #FFFFFF;
 }
+@media(max-width:500px){
+    .cod-main{
+        font-size: 2.8rem;
+    }
+}

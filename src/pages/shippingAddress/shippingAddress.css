@@ -1,7 +1,9 @@
 .ShippingAddress-content {
     display: flex;
-    margin: 0 25.2rem 14rem 38.5rem;
+    margin-inline: 30rem;
+    margin-block: 5rem;
     column-gap: 4rem;
+    margin-bottom: 14.1rem;
 }
 
 .delivery-details {
@@ -79,10 +81,12 @@
 .delivery-details input::placeholder {
     font: normal normal normal 1.6rem/1.9rem Rubik-Regular;
     color: #ADA7A7;
-    
+
 }
 
-.delivery-details textarea {
+.address-div input {
+    width: 81.1rem;
+    height: 16.6rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: none;
     border: 1px solid #EAEAEA;
@@ -91,10 +95,11 @@
     margin-top: 3.1rem;
 }
 
-.delivery-details textarea::placeholder {
+.address-div input::placeholder {
+    padding: 2rem;
+    width: 100%;
     font: normal normal normal 1.6rem/1.9rem Rubik-Regular;
     color: #ADA7A7;
-    
 }
 
 /*******************************************************************************/
@@ -117,6 +122,7 @@
     row-gap: 2.9rem;
     margin-bottom: 3.6rem;
 }
+
 .order-summary-card-products {
     display: flex;
     column-gap: 2.9rem;
@@ -171,7 +177,6 @@
 
 .total-text {
     font: normal normal normal 1.6rem/2.5rem Poppins-Regular;
-    ;
     color: #000000;
 }
 
@@ -194,7 +199,7 @@
 .promo-code input::placeholder {
     font: normal normal normal 1.6rem/2.5rem Poppins-Regular;
     color: #ADA7A7;
-    
+
 }
 
 .order-details button {
@@ -207,4 +212,173 @@
     font: normal normal 500 1.6rem/2.5rem Poppins-Medium;
     color: #FFFFFF;
     margin-top: 6.1rem;
+}
+
+/*************Media Queries***************************/
+@media(max-width:1600px) {
+    .ShippingAddress-content {
+        margin-inline: 15rem;
+    }
+
+    .user-details input {
+        width: 35rem;
+        height: 5.6rem;
+    }
+
+    .email-address input {
+        width: 73.3rem;
+        height: 5.6rem;
+    }
+
+    .country-city-zip-div input {
+        width: 22.4rem;
+        height: 5.6rem;
+    }
+
+    .address-div input {
+        width: 73.2rem;
+        height: 14rem;
+    }
+
+    .promo-code input {
+        width: 34rem;
+        height: 5.6rem;
+    }
+
+    .order-details button {
+        width: 35rem;
+        height: 6.4rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .ShippingAddress-content {
+        flex-direction: column;
+        margin-inline: 13rem;
+        row-gap: 4rem;
+    }
+
+    .delivery-details {
+        border-right: none;
+        border-bottom: 2px solid #E7E7E7;
+        padding-right: 0rem;
+        padding-bottom: 4rem;
+        margin-left: 5rem;
+    }
+
+    .order-details {
+        margin-left: 5rem;
+    }
+
+    .order-details-container {
+        display: flex;
+        column-gap: 17rem;
+        align-items: center;
+    }
+
+    .user-details input {
+        width: 30rem;
+        height: 5.6rem;
+    }
+
+    .email-address input {
+        width: 63.5rem;
+        height: 5.6rem;
+    }
+
+    .country-city-zip-div input {
+        width: 19.2rem;
+        height: 5.6rem;
+    }
+
+    .address-div input {
+        width: 63.5rem;
+        height: 10rem;
+    }
+
+    .promo-code input {
+        width: 34rem;
+        height: 5.6rem;
+    }
+
+    .order-details button {
+        width: 35rem;
+        height: 6.4rem;
+    }
+}
+
+@media(max-width:600px) {
+   
+    .ShippingAddress-content {
+        margin-inline: auto;
+    }
+    .delivery-details{
+        width: 90%;
+    }
+    .order-details-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deliver-address-heading {
+        font: normal normal 500 2.8rem/1.8rem Poppins-Medium;
+    }
+
+    .delivery-details label {
+        font: normal normal 500 2.3rem/1.9rem Rubik-Medium;
+    }
+
+    .address-title {
+        font: normal normal 500 2.4rem/1.9rem Rubik-Medium;
+    }
+
+    .delivery-details input::placeholder {
+        font: normal normal normal 2rem/1.9rem Rubik-Regular;
+    }
+
+    .address-div input::placeholder {
+        font: normal normal normal 2rem/1.9rem Rubik-Regular;
+    }
+
+    .order-summary {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 2.2rem;
+        column-gap: 3rem;
+    }
+    .order-details-container{
+        align-items: flex-start;
+    }
+    .order-details-title {
+        font: normal normal 500 2.8rem/1.8rem Poppins-Medium;
+    }
+
+    .order-summary-product-name {
+        font: normal normal normal 2.3rem/2.5rem Poppins-Regular;
+    }
+
+    .order-summary-product-price {
+        font: normal normal 500 2rem/2.5rem Poppins-Medium;
+    }
+
+    .promo-code {
+        margin-top: 3.5rem;
+        font: normal normal 500 2.2rem/2.5rem Poppins-Medium;
+    }
+
+    .total-text {
+        font: normal normal normal 2rem/2.5rem Poppins-Regular;
+    }
+
+    .promo-price {
+        font: normal normal 500 2rem/2.5rem Poppins-Medium;
+    }
+
+    .promo-code input::placeholder {
+        font: normal normal normal 1.8rem/2.5rem Poppins-Regular;
+
+    }
+    .order-details button {
+        font: normal normal 500 2.1rem/2.5rem Poppins-Medium;
+    }
 }
