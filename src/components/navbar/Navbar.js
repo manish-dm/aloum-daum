@@ -16,6 +16,8 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const onNavBtnClicked = () => {
     setClicked(!clicked);
+
+    onNavigation("/shop");
   };
 
   const onNavigation = (path) => {
@@ -34,7 +36,7 @@ const Navbar = () => {
           <div className="nav-icon-buttons">
             <img src={profileIcon} alt="profile" />
             <img src={favouritesIcon} alt="favorites" />
-            <img src={cartIcon} alt="cart" />
+            <img src={cartIcon} alt="cart" onClick={() => onNavigation("/cart")}/>
           </div>
         </div>
         {/* hamburger btn */}

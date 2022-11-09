@@ -1,10 +1,11 @@
 import React from 'react'
 import './shippingAddress.css'
 import SmallNewsletter from '../../components/smallNewsletter/SmallNewsletter'
-
 import {orderSummaryData} from './orderSummaryData.js'
+import { useNavigate } from 'react-router-dom'
 
 const ShippingAddress = () => {
+    const navigate = useNavigate();
     return (
        <>
         <div className='ShippingAddress-content'>
@@ -83,7 +84,7 @@ const ShippingAddress = () => {
                                 <div className='total-text'>Total</div>
                                 <div className='promo-price'>$150</div>
                             </div>
-                            <button>Proceed To Payment</button>
+                            <button onClick={() => navigate("/payment")}>Proceed To Payment</button>
                         </div>
                   </div>
                  

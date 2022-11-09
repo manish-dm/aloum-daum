@@ -7,8 +7,10 @@ import loginvector from "../../assets/images/cartpage/loginvector.jpg";
 import registervector from "../../assets/images/cartpage/registervector.jpg";
 import SignInModal from "../sign-inModal/SigInModal";
 import RegisterModal from "../registermodal/RegisterModal";
+import { useNavigate } from "react-router-dom";
 
 const CheckoutModal = ({ openDialog, setOpenDialog }) => {
+  const navigate = useNavigate();
   const [openSignIn, setOpenSignIn] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
 
@@ -88,7 +90,7 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
             <img src={registervector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Checkout as Guest</div>
-          <button className="checkoutmodal-primary-button">
+          <button className="checkoutmodal-primary-button" onClick={() => navigate("/shipping-address")}>
             Continue as a guest
           </button>
         </div>

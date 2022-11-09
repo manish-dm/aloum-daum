@@ -33,6 +33,7 @@ const style = {
 
 export default function RegisterModal({ openRegister, setOpenRegister }) {
   const [passwordShown, setPasswordShown] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
 
   return (
     <div>
@@ -103,19 +104,19 @@ export default function RegisterModal({ openRegister, setOpenRegister }) {
 
               <div className="register-phoneNum-input-div">
                 <input
-                  type={passwordShown ? "number" : "password"}
+                  type={showPhone ? "number" : "password"}
                   placeholder="Enter Mobile Number"
                   className="register-pswrd-input"
                 />
-                {passwordShown ? (
+                {showPhone ? (
                   <AiFillEyeInvisible
                     className="pswrd-eye-button-css"
-                    onClick={() => setPasswordShown(!passwordShown)}
+                    onClick={() => setShowPhone(!showPhone)}
                   />
                 ) : (
                   <AiFillEye
                     className="pswrd-eye-button-css"
-                    onClick={() => setPasswordShown(!passwordShown)}
+                    onClick={() => setShowPhone(!showPhone)}
                   />
                 )}
               </div>

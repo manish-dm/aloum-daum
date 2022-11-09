@@ -27,10 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.open-collapse-btn {
-   cursor: pointer;
+  margin-bottom: 0.8rem;
 }
 
 .tagOptionsStyling {
@@ -68,6 +65,7 @@
   gap: 1rem;
   margin-top: 2rem;
 }
+
 .filter-checkbox-div:first-child {
   margin-top: -2rem;
 }
