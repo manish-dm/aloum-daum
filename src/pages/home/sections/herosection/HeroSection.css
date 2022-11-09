@@ -83,6 +83,13 @@
 
 /************************************************/
 
+@media (max-width: 1150px) {
+  .herosection-textContent {
+    padding-left: 9%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 550px) {
   .herosection-imageContent {
     display: none;

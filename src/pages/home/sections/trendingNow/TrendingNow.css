@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   gap: 3.6rem;
-  flex-wrap: wrap;
+  padding: 0 5rem;
 }
 
 .trendingnow-card {
@@ -59,6 +59,20 @@
   cursor: pointer;
 }
 
+@media (max-width: 1150px) {
+  .trendingnow-products-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .trendingnow-products-section {
+    padding: 0 10rem;
+  }
+}
+
 @media (max-width: 500px) {
   .trendingnow-wrapper > * {
     width: 90%;
@@ -67,6 +81,12 @@
   .trendingnow-header-section {
     margin-bottom: 2rem;
   }
+
+  .trendingnow-products-section {
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+  }
+
   .trendingnow-card-name {
     font-size: 2.7rem;
   }
