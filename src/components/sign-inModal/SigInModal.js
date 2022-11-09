@@ -1,9 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import Gicon from '../../../assets/icons/Gicon.png'
-import Ficon from '../../../assets/icons/Ficon.png'
+import Gicon from '../../assets/icons/Gicon.png'
+import Ficon from '../../assets/icons/Ficon.png'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import './signInModal.css'
 const style = {
@@ -30,23 +29,19 @@ const style = {
   p: 4,
 };
 
-export default function SignInModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+export default function SignInModal({openSignIn, setOpenSignIn}) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
-        open={open}
-        onClose={handleClose}
+        open={openSignIn}
+        onClose={() => setOpenSignIn(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} className="box">
           <div className='close-sigIn-modal'>
-            <AiFillCloseCircle onClick = {()=>{ setOpen(false)} } size={37}/>
+            <AiFillCloseCircle onClick = {() => setOpenSignIn(false)} size={37}/>
           </div>
           <div className='SignInModal-main'>
             <div className='SignInModal-title'>

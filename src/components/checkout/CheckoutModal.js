@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import "./CheckoutModal.css";
 import { Dialog } from "@mui/material";
 import Gicon from "../../assets/icons/Gicon.png";
 import Ficon from "../../assets/icons/Ficon.png";
 import loginvector from "../../assets/images/cartpage/loginvector.jpg";
 import registervector from "../../assets/images/cartpage/registervector.jpg";
-import guestvector from "../../assets/images/cartpage/guestvector.jpg";
+import SignInModal from "../sign-inModal/SigInModal";
 
 const CheckoutModal = ({ openDialog, setOpenDialog }) => {
+  const [openSignIn, setOpenSignIn] = useState(false);
+
   return (
     <Dialog
       open={openDialog}
@@ -21,6 +23,7 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
           </div>
           <div className="checkoutmodal-message">Have an Account?</div>
           <button className="checkoutmodal-primary-button">Sign In</button>
+          <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn}/>
 
           <div className="checkoutModal-divider">
             <div className="checkoutModal-left-div"></div>
