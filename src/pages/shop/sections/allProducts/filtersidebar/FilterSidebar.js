@@ -6,12 +6,23 @@ import { FiTrash2 } from "react-icons/fi";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 const FilterSidebar = () => {
-  const [show, setShow] = useState({ id: null, val: false });
+  const [show, setShow] = useState({
+    sizeAcc: { val: false },
+    preferenceAcc: { val: false },
+    genderAcc: { val: false },
+    discountAcc: { val: false },
+    skinAcc: { val: false },
+    concernAcc: { val: false },
+  });
+
   const [min, setMin] = useState(152);
   const [max, setMax] = useState(699);
 
   const openCollapseHandler = (id) => {
-    setShow({ id: id, val: !show.val });
+    setShow((prev) => ({
+      ...prev,
+      [id]: { val: !prev[id].val },
+    }));
   };
 
   return (
@@ -102,13 +113,14 @@ const FilterSidebar = () => {
               {data?.type === "accordian" && (
                 <div className="accordianTypeStyle">
                   {data?.showName && (
-                    <div className="filterName-Style">
+                    <div
+                      className="filterName-Style"
+                      onClick={() => openCollapseHandler(data.id)}
+                      style={{ cursor: "pointer" }}
+                    >
                       <div>{data?.filterName}</div>
-                      <div
-                        className="open-collapse-btn"
-                        onClick={() => openCollapseHandler(data.id)}
-                      >
-                        {show.val && show.id === data.id ? (
+                      <div className="open-collapse-btn">
+                        {show[data.id]["val"] === true ? (
                           <BiChevronUp style={{ fontSize: "2.5rem" }} />
                         ) : (
                           <BiChevronDown style={{ fontSize: "2.5rem" }} />
@@ -118,7 +130,7 @@ const FilterSidebar = () => {
                   )}
                   <div
                     className={
-                      show.val && show.id === data.id
+                      show[data.id]["val"] === true
                         ? "accordian-options open-accordian"
                         : "accordian-options"
                     }

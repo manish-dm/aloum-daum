@@ -1,5 +1,6 @@
 .singlecard-wrapper {
-  width: 37.5rem;
+  width: 100%;
+  max-width: 37.5rem;
   background-color: #ffffff;
 }
 
@@ -98,12 +99,12 @@
   border-top: 1px solid #dcdcdc;
 }
 .favIcon-div {
-  flex: 1;
+  width: 9.4rem;
+  height: 6.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 6.3rem;
 }
 .productFavIcon-CSS {
   font-size: 3.5rem;
@@ -127,4 +128,48 @@
 .addToBag-button:hover {
   background: #343434;
   color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .singlecard-wrapper {
+    min-width: 43rem;
+  }
+  .img-banner-msg-left {
+    font-size: 1.6rem;
+  }
+  .img-banner-msg-right {
+    font-size: 1.6rem;
+  }
+  .singlecard-categ-and-qty > span:nth-of-type(1) {
+    font-size: 1.9rem;
+  }
+  .singlecard-categ-and-qty > span:nth-of-type(2) {
+    font-size: 1.9rem;
+  }
+  .singlecard-productName-style {
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+  }
+  .ratings-div-style {
+    margin-top: 1.4rem;
+  }
+  .ratingIconCSS {
+    font-size: 2.2rem;
+  }
+  .singlecard-product-price {
+    font-size: 2.7rem;
+  }
+  .productFavIcon-CSS {
+    font-size: 4rem;
+  }
+  
+  .favIcon-div {
+    width: 14.4rem;
+    height: 7.5rem;
+  }
+  .addToBag-button {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 4rem 0;
+  }
 }

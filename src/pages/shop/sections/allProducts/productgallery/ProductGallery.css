@@ -71,6 +71,7 @@
 }
 
 .productcard-pagination-div {
+  width: 50%;
   margin-top: 5.7rem;
   display: flex;
   align-items: center;
@@ -96,4 +97,28 @@
 .productcard-pagination-div .pagination-next-page-btn {
   font-size: 2.3rem;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .product-top-actionbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 12rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+  .sort-drop-icon {
+    transform: translateY(0.2rem);
+  }
+  .productcard-pagination-div {
+    font-size: 2rem;
+  }
+  .productcard-pagination-div > span {
+    width: 6.2rem;
+    height: 6.2rem;
+  }
+  .productcard-pagination-div .pagination-next-page-btn {
+    font-size: 2.8rem;
+  }
 }
