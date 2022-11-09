@@ -46,45 +46,47 @@ const ShippingAddress = () => {
                     </div>
                     <div className='address-div'>
                         <label>Address</label><br />
-                        <textarea  placeholder="Address" rows="10"
-                        cols="100"/>
+                        <input  placeholder="Address" />
                     </div>
                 </div>
             </div>
             <div className="order-details">
                    <div className='order-details-title'>
-                     Order Dtails
+                     Order Details
                    </div>
-                 <div className='order-summary'>
-                   {
-                    orderSummaryData.map((item,key)=>{
-                        return  <div className='order-summary-card-products'>
-                        <div className='order-summary-product-image'>
-                            <img src = {item.image} alt = "Product selected to buy" />
-                        </div>
-                        <div className='order-summary-product-name-price'>
-                            <div className='order-summary-product-name'>
-                               {item.productName}
+                  <div className='order-details-container'>
+                        <div className='order-summary'>
+                        {
+                            orderSummaryData.map((item,key)=>{
+                                return  <div className='order-summary-card-products'>
+                                <div className='order-summary-product-image'>
+                                    <img src = {item.image} alt = "Product selected to buy" />
+                                </div>
+                                <div className='order-summary-product-name-price'>
+                                    <div className='order-summary-product-name'>
+                                    {item.productName}
+                                    </div>
+                                    <div className='order-summary-product-price'>
+                                    {item.productPrice}
+                                    </div>
+                                </div>
                             </div>
-                            <div className='order-summary-product-price'>
-                               {item.productPrice}
-                            </div>
+                            })
+                        }
                         </div>
-                    </div>
-                    })
-                   }
-                 </div>
-                 <div className='promo-code-div'>
-                 <div className='promo-code'>
-                        <label>Promo Code</label><br />
-                        <input type="text" placeholder='Promo Code' />
-                    </div>
-                    <div className='total-promo-price'>
-                        <div className='total-text'>Total</div>
-                        <div className='promo-price'>$150</div>
-                    </div>
-                 </div>
-                 <button>Proceed To Payment</button>
+                        <div className='promo-code-div'>
+                        <div className='promo-code'>
+                                <label>Promo Code</label><br />
+                                <input type="text" placeholder='Promo Code' />
+                            </div>
+                            <div className='total-promo-price'>
+                                <div className='total-text'>Total</div>
+                                <div className='promo-price'>$150</div>
+                            </div>
+                            <button>Proceed To Payment</button>
+                        </div>
+                  </div>
+                 
             </div>
         </div>
             <SmallNewsletter />
