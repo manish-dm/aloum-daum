@@ -9,6 +9,7 @@
 }
 .AddOnProducts-wrapper{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 7.4rem;
     justify-content: flex-start;
     align-items: center;
@@ -68,12 +69,27 @@
     border: none;
     border-radius: 0.4rem;
 }
-
-.item input:checked ~ .checkmark {
-    background: #F19291;
-  }
 .AddOnProducts-checklist label {
-    font: normal normal normal 19px/30px Rubik;
-    letter-spacing: 0px;
+    font: normal normal normal 1.9rem/3rem Rubik-Regular;
     color: #505050;
+}
+/******************Media Queries*******************************/
+
+@media(max-width:500px){
+    .AddOnProducts-total-price{
+        margin-block: 8rem ;
+    }
+    .AddOnProducts-price {
+        font: normal normal normal 3.5rem/2.7rem Rubik-Regular; 
+    }
+    
+    .AddOnProducts-total-price-text {
+        font: normal normal normal 2.4rem/2.7rem Rubik-Regular; 
+    }
+    .AddOnProducts-total-price button { 
+        font: normal normal 500 2.3rem/1.5rem Rubik-Medium; 
+    }
+    .AddOnProducts-checklist label {
+        font: normal normal normal 2.2rem/3rem Rubik-Regular; 
+    }
 }

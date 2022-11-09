@@ -7,9 +7,9 @@ const ProductMainDetails = () => {
     return (
         <div className='ProductMainDetails-conatiner'>
             <div className='ProductMainDetails-left-conatiner'>
-                <div className='productMainDetailsPage-status'>
+                {/* <div className='productMainDetailsPage-status'>
                     Product
-                </div>
+                </div> */}
                 <div className='product-images'>
                     <div className='main-img'>
                     <img  src={productImage} alt="product image" />
