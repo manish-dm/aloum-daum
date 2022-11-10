@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Gicon from '../../assets/icons/Gicon.png'
 import Ficon from '../../assets/icons/Ficon.png'
-import {AiFillCloseCircle} from 'react-icons/ai'
+import {AiFillCloseCircle, AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import './signInModal.css'
 const style = {
   position: 'absolute',
@@ -50,7 +50,10 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
             <div className='SignInModal-heading'>
               Sign in
             </div>
-            <input type='all' placeholder="Enter mobile number or email Id" /><br />
+            <div className='SignInModal-main-secured-input'>
+            <input type='all' placeholder="Enter email Id or mobile no." /><br />
+            <AiFillEye className="SignInModal-main-visibility-on"/>
+            </div>
             <button className='SignInModal-otp-btn'>Send OTP</button>
             <div className='SignInModal-divider'>
               <div className="SigInModal-left-div"></div>
