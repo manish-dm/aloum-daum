@@ -17,13 +17,31 @@
 }
 
 .ProductMainDetails-right-conatiner {
-    margin-top: 3rem;
+    margin-top: 11.5rem;
 }
 
 .productMainDetailsPage-status {
-    align-self: start;
-}
+  display: flex;
+  column-gap: 1.5rem;
+  margin-top: 5.5rem;
+  margin-bottom: 3.9rem;
 
+  justify-content: flex-start;
+  align-items: center;
+}
+.status-home-text,
+.status-face-text,
+.status-product-text{
+    font: normal normal normal 2.1rem/2.5rem Urbanist-Regular;
+color: #858585;
+}
+.status-product-text{
+    color: #000000;
+}
+.ProductMainDetails-status-dash{
+    width: 2rem;
+   border-top: 1.5px solid #000000;
+}
 .product-images {
     display: flex;
     flex-direction: column;
