@@ -1,3 +1,21 @@
+
+
+
+
+.not-visited{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color:#CECECE;
+
+    font: normal normal 500 1.6rem Poppins-Medium;
+    color: #FFFFFF;
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+}
 .ShippingAddress-content {
     display: flex;
     margin-inline: 30rem;

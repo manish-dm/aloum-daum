@@ -26,7 +26,11 @@
     color: #202020;
     margin: 0.9rem 0 3.1rem 0;
 }
-
+.SignInModal-main-secured-input{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
 .SignInModal-main input {
     width: 41.7rem;
     height: 5.5rem;
@@ -36,7 +40,12 @@
     border-radius: 1.2rem;
     padding-left: 2rem;
 }
-
+.SignInModal-main-visibility-on{
+    position: absolute;
+    right: 10%;
+    font-size: 2rem;
+    color: #84818A;
+}
 .SignInModal-main input::placeholder {
     font: normal normal normal 1.4rem Poppins-Regular;
     width: 100%;
@@ -100,7 +109,15 @@
     width: 1.7rem;
     height: 1.7rem;
 }
+@media(max-width:1701px){
+    .SignInModal-main-visibility-on{
+        right: 20%;
+    }
+}
 @media(max-width:1300px){
+    .SignInModal-main-visibility-on{
+        right: 10%;
+    }
     .SignInModal-main {
         padding-left: 1rem;
     }
@@ -158,7 +175,8 @@
         font: normal normal 500 4.5rem Poppins-Medium;
     }
     .SignInModal-main input::placeholder {
-        font: normal normal normal 1.2rem Poppins-Regular;
+        width: 75%;
+        font: normal normal normal 1.3rem Poppins-Regular;
     }
     
     .SignInModal-otp-btn {
@@ -169,4 +187,10 @@
     font: normal normal 500 1.8rem Poppins-Medium;
 }
 
+}
+@media(max-width:400px){
+    .SignInModal-main input::placeholder {
+        width: 75%;
+        font: normal normal normal 1.4rem Poppins-Regular;
+    }
 }

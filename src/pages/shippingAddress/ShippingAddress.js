@@ -8,6 +8,19 @@ const ShippingAddress = () => {
     const navigate = useNavigate();
     return (
        <>
+            <div className='show-checkout-status'>
+                        <div className='numbers'>1</div>
+                        <div className='status'>Guest Checkout</div>
+                        <div className='status-border'></div>
+                        <div className='numbers last-num'>2</div>
+                        <div className='status pending-status'>Shipping Address</div>
+                        <div className='status-border'></div>
+                        <div className='pending-number'>
+                        <div className='not-visited'>3</div>
+                        </div>
+                        <div className='status pending-status'>Payment Address</div>
+                        
+                    </div>
         <div className='ShippingAddress-content'>
             <div className='delivery-details'>
                 <div className='deliver-address-heading'>

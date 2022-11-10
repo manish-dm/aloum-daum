@@ -7,9 +7,13 @@ const ProductMainDetails = () => {
     return (
         <div className='ProductMainDetails-conatiner'>
             <div className='ProductMainDetails-left-conatiner'>
-                {/* <div className='productMainDetailsPage-status'>
-                    Product
-                </div> */}
+                <div className='productMainDetailsPage-status'>
+                    <div className='status-home-text'>Home</div>
+                    <div className='ProductMainDetails-status-dash'></div>
+                    <div className='status-face-text'>Face</div>
+                    <div className='ProductMainDetails-status-dash'></div>
+                    <div className='status-product-text'>Product</div>
+                </div>
                 <div className='product-images'>
                     <div className='main-img'>
                     <img  src={productImage} alt="product image" />
