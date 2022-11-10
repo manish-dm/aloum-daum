@@ -6,9 +6,9 @@
 }
 
 .register-modal-main {
-  /* display: flex;
-    flex-direction: column; */
-  margin: 4.9rem 6rem;
+  width: 100%;
+  height: 100%;
+  padding: 4.9rem 6rem;
 }
 
 .register-modal-title {
@@ -185,4 +185,157 @@
 .register-other-Options img {
   width: 1.7rem;
   height: 1.7rem;
+}
+
+/****************************************/
+
+@media (max-width: 1700px) {
+  .register-modal-main {
+    padding: 4.9rem 8rem;
+  }
+}
+@media (max-width: 1199px) {
+  .register-modal-main {
+    padding: 4.9rem 7.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .register-modal-main {
+    padding: 4.9rem 8rem;
+  }
+}
+@media (max-width: 700px) {
+  .register-modal-main {
+    padding: 4.9rem 10rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .register-modal-main {
+    padding: 4.9rem 4.6rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .register-modal-main {
+    padding: 4.9rem 4.6rem;
+  }
+  .close-register-modal {
+    top: -2%;
+    right: -3.4%;
+  }
+}
+
+@media (max-width: 414px) {
+  .register-modal-main {
+    padding: 3.8rem 4.6rem;
+  }
+
+  .register-modal-title {
+    font-size: 2rem;
+  }
+
+  .register-modal-heading {
+    font-size: 5rem;
+  }
+  .register-modal-main input {
+    font-size: 2rem;
+  }
+  .register-modal-main input::placeholder {
+    font-size: 2rem;
+  }
+  .pswrd-eye-button-css {
+    font-size: 3rem;
+  }
+  .register-gender-select-div > span {
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+  }
+  .register-gender-select-div > span:nth-of-type(1) {
+    margin-right: 1rem;
+  }
+  .register-privacyterms-div > span {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .registermodal-otp-btn {
+    font-size: 2.3rem;
+  }
+
+  .register-left-div,
+  .register-right-div {
+    margin-top: 1.5rem;
+  }
+  .register-or {
+    font-size: 2.2rem;
+  }
+
+  .register-signin-vai-google,
+  .register-signin-vai-facebook {
+    font-size: 1.8rem;
+  }
+
+  .register-other-Options img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .register-modal-main {
+    padding: 4.9rem 7rem;
+  }
+  .register-modal-title {
+    font-size: 2.6rem;
+  }
+
+  .register-modal-heading {
+    font-size: 5.2rem;
+  }
+  .register-modal-main input {
+    font-size: 2.2rem;
+  }
+  .register-modal-main input::placeholder {
+    font-size: 2.2rem;
+  }
+  .pswrd-eye-button-css {
+    font-size: 3.2rem;
+  }
+  .register-gender-select-div > span {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+  .register-gender-select-div > span:nth-of-type(1) {
+    margin-right: 0rem;
+  }
+  .register-privacyterms-div > span {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .registermodal-otp-btn {
+    font-size: 2.4rem;
+  }
+
+  .register-email-input,
+  .register-password-input-div,
+  .register-phoneNum-input-div,
+  .registermodal-otp-btn {
+    width: 45rem;
+  }
+  .register-name-input-div > input {
+    width: 21.9rem;
+    height: 4.8rem;
+  }
+
+  .register-left-div,
+  .register-right-div {
+    width: 21rem;
+  }
+
+  .register-google-logo-conatiner,
+  .register-facebook-logo-conatiner {
+    width: 22.3rem;
+  }
 }

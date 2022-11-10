@@ -43,7 +43,7 @@ const HeroSlider = () => {
   ];
   return (
     <div className="hero-slider-wrapper">
-      <Slider slidesToShow={1} arrows={false} swipe={true} dots={true}>
+      <Slider slidesToShow={1} arrows={false} swipe={true} dots={true} autoplay={true} autoplaySpeed={4000}>
         {heroStaticData.length > 0 &&
           heroStaticData.map((staticData, idx) => {
             return <HeroSection key={idx} staticData={staticData} />;

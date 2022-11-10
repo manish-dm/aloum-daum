@@ -102,6 +102,7 @@
 @media (max-width: 500px) {
   .product-top-actionbar {
     flex-direction: column;
+    gap: 2rem;
     align-items: flex-start;
     justify-content: center;
     height: 12rem;

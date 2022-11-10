@@ -144,22 +144,22 @@ input[type="checkbox"]:checked {
 
 /******************************/
 .accordianTypeStyle {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.accordian-options{
-   max-height: 0px;
-   overflow: hidden;
-   padding-top: 0.1rem;
-   transition: max-height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+.accordian-options {
+  max-height: 0px;
+  overflow: hidden;
+  padding-top: 0.1rem;
+  transition: max-height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .open-accordian {
-   max-height: 999px;
-   transition: max-height 0.5s ease-in;
+  max-height: 999px;
+  transition: max-height 0.5s ease-in;
 }
 
 .filter-action-buttons {
-   margin-top: 1rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 2.3rem;
@@ -194,11 +194,24 @@ input[type="checkbox"]:checked {
 }
 
 @media (max-width: 500px) {
+  .filter-action-buttons {
+    gap: 1rem;
+  }
   .filter-action--apply-btn {
-    width: 20rem;
+    width: 26rem;
     line-height: 2.8rem;
   }
-  .filter-action--trash-btn { 
-    width: 12rem;
+  .filter-action--trash-btn {
+    width: 15rem;
+  }
+  .trashIconStyle {
+    font-size: 2.8rem;
+  }
+
+  .range-values {
+    flex-direction: column;
+  }
+  .range-values-child {
+    width: 15rem;
   }
 }
