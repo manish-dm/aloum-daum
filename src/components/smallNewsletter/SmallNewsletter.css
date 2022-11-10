@@ -50,13 +50,13 @@
   border: none;
   width: 33.7rem;
   height: 5rem;
-  font: normal normal normal 1.5rem/3rem Rubik-Regular;
+  font: normal normal normal 1.5rem Rubik-Regular;
   background: #ffffff 0% 0% no-repeat padding-box;
   padding-left: 2rem;
 }
 .newsletter-input-and-button-div > input::placeholder {
   width: 100%;
-  font: normal normal normal 1.5rem/3rem Rubik-Regular;
+  font: normal normal normal 1.5rem Rubik-Regular;
   color: #a0a0a0;
 }
 

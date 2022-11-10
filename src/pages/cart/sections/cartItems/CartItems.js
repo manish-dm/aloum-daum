@@ -30,7 +30,7 @@ const [openDialog, setOpenDialog] = useState(false);
         <div className="cartItems-heading">YOUR CART ITEMS</div>
         <div className="cartItems-table-heading-row">
           <span>PRODUCT NAME</span>
-          <div className="cartItems-grid-view">
+          <div className="cartItems-grid-view cartItems-propertyNames">
             <span>PRICE</span>
             <span>QUANTITY</span>
             <span>TOTAL</span>

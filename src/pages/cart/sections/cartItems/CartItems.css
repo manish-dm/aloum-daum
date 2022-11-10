@@ -2,11 +2,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 9rem;
   margin-bottom: 10rem;
 }
 .cartItems-all-content {
-  width: 117rem;
+  /* width: 117rem; */
+  width: 61vw;
   padding: 11rem 0;
 }
 
@@ -62,10 +62,13 @@
 }
 
 .cartItems-grid-view {
-  width: 33%;
+  /* width: 33%; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
+}
+.cartItems-propertyNames {
+  width: 39.5rem;
 }
 
 .cartItems-spec-list-container {
@@ -243,29 +246,84 @@
 }
 
 /***********************************/
-@media (max-width: 625px) {
-  .cartItems-wrapper {
-    padding: 0 4rem;
-  }
-  .coupon-code-input-div > button {
-    margin-top: 2rem;
-  }
-
-  .cartItems-grid-view {
-    width: 42%;
-  }
-
-  .checkout-box-css {
-    width: 40rem;
-  }
-  .checkout-box-proceed-btn {
-    width: 24rem;
-    height: 5.5rem;
+@media (max-width: 1000px) {
+  .cartItems-all-content {
+    width: 90vw;
   }
 }
 
-@media (max-width: 450px) {
-  .cartItems-grid-view {
-    width: 60%;
+@media (max-width: 625px) {
+  .coupon-code-input-div > button {
+    margin-top: 2rem;
+  }
+  .checkout-box-container {
+    width: 45%;
+  }
+
+  .cartItems-image-and-name-container {
+    width: fit-content;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .cartItems-all-content {
+    width: 94vw;
+  }
+  .checkout-box-container {
+    width: 49%;
+  }
+
+  .cartItems-heading {
+    font-size: 3rem;
+  }
+  .cartItems-table-heading-row {
+    font-size: 2.4rem;
+  }
+  .cartItems-name-container {
+    font-size: 2.3rem;
+  }
+  .cartItems-spec-list-container {
+    font-size: 2.3rem;
+  }
+
+  .cartItems-image-and-name-container {
+    width: 36%;
+  }
+  .clear-and-continue-button-style {
+    width: 30rem;
+    font-size: 1.8rem;
+  }
+  .coupon-code-input-div > input{
+    width: 30rem;
+    padding-left: 1rem;
+  }
+  .coupon-code-input-div > input::placeholder {
+    font-size: 2rem;
+  }
+  .coupon-code-input-div > button {
+    font-size: 2.2rem;
+    width: 18rem;
+    height: 6rem;
+  }
+  .checkout-note-container > span:nth-of-type(1) {
+    font-size: 2rem;
+  }
+  .checkout-note-container > span:nth-of-type(2) {
+    font-size: 1.8rem;
+  }
+
+  .subtotal-details-div {
+    font-size: 1.9rem;
+  }
+  .grandtotal-details-div {
+    font-size: 2.2rem;
+  }
+  .checkout-box-proceed-btn{
+    font-size: 2rem;
+    height: 7rem;
+  }
+  .checkout-box-msg{
+    font-size: 1.6rem;
   }
 }
