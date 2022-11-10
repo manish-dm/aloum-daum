@@ -372,6 +372,9 @@ option {
 }
 
 @media(max-width:500px) {
+    .main-img{
+        width: 63.2rem;
+    }
     .product-selection-dropdown select {
         width: 40rem;
         height: 6.2rem

@@ -1,7 +1,8 @@
 
 .payment-main{
     margin-top:7.7rem ;
-    margin-bottom: 44rem;
+    margin-bottom: 28rem;
+    margin-left: 2rem;
 }
 .payment-container {
     display: flex;
@@ -97,6 +98,7 @@
     gap: 2.5rem;
     margin-bottom: 4rem;
     margin-left: 3rem;
+    width: 100%;
 }
 
 input[type="radio"] {
@@ -137,7 +139,11 @@ input[type="radio"]:checked {
     font: normal normal 500 2rem/2.6rem Rubik-Medium;
     color: #141414;
 }
-
+@media(max-width:1300px){
+    .payment-main{
+        margin-left: 5rem;
+    }
+}
 @media(max-width:600px){
     .payment-heading{
        margin-inline:auto;
@@ -156,6 +162,10 @@ input[type="radio"]:checked {
 }
 
 @media(max-width:500px){
+    .payment-main{
+        margin-inline: auto;
+        margin-right: 2.5rem;
+    }
     .payment-options{
         margin-left: 3rem;
         column-gap: 0.1rem;
