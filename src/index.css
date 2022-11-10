@@ -24,8 +24,7 @@ code {
     monospace;
 }
 input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
+ outline:none;
 }
 /********************responsive font-sizes style**************/
 @media (max-width: 1700px) {
