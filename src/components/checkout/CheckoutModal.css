@@ -97,3 +97,36 @@
   height: 1.7rem;
 }
 /***************/
+
+@media (max-width: 850px) {
+  .checkoutmodal-wrapper {
+    flex-direction: column;
+  }
+  .checkoutmodal-signin,
+  .checkoutmodal-register,
+  .checkoutmodal-guest {
+    width: 54.7rem;
+    height: 37rem;
+  }
+  .checkoutmodal-message {
+    margin-top: 1rem;
+  }
+  
+  .checkoutmodal-image-div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 19rem;
+    height: 13rem;
+  }
+  .checkoutmodal-primary-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .checkoutmodal-primary-button {
+    font-size: 2.1rem;
+  }
+}

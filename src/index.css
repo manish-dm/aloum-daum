@@ -23,10 +23,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
+
 /********************responsive font-sizes style**************/
 @media (max-width: 1700px) {
   html {
