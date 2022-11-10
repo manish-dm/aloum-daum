@@ -11,7 +11,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: {
-    xs: 200, // theme.breakpoints.up('xs')
+    xs: 250, // theme.breakpoints.up('xs')
     sm: 300, // theme.breakpoints.up('sm')
     md: 400, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
@@ -51,7 +51,7 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
               Sign in
             </div>
             <div className='SignInModal-main-secured-input'>
-            <input type='all' placeholder="Enter email Id or mobile no." /><br />
+            <input type='all' placeholder="Enter email Id or mobile no.mber" /><br />
             <AiFillEye className="SignInModal-main-visibility-on"/>
             </div>
             <button className='SignInModal-otp-btn'>Send OTP</button>
