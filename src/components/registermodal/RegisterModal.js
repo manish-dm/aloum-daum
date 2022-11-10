@@ -14,17 +14,17 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: {
     xs: 300, // theme.breakpoints.up('xs')
-    sm: 420, // theme.breakpoints.up('sm')
-    md: 470, // theme.breakpoints.up('md')
+    sm: 400, // theme.breakpoints.up('sm')
+    md: 440, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
     xl: 531, // theme.breakpoints.up('xl')
   },
   height: {
-    xs: 540, // theme.breakpoints.up('xs')
-    sm: 600, // theme.breakpoints.up('sm')
-    md: 700, // theme.breakpoints.up('md')
-    lg: 780, // theme.breakpoints.up('lg')
-    xl: 844, // theme.breakpoints.up('xl')
+    xs: 400, // theme.breakpoints.up('xs')
+    sm: 460, // theme.breakpoints.up('sm')
+    md: 550, // theme.breakpoints.up('md')
+    lg: 620, // theme.breakpoints.up('lg')
+    xl: 650, // theme.breakpoints.up('xl')
   },
   bgcolor: "#FDF9F8",
   boxShadow: 24,
