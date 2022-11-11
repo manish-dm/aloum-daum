@@ -1,13 +1,11 @@
 import React from "react";
 import "./NavMenu.css";
-import instaIcon from "../../assets/images/homepage/Instagram.svg";
-import fbIcon from "../../assets/images/homepage/Facebook.svg";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 
 const NavMenu = () => {
   return (
-    <div className="navmenu-wrapper">
+    <div className="navmenu-wrapper" id="topOfPageRef">
       <div className="navmenu-icons">
         <AiOutlineInstagram className="navmenu-icons-style insta"/>
         <FaFacebookF className="navmenu-icons-style fb"/>
