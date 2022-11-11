@@ -9,7 +9,7 @@
     flex-direction: column;
     margin-inline: auto;
     border: 1px solid black;
-   
+  
 }
 
 .show-checkout-status {
@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    gap: 5rem;
 }
 
 .status-border {
@@ -27,9 +28,7 @@
     margin-block: 7.7rem;
 }
 
-
-
-.numbers {
+.payment-status-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +56,22 @@
     font: normal normal normal 1.6rem Poppins-Regular;
     color: #000000;
 }
-
+.payment-status-div-1,
+.payment-status-div-2,
+.payment-status-div-3{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ row-gap: 1rem;
+}
 .pending-status {
     color: #CECECE;
 }
-
+.payment-status-numbers-active,
+.payment-status-numbers-pending{
+    background-color: #CECECE;
+}
 .payment-content {
     display: flex;
     flex-direction: column;
@@ -72,17 +82,19 @@
 }
 
 .payment-heading {
-    align-self: start;
+    align-self: center;
     font: normal normal bold 3rem/3rem Urbanist-Bold;
     color: #1D1D1D;
     margin-left: 17rem;
+    margin-top: 5rem;
 }
 
 .payment-box {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
     place-content: center;
     place-items: center;
+    column-gap: 2rem;
 }
 
 .payment-options {
@@ -170,13 +182,19 @@ input[type="radio"]:checked {
         margin-left: 3rem;
         column-gap: 0.1rem;
     }
-    .numbers{
-        font-size: 2.5rem;
-        width: 3.5rem;
-        height: 3.5rem;
+    .show-checkout-status{
+        margin-left: 2rem;
     }
+    .status-border{
+     display: none;
+    }
+    .show-checkout-status{
+        margin-inline: auto;
+    }
+    
     .status{
-        font-size: 2.5rem;
+         
+        font-size: 2rem;
         letter-spacing: 0.5px;
     }
     .payment-heading{
@@ -184,5 +202,8 @@ input[type="radio"]:checked {
     }
     .payment-method-name{
         font-size: 2.9rem;
+    }
+    .payment-option-radio-btn{
+        display: none;
     }
 }

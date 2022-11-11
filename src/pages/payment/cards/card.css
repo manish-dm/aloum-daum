@@ -49,6 +49,17 @@ input:focus {
     border-radius: 0.2rem;
 }
 
+/* .card-method-main input[type="date"]::before { 
+	content: attr(data-placeholder);
+	width: 100%;
+}
+.card-method-main input[type="date"]:focus::before,
+.card-method-main input[type="date"]:valid::before { display: none } */
+
+.card-method-main input[type="number"]::placeholder{
+    font: normal normal 500 2rem Rubik-Medium;
+    color: #757575;
+}
 .card-method-main button {
     width: 50.4rem;
     height: 6.5rem;

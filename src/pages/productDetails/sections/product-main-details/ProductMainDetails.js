@@ -2,18 +2,21 @@ import React from 'react'
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import './productMainDetails.css'
 import productImage from '../../../../assets/images/homepage/product6.png'
+import instagram from '../../../../assets/icons/Instagram.svg'
+import facebook from '../../../../assets/icons/Facebook.svg'
+import youtube from '../../../../assets/icons/youtube.svg'
 
 const ProductMainDetails = () => {
     return (
         <div className='ProductMainDetails-conatiner'>
             <div className='ProductMainDetails-left-conatiner'>
-                <div className='productMainDetailsPage-status'>
+                {/* <div className='productMainDetailsPage-status'>
                     <div className='status-home-text'>Home</div>
                     <div className='ProductMainDetails-status-dash'></div>
                     <div className='status-face-text'>Face</div>
                     <div className='ProductMainDetails-status-dash'></div>
                     <div className='status-product-text'>Product</div>
-                </div>
+                </div> */}
                 <div className='product-images'>
                     <div className='main-img'>
                     <img  src={productImage} alt="product image" />
@@ -65,9 +68,9 @@ const ProductMainDetails = () => {
                     <div className='quantity-text'>QUYANTITY</div>
                     <div className='quantity-actions'>
                         <div className='inc-dec-btn'>
-                        <div className='increase-and-decrease' name='increase'>+</div>
+                        <div className='increase-and-decrease' name='increase'>-</div>
                         <div className='show-quantity'>1</div>
-                        <div className='increase-and-decrease' name='decrease'>-</div>
+                        <div className='increase-and-decrease' name='decrease'>+</div>
                         </div>
                         <button className='addtoCart-btn' name="addtoCart">Add to Cart</button>
                     </div>
@@ -86,7 +89,12 @@ const ProductMainDetails = () => {
                     </div>
                     <div className='category'>Category: <span>Skin Care</span></div>
                     <div className='Brand'>Brand: <span>Aloumdowm</span></div>
-                    <div className='follow-us'>Follow us:-</div>
+                    <div className='follow-us-div'>
+                            <div className='follow-us'>Follows Us:- </div>
+                            <img className='icons instagram-logo' src={instagram} />
+                            <img className='icons facebook-logo' src={facebook} />
+                            <img className='icons youtube-logo' src={youtube} />
+                        </div>
                 </div>
             </div>
 
