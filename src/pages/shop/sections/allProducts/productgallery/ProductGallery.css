@@ -43,7 +43,7 @@
   cursor: pointer;
   color: #ababab;
 }
-.sort-view-icon.active {
+.sort-view-icon.gridviewactive {
   color: #000000;
 }
 

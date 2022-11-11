@@ -16,7 +16,7 @@ const ProductGallery = () => {
             <div className="product-view-buttons">
               <span>View:</span>
               <span>
-                <MdGridView className="sort-view-icon active" />
+                <MdGridView className="sort-view-icon gridviewactive" />
               </span>
               <span>
                 <GiHamburgerMenu className="sort-view-icon" />
