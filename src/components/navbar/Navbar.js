@@ -10,10 +10,12 @@ import trendingImage1 from "../../assets/images/homepage/trendingImage1.png";
 import { CgClose } from "react-icons/cg";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
+import {SlClose} from "react-icons/sl";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [clicked, setClicked] = useState(false);
+  const [showSearchBar, setShowSearchBar] = useState(false);
   const onNavBtnClicked = () => {
     setClicked(!clicked);
 
@@ -22,34 +24,57 @@ const Navbar = () => {
 
   const onNavigation = (path) => {
     navigate(path);
-  }
+  };
 
   return (
     <div className="nav-container">
-      <div className="nav-upper">
-        <img src={aloumNavLogo} alt="logo" className="nav-upper-logo" onClick={() => onNavigation("/")}/>
-        <div className="nav-upper-link-buttons">
-          <div className="nav-searchbar">
-            <img src={SearchIcon} alt="search here" />
-            <input type="text" placeholder="Search" />
+      {!showSearchBar ? (
+        <div className="nav-upper">
+          <div className="mobile-nav-hamburger-logo-div">
+            {/* hamburger btn */}
+            {!clicked && (
+              <label
+                htmlFor="menu-btn"
+                className="nav-btn nav-open-btn"
+                onClick={onNavBtnClicked}
+              >
+                <HiOutlineMenuAlt3 className="hamburger-icon-style" />
+              </label>
+            )}
+            <img
+              src={aloumNavLogo}
+              alt="logo"
+              className="nav-upper-logo"
+              onClick={() => onNavigation("/")}
+            />
           </div>
-          <div className="nav-icon-buttons">
-            <img src={profileIcon} alt="profile" />
-            <img src={favouritesIcon} alt="favorites" />
-            <img src={cartIcon} alt="cart" onClick={() => onNavigation("/cart")}/>
+          <div className="nav-upper-link-buttons">
+            <div className="nav-searchbar">
+              <img src={SearchIcon} alt="search here" onClick={() => setShowSearchBar(true)}/>
+              <input type="text" placeholder="Search" />
+            </div>
+            <div className="nav-icon-buttons">
+              <img src={profileIcon} alt="profile" />
+              <img
+                src={favouritesIcon}
+                alt="favorites"
+                className="navbar-favorite-route-icon"
+              />
+              <img
+                src={cartIcon}
+                alt="cart"
+                onClick={() => onNavigation("/cart")}
+              />
+            </div>
           </div>
         </div>
-        {/* hamburger btn */}
-        {!clicked && (
-          <label
-            htmlFor="menu-btn"
-            className="nav-btn nav-open-btn"
-            onClick={onNavBtnClicked}
-          >
-            <HiOutlineMenuAlt3 />
-          </label>
-        )}
-      </div>
+      ) : (
+        <div className="onMobileSearchBar-container">
+          <input type="text" placeholder="Search" className="onMobileSearchBar-styling"/>
+          <SlClose className="onMobileSearchBar-close-icon" onClick={() => setShowSearchBar(false)}/>
+        </div>
+      )}
+
       {/* ************************************************************ */}
       <div className={clicked ? "nav-lower show-nav" : "nav-lower"}>
         <ul className="nav-lower-menu-links">
