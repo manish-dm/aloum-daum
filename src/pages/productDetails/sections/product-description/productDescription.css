@@ -40,9 +40,16 @@
     font: normal normal 500 2.8rem/3rem Urbanist-Medium;
     color: #1D1D1D;
 }
+.prouct-characteristics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.1rem;
+}
 .product-cagarcteristics-heading{
     font: normal normal normal 1.9rem/3rem Rubik-Regular;
-color: #707070;;
+color: #707070;
+
 }
 .prouct-characteristics{
     display:flex;
@@ -61,6 +68,8 @@ color: #707070;;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0.5rem;
+    place-content: center;
+    align-items: center;
 }
 .product-desc-image{
     width: 40rem;
@@ -70,7 +79,9 @@ color: #707070;;
 }
 .product-desc-image img{
     width: 100%;
-    object-fit: scale-down;
+    object-fit: cover;
+     height: 58.9rem;
+     
 }
 /* css for active slidde  */ 
 /* .product-description:hover,
@@ -80,7 +91,20 @@ color: #707070;;
     color: #1D1D1D;
     border-bottom: 3px solid #F19291;
 } */
-
+@media(max-width:1280px){
+    .description-card{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:750px){
+    .right-div-images{
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        place-content: center;
+        align-items: center;
+    }
+}
 @media(max-width:500px){
     .product-description{
         font: normal normal 500 2.8rem/3rem Urbanist-Medium;

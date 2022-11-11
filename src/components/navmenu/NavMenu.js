@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavMenu.css";
-import instaIcon from "../../assets/images/homepage/Instagram.png";
-import fbIcon from "../../assets/images/homepage/facebookIcon.png";
+import instaIcon from "../../assets/images/homepage/Instagram.svg";
+import fbIcon from "../../assets/images/homepage/Facebook.svg";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 

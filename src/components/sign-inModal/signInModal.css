@@ -176,7 +176,7 @@
     }
     .SignInModal-main input::placeholder {
         width: 75%;
-        font: normal normal normal 1.3rem Poppins-Regular;
+        font: normal normal normal 1.7rem Poppins-Regular;
     }
     
     .SignInModal-otp-btn {
@@ -188,9 +188,64 @@
 }
 
 }
-@media(max-width:400px){
+@media(max-width:430px){
+    .SignInModal-other-Options{
+        flex-direction: row;
+    }
+    .close-sigIn-modal {
+        position: absolute;
+        bottom: 92.2%;
+        left: 91%;
+        cursor: pointer;
+    }
+    .SignInModal-title {
+        font: normal normal 500 2.4rem Poppins-Medium;
+    }
+    
+    .SignInModal-heading {
+        font: normal normal 500 5.8rem Poppins-Medium;
+    }
+    .SignInModal-main input {
+        width: 44rem;
+        height: 6rem;
+        margin-top: 3rem;
+    }
+    .SignInModal-main-visibility-on{
+        font-size: 3rem;
+        bottom: 15%;
+    }
+    .SignInModal-otp-btn{
+        height: 6rem;
+        margin-top: 5rem;
+        font: normal normal 500 2.6rem Poppins-Medium;
+    }
     .SignInModal-main input::placeholder {
         width: 75%;
-        font: normal normal normal 1.4rem Poppins-Regular;
+        font: normal normal normal 2rem Poppins-Regular;
     }
+    .SignInModal-or {
+        font: normal normal Normal 1.6rem Poppins-Regular;
+        margin-inline: 1rem;
+    }
+    .google-logo-conatiner,
+.facebook-logo-conatiner {
+    column-gap: 3rem;
+    width: 22rem;
+    height: 5.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDBDD;
+    border-radius: 1.2rem;
+}
+.signin-vai-google,
+.signin-vai-facebook {
+    font: normal normal 500 2.2rem Poppins-Medium;
+    color: #202020;
+}
+.SignInModal-other-Options img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.SignInModal-divider {
+    margin-top: 2.5rem;
+}
 }

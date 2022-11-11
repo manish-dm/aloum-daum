@@ -8,18 +8,26 @@ const ShippingAddress = () => {
     const navigate = useNavigate();
     return (
        <>
-            <div className='show-checkout-status'>
-                        <div className='numbers'>1</div>
-                        <div className='status'>Guest Checkout</div>
-                        <div className='status-border'></div>
-                        <div className='numbers last-num'>2</div>
-                        <div className='status pending-status'>Shipping Address</div>
-                        <div className='status-border'></div>
-                        <div className='pending-number'>
-                        <div className='not-visited'>3</div>
+             <div className='ShippingAddress-status show-checkout-status'>
+                        <div className='payment-status-div-1'>
+                            <div className='payment-status-numbers'>1</div>
+                            <div className='status'>Guest Checkout</div>
                         </div>
-                        <div className='status pending-status'>Payment Address</div>
-                        
+                        <div className='status-border'></div>
+
+                        <div className='payment-status-div-2'>
+                            <div className='payment-status-numbers payment-status-numbers-active'>2</div>
+                            <div className='status'>Shipping Address</div>
+                        </div>
+                        <div className='status-border'></div>
+                        <div className='payment-status-div-3'>
+                            <div className='pending-number'>
+                                <div className='payment-status-numbers payment-status-numbers-pending'>3</div>
+                            </div>
+                            <div className='status pending-status'>Payment Method</div>
+
+                        </div>
+
                     </div>
         <div className='ShippingAddress-content'>
             <div className='delivery-details'>
@@ -72,7 +80,7 @@ const ShippingAddress = () => {
                         <div className='order-summary'>
                         {
                             orderSummaryData.map((item,key)=>{
-                                return  <div className='order-summary-card-products'>
+                                return  <div className='order-summary-card-products' key={key}>
                                 <div className='order-summary-product-image'>
                                     <img src = {item.image} alt = "Product selected to buy" />
                                 </div>
