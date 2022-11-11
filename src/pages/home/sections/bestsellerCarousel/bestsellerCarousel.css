@@ -16,9 +16,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 1.5rem;
 }
 .bestseller-carousel-title {
-  font-family: "Raleway-Bold";
+  font-family: "Urbanist-Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 6.1rem;

@@ -21,28 +21,30 @@
 .newproduct-text-content {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
   width: 53.7rem;
   position: absolute;
   left: 7.2%;
 }
 
 .newproduct-title {
-  font: normal normal normal 1.8rem/4.5rem Rubik-Regular;
+  font: normal normal normal 1.8rem Rubik-Regular;
   color: #131313;
 }
 
 .newproduct-heading {
-  font: normal normal bold 5.2rem/6.9rem Urbanist-Bold;
+  font: normal normal bold 5.2rem Urbanist-Bold;
   color: #131313;
+  margin-top: 1.5rem;
 }
 
 .newproduct-desc {
-  font: normal normal normal 1.9rem/3rem Rubik-Regular;
+  font: normal normal normal 1.9rem Rubik-Regular;
   color: #707070;
+  margin-top: 1.5rem;
 }
 
 .newproduct-button {
+  margin-top: 5rem;
   width: 21.9rem;
   height: 6.2rem;
   background: #a16a5a 0% 0% no-repeat padding-box;
