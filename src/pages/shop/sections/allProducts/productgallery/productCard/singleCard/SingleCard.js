@@ -6,10 +6,17 @@ import {
   AiFillStar,
   AiOutlineStar,
 } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const SingleCard = ({ data }) => {
+  const navigate = useNavigate();
+
+  const navigation = () => {
+    navigate('/product-detail',{state: {image: data.image}});
+  }
+
   return (
-    <div className="singlecard-wrapper">
+    <div className="singlecard-wrapper" onClick={() => navigation()} >
       <div className="singlecard-img-container" style={{ background: data.bg }}>
         <div className="singlecard-img-banner-msg">
           {data.featured ? (

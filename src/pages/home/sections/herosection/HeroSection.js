@@ -7,7 +7,7 @@ const HeroSection = ({ staticData }) => {
   const navigate = useNavigate();
 
   const onNavigation = (id) => {
-    if(id === "sdf") navigate("/product-detail");
+    if(id === "sdf") navigate("/product-detail", {state: {image: staticData.image}});
     else navigate("shop");
   }
 

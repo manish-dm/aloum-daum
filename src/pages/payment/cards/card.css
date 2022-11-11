@@ -26,6 +26,7 @@ input:focus {
     background: #F5F5F5 0% 0% no-repeat padding-box;
     border: none;
     border-radius: 0.2rem;
+    padding-left: 1rem;
 }
 
 .expDate-and-cvv {
@@ -47,6 +48,7 @@ input:focus {
     border: none;
     background: #F5F5F5 0% 0% no-repeat padding-box;
     border-radius: 0.2rem;
+    padding-left: 1rem;
 }
 
 /* .card-method-main input[type="date"]::before { 

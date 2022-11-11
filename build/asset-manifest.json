@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb2222c4.css",
-    "main.js": "/static/js/main.5653f46f.js",
+    "main.css": "/static/css/main.d5df095c.css",
+    "main.js": "/static/js/main.7aa59caa.js",
     "static/js/787.c4beb39a.chunk.js": "/static/js/787.c4beb39a.chunk.js",
     "static/media/registervector.jpg": "/static/media/registervector.6c71ca885b28165d63ae.jpg",
     "static/media/loginvector.jpg": "/static/media/loginvector.ae180890aa97315c8a69.jpg",
+    "static/media/cartBanner.png": "/static/media/cartBanner.e0369fcb50f719a97ee5.png",
     "static/media/trendingImage2.png": "/static/media/trendingImage2.7f00f28e12925d5a5d01.png",
     "static/media/product2.png": "/static/media/product2.51118ec8a8eda315491b.png",
     "static/media/categoryGridImage5.png": "/static/media/categoryGridImage5.db005dddeab5cc7db17f.png",
+    "static/media/product6.png": "/static/media/product6.eff9a7769d86e3b3acdb.png",
+    "static/media/product-desc-image.png": "/static/media/product-desc-image.13e52fa2baed880562f4.png",
     "static/media/categoryGridImage1.png": "/static/media/categoryGridImage1.a18d2021466b0bdc301b.png",
     "static/media/trendingImage4.png": "/static/media/trendingImage4.2e88f1977ab104d23643.png",
     "static/media/trendingImage3.png": "/static/media/trendingImage3.9ffb0a0855ad46b111e4.png",
@@ -30,10 +33,8 @@
     "static/media/Rubik-SemiBold.ttf": "/static/media/Rubik-SemiBold.4e99ecca3660ff081d90.ttf",
     "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.12b9f128a901a8977a57.ttf",
     "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.4f69a31f58eb5e296d8d.ttf",
-    "static/media/cartBanner.jpg": "/static/media/cartBanner.e157e2551224d1c6e0b9.jpg",
     "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
-    "static/media/product6.png": "/static/media/product6.c776d9f513263cf522a5.png",
     "static/media/categoryGridImage2.png": "/static/media/categoryGridImage2.c8c615dec3e66e1eea3a.png",
     "static/media/product1.png": "/static/media/product1.3199ce180b716cbab0a9.png",
     "static/media/Urbanist-Light.ttf": "/static/media/Urbanist-Light.55ed2929e37cd5fd9b62.ttf",
@@ -45,17 +46,20 @@
     "static/media/product4.png": "/static/media/product4.13063fba7ee80b73e804.png",
     "static/media/netBankingMethod.png": "/static/media/netBankingMethod.288395c011bc573b305d.png",
     "static/media/Group15.png": "/static/media/Group15.20c80fea00e20aa19d45.png",
+    "static/media/Instagram.svg": "/static/media/Instagram.c3d6f8f177b0aaa23f92678e1ad0471d.svg",
+    "static/media/Facebook.svg": "/static/media/Facebook.5a38c48d07f859ead049aa5902e0979b.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/youtube.svg": "/static/media/youtube.231a3824d5878475c3aaa9a3936c48b2.svg",
     "index.html": "/index.html",
-    "main.fb2222c4.css.map": "/static/css/main.fb2222c4.css.map",
-    "main.5653f46f.js.map": "/static/js/main.5653f46f.js.map",
+    "main.d5df095c.css.map": "/static/css/main.d5df095c.css.map",
+    "main.7aa59caa.js.map": "/static/js/main.7aa59caa.js.map",
     "787.c4beb39a.chunk.js.map": "/static/js/787.c4beb39a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb2222c4.css",
-    "static/js/main.5653f46f.js"
+    "static/css/main.d5df095c.css",
+    "static/js/main.7aa59caa.js"
   ]
 }

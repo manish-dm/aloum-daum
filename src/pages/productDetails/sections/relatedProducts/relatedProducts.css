@@ -16,5 +16,8 @@
 }
 .RelatedProducts-imagaes{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 2.2rem;
+    row-gap: 10.2rem;
 }

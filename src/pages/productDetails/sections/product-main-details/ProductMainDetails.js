@@ -5,8 +5,12 @@ import productImage from '../../../../assets/images/homepage/product6.png'
 import instagram from '../../../../assets/icons/Instagram.svg'
 import facebook from '../../../../assets/icons/Facebook.svg'
 import youtube from '../../../../assets/icons/youtube.svg'
+import { useLocation } from 'react-router-dom';
 
 const ProductMainDetails = () => {
+    const location = useLocation();
+    console.log('location.state.name', location.state.image);
+
     return (
         <div className='ProductMainDetails-conatiner'>
             <div className='ProductMainDetails-left-conatiner'>
@@ -19,13 +23,13 @@ const ProductMainDetails = () => {
                 </div> */}
                 <div className='product-images'>
                     <div className='main-img'>
-                    <img  src={productImage} alt="product image" />
+                    <img  src={location?.state?.image} alt="product image" />
                     </div>
                     <div className='product-alt-images'>
-                       <div className='individual-product-alt-img'><img src={productImage} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={productImage} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={productImage} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={productImage} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
                     </div>
                 </div>
             </div>
@@ -35,7 +39,7 @@ const ProductMainDetails = () => {
                     $12.00 - $20.00
                 </div>
                 <div className='ProductMainDetails-product-name'>
-                    Sheild Conatiner
+                    Shield Container
                 </div>
                 <div className='product-ratings-and-reviews'>
                     <div className='product-ratings'>
