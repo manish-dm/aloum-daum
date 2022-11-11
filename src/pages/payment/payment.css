@@ -27,8 +27,6 @@
     margin-block: 7.7rem;
 }
 
-
-
 .numbers {
     display: flex;
     justify-content: center;
@@ -170,13 +168,21 @@ input[type="radio"]:checked {
         margin-left: 3rem;
         column-gap: 0.1rem;
     }
-    .numbers{
-        font-size: 2.5rem;
-        width: 3.5rem;
-        height: 3.5rem;
+    .show-checkout-status{
+        margin-left: 2rem;
+    }
+    .status-border{
+      margin-right: 1.5rem;
+    }
+    .show-checkout-status{
+        margin-inline: auto;
+    }
+    .numbers, .last-num{
+        display: none;
     }
     .status{
-        font-size: 2.5rem;
+         
+        font-size: 2rem;
         letter-spacing: 0.5px;
     }
     .payment-heading{
@@ -184,5 +190,8 @@ input[type="radio"]:checked {
     }
     .payment-method-name{
         font-size: 2.9rem;
+    }
+    .payment-option-radio-btn{
+        display: none;
     }
 }

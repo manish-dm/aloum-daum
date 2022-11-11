@@ -24,7 +24,7 @@ const Payment = () => {
                     <div className='pending-number'>
                     <div className='numbers last-num'>3</div>
                     </div>
-                    <div className='status pending-status'>Payment Address</div>
+                    <div className='status pending-status'>Payment Method</div>
                     
                 </div>
                 <div className='payment-content'>
@@ -36,7 +36,7 @@ const Payment = () => {
                             {
                                 paymentMethodData.map((item,key)=>{
                                     return <div className='individual-methods' key = {key}>
-                                        <input type="radio" name = "check" defaultChecked= {item.value === 'card'} id= {key} onClick={()=> showComponenet(item.value)}/>
+                                        <input className="payment-option-radio-btn" type="radio" name = "check" defaultChecked= {item.value === 'card'} id= {key} onClick={()=> showComponenet(item.value)}/>
                                         <div className='method-icon'>
                                         <img src ={item.icon} alt = "payment method icon"  />
                                          </div>

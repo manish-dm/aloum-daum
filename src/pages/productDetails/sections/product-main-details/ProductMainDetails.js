@@ -65,9 +65,9 @@ const ProductMainDetails = () => {
                     <div className='quantity-text'>QUYANTITY</div>
                     <div className='quantity-actions'>
                         <div className='inc-dec-btn'>
-                        <div className='increase-and-decrease' name='increase'>+</div>
+                        <div className='increase-and-decrease' name='increase'>-</div>
                         <div className='show-quantity'>1</div>
-                        <div className='increase-and-decrease' name='decrease'>-</div>
+                        <div className='increase-and-decrease' name='decrease'>+</div>
                         </div>
                         <button className='addtoCart-btn' name="addtoCart">Add to Cart</button>
                     </div>

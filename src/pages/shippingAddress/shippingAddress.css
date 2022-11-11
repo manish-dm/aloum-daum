@@ -400,3 +400,15 @@
         font: normal normal 500 2.1rem/2.5rem Poppins-Medium;
     }
 }
+
+@media(max-width:500px){
+    .numbers, .last-num, .not-visited{
+        display: none;
+    }
+    .active{
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        
+        border-bottom: 2px solid #707070;;
+    }
+}

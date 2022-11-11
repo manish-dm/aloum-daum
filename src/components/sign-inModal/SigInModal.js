@@ -11,14 +11,14 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: {
-    xs: 250, // theme.breakpoints.up('xs')
+    xs: 300, // theme.breakpoints.up('xs')
     sm: 300, // theme.breakpoints.up('sm')
     md: 400, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
     xl: 531, // theme.breakpoints.up('xl')
   },
   height: {
-    xs: 350, // theme.breakpoints.up('xs')
+    xs: 380, // theme.breakpoints.up('xs')
     sm: 400, // theme.breakpoints.up('sm')
     md: 450, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
@@ -51,7 +51,7 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
               Sign in
             </div>
             <div className='SignInModal-main-secured-input'>
-            <input type='all' placeholder="Enter email Id or mobile no.mber" /><br />
+            <input type='all' placeholder="Enter email Id or mobile no." /><br />
             <AiFillEye className="SignInModal-main-visibility-on"/>
             </div>
             <button className='SignInModal-otp-btn'>Send OTP</button>

@@ -13,7 +13,7 @@ const ShippingAddress = () => {
                         <div className='status'>Guest Checkout</div>
                         <div className='status-border'></div>
                         <div className='numbers last-num'>2</div>
-                        <div className='status pending-status'>Shipping Address</div>
+                        <div className='status active pending-status'>Shipping Address</div>
                         <div className='status-border'></div>
                         <div className='pending-number'>
                         <div className='not-visited'>3</div>
