@@ -402,6 +402,10 @@
 }
 
 @media(max-width:500px){
+    .ShippingAddress-status{
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+    }
     .numbers, .last-num, .not-visited{
         display: none;
     }

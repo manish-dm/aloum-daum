@@ -18,15 +18,11 @@
   align-items: flex-start;
 }
 .bestseller-carousel-title {
-  font-family: "Raleway-Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 6.1rem;
-  line-height: 7.2rem;
-  letter-spacing: -0.1rem;
-  color: #1d293f;
+  font: normal normal 600 4.1rem/3.4rem Urbanist-Bold;
+color: #111111;
 }
 .bestseller-carousel-desc{
+  margin-top: 2rem;
   width: 54.3rem;
   font: normal normal normal 1.9rem/3rem Rubik-Regular;
    color: #707070;

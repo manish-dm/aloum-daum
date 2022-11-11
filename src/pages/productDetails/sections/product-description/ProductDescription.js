@@ -1,7 +1,7 @@
 import React from 'react'
 import './productDescription.css'
 import image from '../../../../assets/images/homepage/trendingImage4.png'
-import image2 from '../../../../assets/images/homepage/product1.png'
+import image2 from '../../../../assets/images/homepage/product-desc-image.png'
 import {MdKeyboardArrowRight} from 'react-icons/md'
 
 const ProductDescription = () => {
@@ -26,31 +26,31 @@ const ProductDescription = () => {
                   </div>
                   <div className='product-charactersitic-listings'>
                     <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={20}/>
+                        <MdKeyboardArrowRight size ={25}/>
                         <div className='product-cagarcteristics-heading'>
                         Lorem ipsum dolor sit amet,
                         </div>
                     </div>
                     <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={20}/>
+                        <MdKeyboardArrowRight size ={25}/>
                         <div className='product-cagarcteristics-heading'>
                         Lorem ipsum dolor sit amet,
                         </div>
                     </div>
                     <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={20}/>
+                        <MdKeyboardArrowRight size ={25}/>
                         <div className='product-cagarcteristics-heading'>
                         Lorem ipsum dolor sit amet,
                         </div>
                     </div>
                     <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={20}/>
+                        <MdKeyboardArrowRight size ={25}/>
                         <div className='product-cagarcteristics-heading'>
                         Lorem ipsum dolor sit amet,
                         </div>
                     </div>
                     <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={20}/>
+                        <MdKeyboardArrowRight size ={25}/>
                         <div className='product-cagarcteristics-heading'>
                         Lorem ipsum dolor sit amet,
                         </div>

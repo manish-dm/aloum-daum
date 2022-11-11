@@ -8,6 +8,7 @@
     border-bottom: 1px solid lightgray;
     margin-left: 13.7rem;
     margin-right: 13.9rem;
+    margin-top: 5rem;
 }
 
 .ProductMainDetails-left-conatiner,
@@ -16,9 +17,9 @@
     flex-direction: column;
 }
 
-.ProductMainDetails-right-conatiner {
-    margin-top: 11.5rem;
-}
+/* .ProductMainDetails-right-conatiner {
+   
+} */
 
 .productMainDetailsPage-status {
   display: flex;
@@ -214,7 +215,7 @@ option {
     margin-top: 5rem;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 1rem;
 }
 
 .addToWishlist-text {

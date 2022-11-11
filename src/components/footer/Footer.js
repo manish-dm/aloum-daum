@@ -1,9 +1,9 @@
 import React from 'react'
 import './footer.css'
 import aloumFooterLogo from "../../assets/images/homepage/aloumfooterLogo.png"
-import facebook from '../../assets/icons/facebook.png'
-import youtube from '../../assets/icons/youtube.png'
-import instagram from '../../assets/icons/instagram.png'
+import facebook from '../../assets/icons/Facebook.svg'
+import youtube from '../../assets/icons/youtube.svg'
+import instagram from '../../assets/icons/Instagram.svg'
 
 const Footer = () => {
     const year = new Date().getFullYear();

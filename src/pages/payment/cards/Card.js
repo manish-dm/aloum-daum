@@ -11,8 +11,10 @@ const Card = () => {
         </div>
         <div className='expDate-and-cvv'>
           <div className='expDate'>
-            <label name="name">Expiry Date</label>
-            <input type="date" />
+            <label name="name">Valid Date</label>
+            <input type="number"
+             placeholder=" &nbsp;MM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;YYYY" 
+             />
           </div>
           <div className='cvv'>
             <label name="name">CVV</label>
