@@ -12,12 +12,16 @@ const SingleCard = ({ data }) => {
   const navigate = useNavigate();
 
   const navigation = () => {
-    navigate('/product-detail',{state: {image: data.image}});
-  }
+    navigate("/product-detail", { state: { image: data.image } });
+  };
 
   return (
-    <div className="singlecard-wrapper" onClick={() => navigation()} >
-      <div className="singlecard-img-container" style={{ background: data.bg }}>
+    <div className="singlecard-wrapper">
+      <div
+        className="singlecard-img-container"
+        style={{ background: data.bg }}
+        onClick={() => navigation()}
+      >
         <div className="singlecard-img-banner-msg">
           {data.featured ? (
             <span className="img-banner-msg-left">FEATURED</span>
