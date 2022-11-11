@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Gicon from '../../assets/icons/Gicon.png'
 import Ficon from '../../assets/icons/Ficon.png'
-import {AiFillCloseCircle, AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
+import { AiFillCloseCircle, AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import './signInModal.css'
 const style = {
   position: 'absolute',
@@ -14,8 +14,8 @@ const style = {
     xs: 300, // theme.breakpoints.up('xs')
     sm: 300, // theme.breakpoints.up('sm')
     md: 400, // theme.breakpoints.up('md')
-    lg: 500, // theme.breakpoints.up('lg')
-    xl: 531, // theme.breakpoints.up('xl')
+    lg: 450, // theme.breakpoints.up('lg')
+    xl: 450, // theme.breakpoints.up('xl')
   },
   height: {
     xs: 380, // theme.breakpoints.up('xs')
@@ -29,8 +29,8 @@ const style = {
   p: 4,
 };
 
-export default function SignInModal({openSignIn, setOpenSignIn}) {
-
+export default function SignInModal({ openSignIn, setOpenSignIn }) {
+  const [emailShown, setEmailShown] = useState(false);
   return (
     <div>
       <Modal
@@ -41,7 +41,7 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
       >
         <Box sx={style} className="box">
           <div className='close-sigIn-modal'>
-            <AiFillCloseCircle onClick = {() => setOpenSignIn(false)} size={37}/>
+            <AiFillCloseCircle onClick={() => setOpenSignIn(false)} size={37} />
           </div>
           <div className='SignInModal-main'>
             <div className='SignInModal-title'>
@@ -51,8 +51,23 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
               Sign in
             </div>
             <div className='SignInModal-main-secured-input'>
-            <input type='all' placeholder="Enter email Id or mobile no." /><br />
-            <AiFillEye className="SignInModal-main-visibility-on"/>
+              <input
+
+                type={emailShown ? "text" : "password"}
+
+                placeholder="Enter email Id or mobile no."
+
+              />
+              <br />
+              <AiFillEye className="SignInModal-main-visibility-on" />
+              {emailShown ? (<AiFillEyeInvisible
+                className="SignInModal-main-visibility-on"
+                onClick={() => setEmailShown(!emailShown)}
+              />
+              ) : (<AiFillEye
+                className="SignInModal-main-visibility-on"
+                onClick={() => setEmailShown(!emailShown)}
+              />)}
             </div>
             <button className='SignInModal-otp-btn'>Send OTP</button>
             <div className='SignInModal-divider'>
@@ -66,7 +81,7 @@ export default function SignInModal({openSignIn, setOpenSignIn}) {
                 <div className='signin-vai-google'>Google</div>
               </div>
               <div className='facebook-logo-conatiner'>
-              <img src={Ficon} alt="Facebook logo" />
+                <img src={Ficon} alt="Facebook logo" />
                 <div className='signin-vai-facebook'>Facebook</div>
               </div>
 

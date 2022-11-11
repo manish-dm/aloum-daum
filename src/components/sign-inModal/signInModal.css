@@ -131,20 +131,24 @@
         left: 94%;
     }
 }
-@media(max-width:1100px){
+/* @media(max-width:1920px){
     .close-sigIn-modal {
         position: absolute;
         bottom: 93.5%;
         left: 92%;
     }
-}
+} */
 
-@media(max-width:900px) {
+@media(max-width:1920px) {
     .SignInModal-main input,
     .SignInModal-otp-btn {
         width: 95%;
     }
-   
+    .close-sigIn-modal {
+        position: absolute;
+        bottom: 94%;
+        left: 93.5%;
+    }
     
 }
 @media(max-width:600px){
@@ -213,6 +217,7 @@
     .SignInModal-main-visibility-on{
         font-size: 3rem;
         bottom: 15%;
+        cursor: pointer;
     }
     .SignInModal-otp-btn{
         height: 6rem;

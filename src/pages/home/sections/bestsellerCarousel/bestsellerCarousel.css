@@ -16,16 +16,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 0.4rem;
 }
 .bestseller-carousel-title {
-  font: normal normal 600 4.1rem Urbanist-SemiBold;
-  color: #1d293f;
+  font: normal normal 600 4.1rem/3.4rem Urbanist-Semiold;
+color: #111111;
 }
 .bestseller-carousel-desc{
   margin-top: 2rem;
   width: 54.3rem;
-  font: normal normal normal 1.9rem Rubik-Regular;
+  font: normal normal normal 1.9rem/3rem Rubik-Regular;
    color: #707070;
 }
 .bestseller-carousel-actions {

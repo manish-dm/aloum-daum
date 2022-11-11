@@ -16,7 +16,7 @@ const ShippingAddress = () => {
                         <div className='status-border'></div>
 
                         <div className='payment-status-div-2'>
-                            <div className='payment-status-numbers payment-status-numbers-active'>2</div>
+                            <div className='payment-status-numbers payment-status-numbers-active  .payment-status-numbers-pending'>2</div>
                             <div className='status'>Shipping Address</div>
                         </div>
                         <div className='status-border'></div>
