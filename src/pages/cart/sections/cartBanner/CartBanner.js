@@ -1,6 +1,6 @@
 import React from "react";
 import "./CartBanner.css";
-import CartBannerImg from "../../../../assets/images/cartpage/cartBanner.jpg";
+import CartBannerImg from "../../../../assets/images/cartpage/cartBanner.png";
 
 const CartBanner = () => {
   return (

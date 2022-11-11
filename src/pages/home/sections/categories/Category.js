@@ -28,7 +28,7 @@ const Category = () => {
         </div>
         <div className='item-3'>
           <img src={categoryGridImage1} />
-          <div className='item-3-text'>HAIR</div>
+          <div className='item-3-text'>BODY</div>
         </div>
         <div className='item-4'>
           <img src={categoryGridImage4} />

@@ -44,10 +44,11 @@ img {
 .category-heading {
   width: 60%;
   font: normal normal bold 5.2rem Urbanist-Bold;
-  margin-block: 1.5rem;
+  margin-top: 1.8rem;
 }
 
 .category-desc {
+  margin-top: 3rem;
   font: normal normal normal 2.6rem Rubik-Regular;
 }
 
@@ -61,11 +62,13 @@ img {
   position: absolute;
   background-color: #ffffff;
   width: 13.1rem;
-  /* height: 4.9rem; */
-  text-align: center;
+  height: 4.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font: normal normal 300 2.6rem Rubik-Light;
   color: #131313;
-  top: 95%;
+  bottom: 0;
 }
 
 .item-3 {
@@ -78,11 +81,13 @@ img {
   position: absolute;
   background-color: #ffffff;
   width: 13.1rem;
-  /* height: 4.9rem; */
-  text-align: center;
+  height: 4.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font: normal normal 300 2.6rem Rubik-Light;
   color: #131313;
-  top: 96.5%;
+  bottom: 0;
 }
 
 .item-4 {
@@ -100,11 +105,14 @@ img {
   position: absolute;
   background-color: #ffffff;
   width: 13.1rem;
-  /* height: 4.9rem; */
-  text-align: center;
+  height: 4.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font: normal normal 300 2.6rem Rubik-Light;
   color: #131313;
-  top: 88%;
+  bottom: 0;
+  right: 0;
 }
 
 .item-5 {
