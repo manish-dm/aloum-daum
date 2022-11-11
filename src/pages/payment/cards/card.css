@@ -43,7 +43,7 @@ input:focus {
 
 .expDate input,
 .cvv input {
-    width: 25.3rem;
+    width: 24.1rem;
     height: 7.2rem;
     border: none;
     background: #F5F5F5 0% 0% no-repeat padding-box;
@@ -63,7 +63,7 @@ input:focus {
     color: #757575;
 }
 .card-method-main button {
-    width: 50.4rem;
+    width: 50.3rem;
     height: 6.5rem;
     background: #000000 0% 0% no-repeat padding-box;
     border: none;
