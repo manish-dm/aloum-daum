@@ -16,7 +16,7 @@ const SmallNewsletter = () => {
           </div>
         </div>
         <div className="newsletter-input-and-button-div">
-          <input type="text" placeholder="Enter your email address" />
+          <input type="text" placeholder="Enter your email Id" />
           <button>Sign Up</button>
         </div>
       </div>
