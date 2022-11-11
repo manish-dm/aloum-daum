@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./CartItems.css";
 import cartItemImage1 from "../../../../assets/images/homepage/product1.png";
 import cartItemImage2 from "../../../../assets/images/homepage/product6.png";
@@ -6,7 +6,7 @@ import { HiPlusSm, HiMinusSm } from "react-icons/hi";
 import CheckoutModal from "../../../../components/checkout/CheckoutModal";
 
 const CartItems = () => {
-const [openDialog, setOpenDialog] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
 
   const staticData = [
     {
@@ -55,13 +55,13 @@ const [openDialog, setOpenDialog] = useState(false);
                 <div>${data.price}</div>
                 <div className="cartItems-quantity-div">
                   <span className="cartItems-quantity-div-buttons">
-                    <HiPlusSm />
+                    <HiMinusSm />
                   </span>
                   <span className="cartItems-quantity-div-number">
                     {data.qty}
                   </span>
                   <span className="cartItems-quantity-div-buttons">
-                    <HiMinusSm />
+                    <HiPlusSm />
                   </span>
                 </div>
                 <div>${data.price * data.qty}</div>
@@ -113,12 +113,20 @@ const [openDialog, setOpenDialog] = useState(false);
               </div>
 
               <div className="proceed-btn-container">
-                <button className="checkout-box-proceed-btn" onClick={() => setOpenDialog(true)}>
+                <button
+                  className="checkout-box-proceed-btn"
+                  onClick={() => setOpenDialog(true)}
+                >
                   PROCEED TO CHECKOUT
                 </button>
-                <CheckoutModal openDialog={openDialog} setOpenDialog={setOpenDialog}/>
+                <CheckoutModal
+                  openDialog={openDialog}
+                  setOpenDialog={setOpenDialog}
+                />
               </div>
-              <span className="checkout-box-msg">Checkout with Mutilple Adresses</span>
+              <span className="checkout-box-msg">
+                Checkout with Mutilple Adresses
+              </span>
             </div>
           </div>
         </div>

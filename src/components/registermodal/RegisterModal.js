@@ -13,18 +13,18 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: {
-    xs: 300, // theme.breakpoints.up('xs')
+    xs: "100vw", // theme.breakpoints.up('xs')
     sm: 400, // theme.breakpoints.up('sm')
     md: 440, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
-    xl: 531, // theme.breakpoints.up('xl')
+    xl: 500, // theme.breakpoints.up('xl')
   },
   height: {
-    xs: 400, // theme.breakpoints.up('xs')
+    xs: "100vh", // theme.breakpoints.up('xs')
     sm: 460, // theme.breakpoints.up('sm')
     md: 550, // theme.breakpoints.up('md')
     lg: 620, // theme.breakpoints.up('lg')
-    xl: 650, // theme.breakpoints.up('xl')
+    xl: 690, // theme.breakpoints.up('xl')
   },
   bgcolor: "#FDF9F8",
   boxShadow: 24,
