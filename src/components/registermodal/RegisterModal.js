@@ -121,11 +121,11 @@ export default function RegisterModal({ openRegister, setOpenRegister }) {
                 )}
               </div>
               <div className="register-privacyterms-div">
-                <input type="checkbox" />
-                <span>
+                <input type="checkbox" id="privacyCheckbox"/>
+                <label htmlFor="privacyCheckbox">
                   By clicking Create account, I agree that I have read and
                   accepted the Terms of Use and Privacy Policy.
-                </span>
+                </label>
               </div>
             </div>
 

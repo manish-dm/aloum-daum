@@ -113,7 +113,7 @@
   width: 3rem;
   height: 3rem;
 }
-.register-privacyterms-div > span {
+.register-privacyterms-div > label {
   color: #84818a;
   font: normal normal normal 1.2rem Poppins-Regular;
 }
@@ -205,60 +205,60 @@
 /*************mobile view modal css ************************/
 @media (max-width: 599px) {
   .close-register-modal {
-    top: 1.7%;
+    top: 3.2%;
     right: 3%;
   }
 
   .register-modal-main {
-    padding: 15rem 5rem;
+    padding: 9rem 5rem;
     display: flex;
     flex-direction: column;
   }
   .register-modal-title {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
   .register-modal-heading {
-    font-size: 7rem;
+    font-size: 4.9rem;
+    margin-bottom: 1rem;
   }
   .register-modal-main input {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
   }
   .register-modal-main input::placeholder {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     width: 100%;
     height: 100%;
   }
   .pswrd-eye-button-css {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .register-gender-select-div {
     width: 80vw;
   }
   .register-gender-select-div > span {
     font-size: 3rem;
-    line-height: 7rem;
+    line-height: 5rem;
   }
   .register-gender-select-div > span:nth-of-type(1) {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   #registerOptionFemale,
   #registerOptionMale {
     width: 3rem;
     height: 3rem;
-    border: 1px solid #212020;
-    border-radius: 50%;
   }
 
   .register-privacyterms-div {
     width: 80vw;
   }
-  .register-privacyterms-div > span {
-    margin: 2rem 0;
+  .register-privacyterms-div > label {
+    margin: 1rem 0;
     font-size: 2.5rem;
     line-height: 4rem;
   }
 
   .registermodal-otp-btn {
+    margin-top: 1rem;
     font-size: 2.8rem;
   }
 
@@ -267,15 +267,15 @@
   .register-phoneNum-input-div,
   .registermodal-otp-btn {
     width: 80vw;
-    height: 7rem;
+    height: 6.2rem;
   }
   .register-name-input-div > input {
     width: 39.1vw;
-    height: 7rem;
+    height: 6.2rem;
   }
   .register-left-div,
   .register-right-div {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     width: 36.6vw;
   }
   .register-google-logo-conatiner,
@@ -285,15 +285,15 @@
   }
 
   .register-or {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .register-signin-vai-google,
   .register-signin-vai-facebook {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .register-other-Options img {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 }
