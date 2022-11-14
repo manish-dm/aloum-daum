@@ -68,7 +68,7 @@ const ShippingAddress = () => {
                     </div>
                     <div className='address-div'>
                         <label>Address</label><br />
-                        <input  placeholder="Address" />
+                        <textarea  placeholder="Address"/>
                     </div>
                 </div>
             </div>

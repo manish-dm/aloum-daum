@@ -6,25 +6,31 @@ import DisplayCard from './DisplayCard'
 const ProductDescription = () => {
     const [switchTab, setSwitchTab] = React.useState("description");
 
-    function onClickHandler (prop){
+    function onClickHandler(prop) {
         setSwitchTab(prop)
     }
     return (
         <div className='ProductDescription-main'>
             <div className="product-desc-nav">
-                <div className = {switchTab==='description'? "product-description productDesc-active":'product-description' } onClick={()=> onClickHandler("description")}>
+                <div
+                    className={switchTab === 'description' ? "product-description productDesc-active" : 'product-description'}
+                    onClick={() => onClickHandler("description")}>
                     Product Description
 
                 </div>
-                <div className={switchTab==='aboutBrands'? "About-Brand productDesc-active":'About-Brand' } onClick={()=> onClickHandler("aboutBrands")}>
+                <div
+                    className={switchTab === 'aboutBrands' ? "About-Brand productDesc-active" : 'About-Brand'}
+                    onClick={() => onClickHandler("aboutBrands")}>
                     About Brand
                 </div>
-                <div className={switchTab==='reviews'? "Reviews productDesc-active":'Reviews' } onClick={()=> onClickHandler("reviews")}>
+                <div
+                    className={switchTab === 'reviews' ? "Reviews productDesc-active" : 'Reviews'}
+                    onClick={() => onClickHandler("reviews")}>
                     Reviews
                 </div>
             </div>
             <div className='productDescriptionCards'>
-                <DisplayCard prop= {switchTab} />
+                <DisplayCard prop={switchTab} />
             </div>
         </div>
     )

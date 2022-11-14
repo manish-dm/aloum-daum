@@ -5,8 +5,7 @@ import productImage from '../../../../assets/images/homepage/product6.png'
 import instagram from '../../../../assets/icons/Instagram.svg'
 import facebook from '../../../../assets/icons/Facebook.svg'
 import youtube from '../../../../assets/icons/youtube.svg'
-import { useLocation } from 'react-router-dom';
-import { style } from '@mui/system';
+import { useLocation } from 'react-router-dom'; 
 
 const ProductMainDetails = () => {
     const location = useLocation();
@@ -16,7 +15,11 @@ const ProductMainDetails = () => {
     const [addToWishList, setTAddToWishList] = useState(false);
 
     const onClickHandler = (prop) =>{
-        prop === '-'? setQuantity(quantity -1) : setQuantity(quantity + 1)
+        prop === '-'?  
+            (quantity > 1) ? setQuantity(quantity -1)
+        :setQuantity(1)
+      
+        : setQuantity(quantity + 1)
     }
   
     function onCLickChangeImage(prop){

@@ -9,6 +9,11 @@ const Payment = () => {
     function showComponenet(prop) {
         setShowItemName(prop)
     }
+    const [activeMethod, setActiveMethod] = useState("card")
+
+    function onclickHandler(prop){
+        setActiveMethod(prop)
+    }
     return (
         <>
 
@@ -50,7 +55,13 @@ const Payment = () => {
                                             <div className='method-icon'>
                                                 <img src={item.icon} alt="payment method icon" />
                                             </div>
-                                            <label htmlFor={key} name="check" className="payment-method-name">{item.method}</label>
+                                            <label 
+                                            htmlFor={key} 
+                                            name="check" 
+                                            className={activeMethod===item.value? "payment-method-active-name": "payment-method-name"}
+                                            onClick={()=> onclickHandler(item.value)}>
+                                                {item.method}
+                                                </label>
                                         </div>
                                     })
                                 }

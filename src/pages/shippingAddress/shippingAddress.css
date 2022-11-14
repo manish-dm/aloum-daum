@@ -105,19 +105,20 @@
 
 }
 
-.address-div input {
-    width: 81.1rem;
+.address-div textarea {
+    width:100%;
+    resize: none;
     height: 16.6rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
+    outline:none;
     border: none;
     border: 1px solid #EAEAEA;
     border-radius: 0.8rem;
-    padding-left: 1rem;
+    padding: 1.5rem;
     margin-top: 3.1rem;
 }
 
-.address-div input::placeholder {
-    padding: 2rem;
+.address-div textarea::placeholder {
     width: 100%;
     font: normal normal normal 1.6rem/1.9rem Rubik-Regular;
     color: #ADA7A7;

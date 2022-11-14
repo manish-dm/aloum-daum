@@ -94,10 +94,10 @@
 
 .payment-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     place-content: center;
     place-items: center;
-    column-gap: 2rem;
+    column-gap: 10rem;
 }
 
 .payment-options {
@@ -152,7 +152,11 @@ input[type="radio"]:checked {
 
 .payment-method-name {
     font: normal normal 500 2rem/2.6rem Rubik-Medium;
-    color: #141414;
+    color: #b9b9b9;
+}
+.payment-method-active-name{
+    font: normal normal 500 2rem/2.6rem Rubik-Medium;
+    color: #000000;
 }
 @media(max-width:1300px){
     .payment-main{
