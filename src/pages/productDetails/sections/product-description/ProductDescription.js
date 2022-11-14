@@ -1,81 +1,30 @@
 import React from 'react'
 import './productDescription.css'
-import image from '../../../../assets/images/homepage/trendingImage4.png'
-import image2 from '../../../../assets/images/homepage/product-desc-image.png'
-import {MdKeyboardArrowRight} from 'react-icons/md'
+import DisplayCard from './DisplayCard'
+
 
 const ProductDescription = () => {
+    const [switchTab, setSwitchTab] = React.useState("description");
+
+    function onClickHandler (prop){
+        setSwitchTab(prop)
+    }
     return (
         <div className='ProductDescription-main'>
             <div className="product-desc-nav">
-                <div className='product-description'>
+                <div className = {switchTab==='description'? "product-description productDesc-active":'product-description' } onClick={()=> onClickHandler("description")}>
                     Product Description
 
                 </div>
-                <div className='About-Brand'>
+                <div className={switchTab==='aboutBrands'? "About-Brand productDesc-active":'About-Brand' } onClick={()=> onClickHandler("aboutBrands")}>
                     About Brand
                 </div>
-                <div className='Reviews'>
+                <div className={switchTab==='reviews'? "Reviews productDesc-active":'Reviews' } onClick={()=> onClickHandler("reviews")}>
                     Reviews
                 </div>
             </div>
-            <div className='description-card'>
-                <div className='left-div-texts'>
-                  <div className="left-div-texts-heading">
-                    Shield Container
-                  </div>
-                  <div className='product-charactersitic-listings'>
-                    <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={25}/>
-                        <div className='product-cagarcteristics-heading'>
-                        Lorem ipsum dolor sit amet,
-                        </div>
-                    </div>
-                    <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={25}/>
-                        <div className='product-cagarcteristics-heading'>
-                        Lorem ipsum dolor sit amet,
-                        </div>
-                    </div>
-                    <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={25}/>
-                        <div className='product-cagarcteristics-heading'>
-                        Lorem ipsum dolor sit amet,
-                        </div>
-                    </div>
-                    <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={25}/>
-                        <div className='product-cagarcteristics-heading'>
-                        Lorem ipsum dolor sit amet,
-                        </div>
-                    </div>
-                    <div className='prouct-characteristics'>
-                        <MdKeyboardArrowRight size ={25}/>
-                        <div className='product-cagarcteristics-heading'>
-                        Lorem ipsum dolor sit amet,
-                        </div>
-                    </div>
-                  </div>
-                  <div className='left-div-extraInfo'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor Lorem ipsum Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut.<br/><br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor Lorem ipsum Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut.
-                  </div>
-                </div>
-                <div className='right-div-images'>
-                    <div className='product-desc-image'>
-                        <img src={image2} alt="product description images" />
-                    </div>
-                    <div className='product-desc-image'>
-                        <img src={image} alt="product description images" />
-                    </div>
-                </div>
-
+            <div className='productDescriptionCards'>
+                <DisplayCard prop= {switchTab} />
             </div>
         </div>
     )

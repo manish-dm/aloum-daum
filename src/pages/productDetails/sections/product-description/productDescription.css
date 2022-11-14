@@ -13,19 +13,17 @@
     padding-bottom:5rem ;
 }
 
-.product-description{
-    font: normal normal 500 2.8rem/3rem Urbanist-Medium;
-    color: #1D1D1D;
-    border-bottom: 3px solid #F19291;
-    padding-bottom: 1.5rem ;
-}
-
+.product-description,
 .About-Brand,
 .Reviews {
     font: normal normal 500 2.8rem/3rem Urbanist-Medium;
     color: #B9B9B9;
     border-bottom: 3px solid #f1939100;
     padding-bottom: 1.5rem ;
+}
+.productDesc-active{
+    color: black;
+    border-bottom: 3px solid #F19291;
 }
 .description-card{
     display: grid;
