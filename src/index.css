@@ -27,6 +27,9 @@ code {
 input{
  outline:none;
 }
+button{
+  cursor:pointer;
+}
 /********************responsive font-sizes style**************/
 @media (max-width: 1700px) {
   html {
