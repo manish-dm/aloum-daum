@@ -82,7 +82,7 @@ color: #858585;
     background: #F5F5F7 0% 0% no-repeat padding-box;
     width: 9rem;
     height: 10.9rem;
-
+    cursor: pointer;
 }
 
 /***********************************/
@@ -192,12 +192,22 @@ option {
 
 .increase-and-decrease,
 .show-quantity {
-    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
     padding: 2.5rem;
     font: normal normal 500 2.6rem/3rem Rubik-Regular;
     color: #000000;
 }
-
+.increase-and-decrease{
+    cursor: pointer;
+    transition: 10ms ease-out;
+}
+.increase-and-decrease:hover{
+    background-color: #d8d8d8;
+    transition: 10ms ease-in;
+}
 .addtoCart-btn {
     width: 45.7rem;
     height: 8.2rem;
@@ -231,8 +241,12 @@ option {
 
 .tag-list {
     display: flex;
+    transition: 100ms ease-out;
 }
-
+.tag-list :hover{
+    background-color: #d8d8d8;
+    transition: 100ms ease-in;
+}
 .tag-text {
     font: normal normal 500 2rem/3rem Rubik-Medium;
     color: #1D1D1D;
@@ -265,7 +279,9 @@ option {
     font: normal normal normal 2rem/3rem Rubik-Regular;
     color: #7A7A7A;
 }
-
+.icons{
+    cursor: pointer;
+}
 /****************Media Queries**************/
 @media(max-width:1600px) {
     .product-selection-dropdown select {

@@ -1,6 +1,9 @@
 
 
-
+.delivery-details button,
+.order-details button{
+    cursor: pointer;
+}
 
 .not-visited{
     display: flex;

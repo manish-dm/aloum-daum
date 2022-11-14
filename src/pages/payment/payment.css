@@ -4,6 +4,9 @@
     margin-bottom: 28rem;
     margin-left: 2rem;
 }
+.payment-main button{
+    cursor: pointer;
+}
 .payment-container {
     display: flex;
     flex-direction: column;
