@@ -1,17 +1,36 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import './productMainDetails.css'
 import productImage from '../../../../assets/images/homepage/product6.png'
 import instagram from '../../../../assets/icons/Instagram.svg'
 import facebook from '../../../../assets/icons/Facebook.svg'
 import youtube from '../../../../assets/icons/youtube.svg'
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'; 
 
 const ProductMainDetails = () => {
     const location = useLocation();
-    console.log('location.state.name', location.state.image);
+     
+    const [quantity, setQuantity] = useState(1);
+    const [activeProductImage, setActiveProductImage] = useState(location?.state?.image);
+    const [addToWishList, setTAddToWishList] = useState(false);
 
+    const onClickHandler = (prop) =>{
+        prop === '-'?  
+            (quantity > 1) ? setQuantity(quantity -1)
+        :setQuantity(1)
+      
+        : setQuantity(quantity + 1)
+    }
+  
+    function onCLickChangeImage(prop){
+        setActiveProductImage(prop)
+    }
+    function wishListToggleHandler(){
+       if(addToWishList === false )setTAddToWishList(true)
+       else setTAddToWishList(false)
+    }
     return (
+        
         <div className='ProductMainDetails-conatiner'>
             <div className='ProductMainDetails-left-conatiner'>
                 {/* <div className='productMainDetailsPage-status'>
@@ -23,13 +42,18 @@ const ProductMainDetails = () => {
                 </div> */}
                 <div className='product-images'>
                     <div className='main-img'>
-                    <img  src={location?.state?.image} alt="product image" />
+                    <img  src={activeProductImage} alt="product image" />
                     </div>
                     <div className='product-alt-images'>
-                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
-                       <div className='individual-product-alt-img'><img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img' onClick={()=> onCLickChangeImage(productImage)}>
+                        <img src={productImage} alt="main-product-alternative-images" />
+                        </div>
+                       <div className='individual-product-alt-img' onClick={()=> onCLickChangeImage(location?.state?.image)}>
+                        <img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img' onClick={()=> onCLickChangeImage(location?.state?.image)}>
+                        <img src={location?.state?.image} alt="main-product-alternative-images" /></div>
+                       <div className='individual-product-alt-img'onClick={()=> onCLickChangeImage(location?.state?.image)}>
+                        <img src={location?.state?.image} alt="main-product-alternative-images" /></div>
                     </div>
                 </div>
             </div>
@@ -69,17 +93,20 @@ const ProductMainDetails = () => {
                     </select>
                 </div>
                 <div className='product-quantity'>
-                    <div className='quantity-text'>QUYANTITY</div>
+                    <div className='quantity-text'>Quantity</div>
                     <div className='quantity-actions'>
                         <div className='inc-dec-btn'>
-                        <div className='increase-and-decrease' name='increase'>-</div>
-                        <div className='show-quantity'>1</div>
-                        <div className='increase-and-decrease' name='decrease'>+</div>
+                        <div className='increase-and-decrease' name='increase' onClick={()=>onClickHandler("-")}>-</div>
+                        <div className='show-quantity'>{quantity}</div>
+                        <div className='increase-and-decrease' name='decrease' onClick={()=>onClickHandler("+")}>+</div>
                         </div>
                         <button className='addtoCart-btn' name="addtoCart">Add to Cart</button>
                     </div>
-                    <div className='add-wishlist'>
-                        <AiOutlineStar size={25}/>
+                    <div className='add-wishlist' onClick={wishListToggleHandler}>
+                        {
+                            !addToWishList?<AiOutlineStar size={25} />: 
+                           <AiFillStar className='star' size={25} color='#FFCC00'/>
+                           }
                         <div className='addToWishlist-text'>
                             Add to Wishlist
                         </div>
