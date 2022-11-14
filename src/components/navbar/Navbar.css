@@ -35,15 +35,20 @@
 .nav-searchbar > input {
   border: none;
   outline: none;
-  height: 2.5rem;
+  height: 2.9rem;
   font: normal normal normal 1.6rem Rubik-Regular;
   color: #707070;
   background: none;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+}
+.nav-searchbar > input:focus {
+  width: 24rem;
+  border: 1px solid rgba(128, 128, 128, 0.37);
 }
 .nav-searchbar > input::placeholder {
   font: normal normal normal 1.6rem Rubik-Regular;
   color: #707070;
-  padding-left: 0.5rem;
 }
 .nav-icon-buttons {
   display: flex;
@@ -55,6 +60,7 @@
 }
 .nav-search-icon-styling {
   pointer-events: none;
+  width: 3.4rem;
 }
 
 /*********************************************************/
@@ -215,13 +221,17 @@
   border-radius: 1.4rem;
   font: normal normal normal 2.7rem Rubik-Regular;
 }
+.onMobileSearchBar-styling:focus {
+  border: 1px solid rgba(128, 128, 128, 0.411);
+}
 .onMobileSearchBar-styling::placeholder {
   font: normal normal normal 2.7rem Rubik-Regular;
   color: gray;
 }
 .onMobileSearchBar-close-icon {
-  font-size: 4.7rem;
+  font-size: 4.5rem;
   color: black;
+  cursor: pointer;
 }
 
 /***************Mobile Responsive***************************/
@@ -253,6 +263,7 @@
   }
   .nav-search-icon-styling {
     pointer-events: all;
+    cursor: pointer;
   }
 
   /****************/
@@ -315,18 +326,18 @@
     opacity: 1;
     visibility: visible;
     background-color: transparent;
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   #showDropdown1:checked ~ .dropDown-list,
   #showDropdown2:checked ~ .dropDown-list,
   #showDropdown3:checked ~ .dropDown-list,
   #showDropdown4:checked ~ .dropDown-list,
-  #showMobileMega:checked ~ .mega-box {
-    height: 100%;
-    /* transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-      height 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  #showMobileMega:checked ~ .mega-100box {
+    max-height: 999px;
+    transition: max-height 0.5s ease-in;
   }
 
   .dropDown-list li:hover {
@@ -361,12 +372,12 @@
     width: 100%;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.9s linear;
+    transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   #showMobileMega:checked ~ .mega-box {
-    max-height: 100%;
-    transition: max-height 0.9s linear;
+    max-height: 999px;
+    transition: max-height 0.5s ease-in;
   }
 
   .mega-box-content {
