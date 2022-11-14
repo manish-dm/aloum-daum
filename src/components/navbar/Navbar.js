@@ -26,9 +26,11 @@ const Navbar = () => {
 
   const onNavBtnClicked = () => {
     setClicked(!clicked);
-
-    onNavigation("/shop");
   };
+  const onNavProductChosen = () => {
+    onNavigation("/shop");
+    setClicked(!clicked);
+  }
 
   const onNavigation = (path) => {
     navigate(path);
@@ -134,10 +136,10 @@ const Navbar = () => {
               )}
             </label>
             <ul className="dropDown-list">
-              <li onClick={onNavBtnClicked}>Conditioner</li>
-              <li onClick={onNavBtnClicked}>Hair oil</li>
-              <li onClick={onNavBtnClicked}>Shampoo</li>
-              <li onClick={onNavBtnClicked}>Volumizer</li>
+              <li onClick={onNavProductChosen}>Conditioner</li>
+              <li onClick={onNavProductChosen}>Hair oil</li>
+              <li onClick={onNavProductChosen}>Shampoo</li>
+              <li onClick={onNavProductChosen}>Volumizer</li>
             </ul>
           </li>
           <li>
@@ -161,9 +163,9 @@ const Navbar = () => {
               )}
             </label>
             <ul className="dropDown-list">
-              <li onClick={onNavBtnClicked}>Whitener</li>
-              <li onClick={onNavBtnClicked}>Mask</li>
-              <li onClick={onNavBtnClicked}>Acne Remover</li>
+              <li onClick={onNavProductChosen}>Whitener</li>
+              <li onClick={onNavProductChosen}>Mask</li>
+              <li onClick={onNavProductChosen}>Acne Remover</li>
             </ul>
           </li>
           <li>
@@ -198,25 +200,25 @@ const Navbar = () => {
                 <div className="mega-box-row">
                   <header>Head</header>
                   <ul className="mega-box-links">
-                    <li onClick={onNavBtnClicked}>Body oil</li>
-                    <li onClick={onNavBtnClicked}>Tanner</li>
-                    <li onClick={onNavBtnClicked}>Moisturiser</li>
+                    <li onClick={onNavProductChosen}>Body oil</li>
+                    <li onClick={onNavProductChosen}>Tanner</li>
+                    <li onClick={onNavProductChosen}>Moisturiser</li>
                   </ul>
                 </div>
                 <div className="mega-box-row">
                   <header>Middle</header>
                   <ul className="mega-box-links">
-                    <li onClick={onNavBtnClicked}>Spray</li>
-                    <li onClick={onNavBtnClicked}>Lotion</li>
-                    <li onClick={onNavBtnClicked}>Perfume</li>
+                    <li onClick={onNavProductChosen}>Spray</li>
+                    <li onClick={onNavProductChosen}>Lotion</li>
+                    <li onClick={onNavProductChosen}>Perfume</li>
                   </ul>
                 </div>
                 <div className="mega-box-row">
                   <header>Lower</header>
                   <ul className="mega-box-links">
-                    <li onClick={onNavBtnClicked}>Cobblouise</li>
-                    <li onClick={onNavBtnClicked}>Yorlopi</li>
-                    <li onClick={onNavBtnClicked}>Smoothner</li>
+                    <li onClick={onNavProductChosen}>Cobblouise</li>
+                    <li onClick={onNavProductChosen}>Yorlopi</li>
+                    <li onClick={onNavProductChosen}>Smoothner</li>
                   </ul>
                 </div>
               </div>
@@ -243,9 +245,9 @@ const Navbar = () => {
               )}
             </label>
             <ul className="dropDown-list">
-              <li onClick={onNavBtnClicked}>Grooming</li>
-              <li onClick={onNavBtnClicked}>Hygiene</li>
-              <li onClick={onNavBtnClicked}>Health</li>
+              <li onClick={onNavProductChosen}>Grooming</li>
+              <li onClick={onNavProductChosen}>Hygiene</li>
+              <li onClick={onNavProductChosen}>Health</li>
             </ul>
           </li>
           <li>
@@ -269,10 +271,10 @@ const Navbar = () => {
               )}
             </label>
             <ul className="dropDown-list">
-              <li onClick={onNavBtnClicked}>Spa Oil</li>
-              <li onClick={onNavBtnClicked}>Truffler</li>
-              <li onClick={onNavBtnClicked}>Shredlum</li>
-              <li onClick={onNavBtnClicked}>Brocolopico</li>
+              <li onClick={onNavProductChosen}>Spa Oil</li>
+              <li onClick={onNavProductChosen}>Truffler</li>
+              <li onClick={onNavProductChosen}>Shredlum</li>
+              <li onClick={onNavProductChosen}>Brocolopico</li>
             </ul>
           </li>
         </ul>
