@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
           <div className="nav-upper-link-buttons">
             <div className="nav-searchbar">
-              <img src={SearchIcon} alt="search here" onClick={() => setShowSearchBar(true)}/>
+              <img src={SearchIcon} alt="search here" onClick={() => setShowSearchBar(true)} className="nav-search-icon-styling"/>
               <input type="text" placeholder="Search" />
             </div>
             <div className="nav-icon-buttons">

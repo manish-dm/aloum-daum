@@ -53,6 +53,9 @@
 .nav-icon-buttons > * {
   cursor: pointer;
 }
+.nav-search-icon-styling {
+  pointer-events: none;
+}
 
 /*********************************************************/
 
@@ -247,6 +250,9 @@
   }
   .nav-icon-buttons > img {
     width: 4rem;
+  }
+  .nav-search-icon-styling {
+    pointer-events: all;
   }
 
   /****************/
