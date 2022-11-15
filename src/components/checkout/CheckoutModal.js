@@ -3,8 +3,7 @@ import "./CheckoutModal.css";
 import { Dialog } from "@mui/material";
 import Gicon from "../../assets/icons/Gicon.png";
 import Ficon from "../../assets/icons/Ficon.png";
-import loginvector from "../../assets/images/cartpage/loginvector.jpg";
-import registervector from "../../assets/images/cartpage/registervector.jpg";
+import checkoutVector from "../../assets/images/cartpage/checkoutVector.svg";
 import SignInModal from "../sign-inModal/SigInModal";
 import RegisterModal from "../registermodal/RegisterModal";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +22,7 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
       <div className="checkoutmodal-wrapper">
         <div className="checkoutmodal-signin">
           <div className="checkoutmodal-image-div">
-            <img src={loginvector} alt="vector art" />
+            <img src={checkoutVector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Have an Account?</div>
           <button
@@ -54,7 +53,7 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
         {/* ****************************** */}
         <div className="checkoutmodal-register">
           <div className="checkoutmodal-image-div">
-            <img src={registervector} alt="vector art" />
+            <img src={checkoutVector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Don't have a Account?</div>
           <button
@@ -87,10 +86,13 @@ const CheckoutModal = ({ openDialog, setOpenDialog }) => {
         {/* *********************************** */}
         <div className="checkoutmodal-guest">
           <div className="checkoutmodal-image-div">
-            <img src={registervector} alt="vector art" />
+            <img src={checkoutVector} alt="vector art" />
           </div>
           <div className="checkoutmodal-message">Checkout as Guest</div>
-          <button className="checkoutmodal-primary-button" onClick={() => navigate("/shipping-address")}>
+          <button
+            className="checkoutmodal-primary-button"
+            onClick={() => navigate("/shipping-address")}
+          >
             Continue as a guest
           </button>
         </div>
