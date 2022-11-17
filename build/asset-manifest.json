@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.68db18d0.css",
-    "main.js": "/static/js/main.e7a0a5a3.js",
+    "main.css": "/static/css/main.0bc28d3e.css",
+    "main.js": "/static/js/main.ea8f01fa.js",
     "static/js/787.c4beb39a.chunk.js": "/static/js/787.c4beb39a.chunk.js",
-    "static/media/registervector.jpg": "/static/media/registervector.6c71ca885b28165d63ae.jpg",
-    "static/media/loginvector.jpg": "/static/media/loginvector.ae180890aa97315c8a69.jpg",
     "static/media/cartBanner.png": "/static/media/cartBanner.e0369fcb50f719a97ee5.png",
     "static/media/trendingImage2.png": "/static/media/trendingImage2.7f00f28e12925d5a5d01.png",
     "static/media/product2.png": "/static/media/product2.51118ec8a8eda315491b.png",
@@ -37,6 +35,7 @@
     "static/media/Lato-Bold.ttf": "/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/categoryGridImage2.png": "/static/media/categoryGridImage2.c8c615dec3e66e1eea3a.png",
     "static/media/product1.png": "/static/media/product1.3199ce180b716cbab0a9.png",
+    "static/media/checkoutVectorMask.svg": "/static/media/checkoutVectorMask.94c7ff0bb117d560ba40.svg",
     "static/media/Urbanist-Light.ttf": "/static/media/Urbanist-Light.55ed2929e37cd5fd9b62.ttf",
     "static/media/Urbanist-Medium.ttf": "/static/media/Urbanist-Medium.934caf896c405316f809.ttf",
     "static/media/Urbanist-SemiBold.ttf": "/static/media/Urbanist-SemiBold.7da44a6d82965ce3d957.ttf",
@@ -44,6 +43,7 @@
     "static/media/Urbanist-Bold.ttf": "/static/media/Urbanist-Bold.578c7c1d4785d6cd2fa5.ttf",
     "static/media/product5.png": "/static/media/product5.0b8a27927ffbcb872140.png",
     "static/media/product4.png": "/static/media/product4.13063fba7ee80b73e804.png",
+    "static/media/checkoutVector.svg": "/static/media/checkoutVector.f41a3f3f19b082502c8bddf8f544e1ea.svg",
     "static/media/netBankingMethod.png": "/static/media/netBankingMethod.288395c011bc573b305d.png",
     "static/media/Group15.png": "/static/media/Group15.20c80fea00e20aa19d45.png",
     "static/media/Instagram.svg": "/static/media/Instagram.c3d6f8f177b0aaa23f92678e1ad0471d.svg",
@@ -54,12 +54,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/youtube.svg": "/static/media/youtube.231a3824d5878475c3aaa9a3936c48b2.svg",
     "index.html": "/index.html",
-    "main.68db18d0.css.map": "/static/css/main.68db18d0.css.map",
-    "main.e7a0a5a3.js.map": "/static/js/main.e7a0a5a3.js.map",
+    "main.0bc28d3e.css.map": "/static/css/main.0bc28d3e.css.map",
+    "main.ea8f01fa.js.map": "/static/js/main.ea8f01fa.js.map",
     "787.c4beb39a.chunk.js.map": "/static/js/787.c4beb39a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68db18d0.css",
-    "static/js/main.e7a0a5a3.js"
+    "static/css/main.0bc28d3e.css",
+    "static/js/main.ea8f01fa.js"
   ]
 }
