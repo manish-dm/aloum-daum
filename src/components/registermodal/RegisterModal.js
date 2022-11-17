@@ -71,12 +71,12 @@ export default function RegisterModal({ openRegister, setOpenRegister }) {
                   className="register-pswrd-input"
                 />
                 {passwordShown ? (
-                  <AiFillEyeInvisible
+                  <AiFillEye
                     className="pswrd-eye-button-css"
                     onClick={() => setPasswordShown(!passwordShown)}
                   />
                 ) : (
-                  <AiFillEye
+                  <AiFillEyeInvisible
                     className="pswrd-eye-button-css"
                     onClick={() => setPasswordShown(!passwordShown)}
                   />
@@ -109,19 +109,19 @@ export default function RegisterModal({ openRegister, setOpenRegister }) {
                   className="register-pswrd-input"
                 />
                 {showPhone ? (
-                  <AiFillEyeInvisible
+                  <AiFillEye
                     className="pswrd-eye-button-css"
                     onClick={() => setShowPhone(!showPhone)}
                   />
                 ) : (
-                  <AiFillEye
+                  <AiFillEyeInvisible
                     className="pswrd-eye-button-css"
                     onClick={() => setShowPhone(!showPhone)}
                   />
                 )}
               </div>
               <div className="register-privacyterms-div">
-                <input type="checkbox" id="privacyCheckbox"/>
+                <input type="checkbox" id="privacyCheckbox" />
                 <label htmlFor="privacyCheckbox">
                   By clicking Create account, I agree that I have read and
                   accepted the Terms of Use and Privacy Policy.
