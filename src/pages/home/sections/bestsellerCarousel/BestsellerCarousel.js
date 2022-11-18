@@ -10,7 +10,7 @@ const BestsellerCarousel = () => {
   const bestsellerSliderRef = useRef();
 
   const sliderChangeCallback = (currentSlide, nextSlide) => {
-    let calc = (nextSlide / (BestsellerCarouselData.length - 1)) * 100;
+    let calc = (nextSlide / (BestsellerCarouselData.length - 1)) * 93;
     setProgressVal(calc);
   };
 
