@@ -129,6 +129,7 @@ img {
   margin-block: auto;
   margin-bottom: 55%;
   position: relative;
+  cursor: pointer;
 }
 
 .item-6-text {
@@ -160,6 +161,7 @@ img {
   background: black;
   transform: translateX(1.2rem);
   transition: width 0.5s ease;
+  cursor: pointer;
 }
 .item-6:hover .readmore-btn-dash {
   width: 6rem;
@@ -168,6 +170,7 @@ img {
   grid-area: item-7;
   border-top-right-radius: 5.8rem;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {

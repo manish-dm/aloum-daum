@@ -18,7 +18,7 @@ const style = {
     xl: 450, // theme.breakpoints.up('xl')
   },
   height: {
-    xs: 380, // theme.breakpoints.up('xs')
+    xs: 400, // theme.breakpoints.up('xs')
     sm: 400, // theme.breakpoints.up('sm')
     md: 450, // theme.breakpoints.up('md')
     lg: 500, // theme.breakpoints.up('lg')
