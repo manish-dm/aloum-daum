@@ -60,11 +60,11 @@ export default function SignInModal({ openSignIn, setOpenSignIn }) {
               />
               <br />
               <AiFillEye className="SignInModal-main-visibility-on" />
-              {emailShown ? (<AiFillEyeInvisible
+              {emailShown ? (<AiFillEye
                 className="SignInModal-main-visibility-on"
                 onClick={() => setEmailShown(!emailShown)}
               />
-              ) : (<AiFillEye
+              ) : (<AiFillEyeInvisible
                 className="SignInModal-main-visibility-on"
                 onClick={() => setEmailShown(!emailShown)}
               />)}
